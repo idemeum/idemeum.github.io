@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-13T23:30:39-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">idemeum.github.io</title><entry><title type="html">idemeum approach to security</title><link href="http://localhost:4000/blog/idemeum-security" rel="alternate" type="text/html" title="idemeum approach to security" /><published>2020-11-11T16:00:00-08:00</published><updated>2020-11-11T16:00:00-08:00</updated><id>http://localhost:4000/blog/idemeum-security</id><content type="html" xml:base="http://localhost:4000/blog/idemeum-security">&lt;p&gt;Our mission is to make digital identity simple, secure, and private.&lt;/p&gt;
+
+&lt;p&gt;Security if one of the core principles that is applied to everything we do - mobile, backend, DevOps, it does not matter, security is fundamental and key.&lt;/p&gt;
+
+&lt;p&gt;What is more, authentication is mission critical to businesses and individuals. Therefore, we designed idemeum in accordance with the latest best practices as it relates to Confidentiality, Integrity, and Availability (&lt;a href=&quot;https://en.wikipedia.org/wiki/Information_security&quot;&gt;CIA triad&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;We are also conducting continuous threat modeling and evaluation to make sure we harden idemeum even further.&lt;/p&gt;
+
+&lt;h3&gt;How do we keep your data secure?&lt;/h3&gt;
+
+&lt;h5&gt;idemeum backend&lt;/h5&gt;
+
+&lt;p&gt;For idemeum backend we have taken a radical new approach by storing your personal data on your mobile device &lt;strong&gt;ONLY&lt;/strong&gt;. What that means is that we have no users’ digital identity data in our backend. Not only is it important from the privacy standpoint, but it also reduces attack surface significantly. If our backend gets compromised, attackers will get nothing from it, as there is not valuable user data there.&lt;/p&gt;
+
+&lt;h5&gt;idemeum mobile application&lt;/h5&gt;
+
+&lt;p&gt;On a mobile side, we are follow general mobile security best practices, including &lt;a href=&quot;https://owasp.org/www-project-mobile-security/&quot;&gt;OWASP Mobile Top 10&lt;/a&gt;, in order to protect idemeum mobile application. We leverage security measures such as hardware based key encryption, jailbreak detection, data encryption, liveness detection and others.&lt;/p&gt;
+
+&lt;h5&gt;idemeum authentication&lt;/h5&gt;
+
+&lt;p&gt;idemeum leverages biometric based authentication that is using biometric sensors on Apple and Google mobile devices. We are using FIDO2 protocol (developed by &lt;a href=&quot;https://fidoalliance.org&quot;&gt;FIDO Alliance&lt;/a&gt;) that is becoming the de-facto standard in the identity industry. The FIDO Alliance developed FIDO Authentication standards based on public key cryptography for authentication that is more secure than passwords and SMS OTPs, simpler for consumers to use, and easier for service providers to deploy and manage. FIDO Authentication enables password-only logins to be replaced with secure and fast login experiences across websites and apps.&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/11UfySDn7_I&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Nikolay</name></author><summary type="html">Our mission is to make digital identity simple, secure, and private.</summary></entry><entry><title type="html">idemeum privacy</title><link href="http://localhost:4000/blog/about-privacy" rel="alternate" type="text/html" title="idemeum privacy" /><published>2020-11-10T16:00:00-08:00</published><updated>2020-11-10T16:00:00-08:00</updated><id>http://localhost:4000/blog/about-privacy</id><content type="html" xml:base="http://localhost:4000/blog/about-privacy">&lt;p&gt;Privacy of your data is paramount to us.&lt;/p&gt;
+
+&lt;p&gt;That is why we designed idemeum to be 100% privacy enabled.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-default&quot; role=&quot;alert&quot;&gt;
+Unlike any other solution on the market today, any details you add to your digital identity are stored only on your phone only.&lt;br /&gt;&lt;br /&gt;
+
+We do not store any of your data in our backend.
+&lt;/div&gt;
+
+&lt;h6&gt;Your data only on mobile device&lt;/h6&gt;
+&lt;p&gt;When you create your idemeum identity and add personal details, such as email, phone number, or driver’s license, all information is stored on your mobile device. We leverage state of the art mobile security practices to protect your information, such as storing your data in the secure areas of mobile operating system and using public key encryption to protect your data.&lt;/p&gt;
+
+&lt;h6&gt;Anonymized data in the backend&lt;/h6&gt;
+&lt;p&gt;When your application registers with our backend, there is only anonymized data that we use to enable the authentication. We do NOT store any of your personal details, such as email address, phone number, or any information from your IDs.&lt;/p&gt;</content><author><name>Nikolay</name></author><summary type="html">Privacy of your data is paramount to us.</summary></entry><entry><title type="html">About idemeum</title><link href="http://localhost:4000/blog/about-idemeum" rel="alternate" type="text/html" title="About idemeum" /><published>2020-11-09T16:00:00-08:00</published><updated>2020-11-09T16:00:00-08:00</updated><id>http://localhost:4000/blog/about-idemeum</id><content type="html" xml:base="http://localhost:4000/blog/about-idemeum">&lt;p&gt;&lt;strong&gt;Welcome to idemeum!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-default&quot; role=&quot;alert&quot;&gt;
+At idemeum we are on a mission to make digital identity simple, secure, and private.
+&lt;/div&gt;
+
+&lt;p&gt;Therefore, we decided to build a decentralized digital identity platform. idemeum will become your secure way to create your own digital identity and safely store it on your mobile device.&lt;/p&gt;
+
+&lt;p&gt;Keep your personal details safely stored in the idemeum app, where only you can access them. Yes, you got that right - we do not store any of your data in the backend.&lt;/p&gt;
+
+&lt;p&gt;When you need to login into applications, idemeum gives you a secure and convenient way to share your details.&lt;/p&gt;
+
+&lt;p&gt;With idemeum you will be able to:&lt;/p&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;Eliminate passwords&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;No more passwords to remember, no more passwords to type, no locked accounts, and no more account takeovers. idemeum allows you to safely and securely access your applications with the simple tap on your phone.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;Authenticate with biometrics&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;idemeum helps protect your identity with strong authentication. It is multi-factor by design - something you are and something you own. idemeum uses modern authentication protocols such as FIDO2 to secure your digital identity.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;Control what you share and with who&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;idemeum gives you the power to control your own digital identity. Only you can decide what information you want to share and with who. We do not see your data... Why would anyone need to own or control your data but you?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name>Nikolay</name></author><summary type="html">Welcome to idemeum!</summary></entry></feed>

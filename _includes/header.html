@@ -1,4 +1,4 @@
-{% if page.url != "/" and page.featured_image and site.data.settings.header_settings.allow_transparent == "yes" %}
+{% if site.data.settings.header_settings.allow_transparent == "yes" %}
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent headroom">
   {% elsif site.data.settings.header_settings.theme == "blue" %}
   <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg bg-primary navbar-dark headroom">
@@ -10,11 +10,11 @@
 
         <div class="container">
           {% if site.data.settings.header_settings.logo_image %}
-          <a href="/blog/" class="navbar-brand mr-lg-5">
+          <a href="{{ site.baseurl }}/" class="navbar-brand mr-lg-5">
             <img src="{{ site.data.settings.header_settings.logo_image | relative_url }}">
           </a>
           {% else %}
-          <a href="/blog/" class="navbar-brand mr-lg-5">
+          <a href="{{ site.baseurl }}/" class="navbar-brand mr-lg-5">
             {{site.data.settings.basic_settings.site_title}}
           </a>
           {% endif %}
