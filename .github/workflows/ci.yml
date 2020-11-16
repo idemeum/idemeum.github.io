@@ -2,8 +2,7 @@ name: Upgrade mkdocs files
 on:
   push:
     paths:
-    - 'docs/**'
-    - '**.yml'
+    - 'docs-source/**'
     branches:
     - gh-pages
 jobs:

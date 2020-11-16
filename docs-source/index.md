@@ -1,4 +1,4 @@
-# Welcome to idemeum !!!!
+# Hello and welcome to idemeum
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
