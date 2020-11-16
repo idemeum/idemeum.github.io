@@ -16,9 +16,8 @@ jobs:
           python-version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - run: pip install mkdocs-material
-      - run: git remote add origin https://github.com/idemeum/idemeum.github.io.git
       - run: git fetch
       - run: mkdocs build
-      - run: git add. 
+      - run: git add.
       - run: git commit - M "Adding docuemntation files"
       - run: git push
