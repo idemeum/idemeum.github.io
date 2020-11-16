@@ -1,5 +1,4 @@
-# Hello and welcome to idemeum one last timne hahha
-
+# Hello
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
