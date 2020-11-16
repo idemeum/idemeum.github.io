@@ -42,7 +42,7 @@ menu_settings:
       - title: Submit product idea
         url: 'https://roadmap.idemeum.com/roadmaps/5fb1f2eac80bbc00293063d0/public#ideas'
         icon: ni-bulb-61 text-primary
-    - title: 'About'
+    - title: 'About us'
       submenu_items:
       - title: Contact us
         url: /contact
