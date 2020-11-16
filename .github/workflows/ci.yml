@@ -1,8 +1,11 @@
-name: ci
+name: Upgrade mkdocs files
 on:
   push:
+    paths:
+    - 'docs/**'
+    - '**.yml'
     branches:
-      - gh-pages
+    - gh-pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -13,6 +16,11 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: mkdocs build
-      - run: git add .
-      - run: git commit -m "Updating documentation"
-      - run: git push
+      - name: Deploy Files
+        run: |
+          git config user.name ${{ secrets.GH_USER }}
+          git config user.email "${{ secrets.GH_MAIL }}"
+          git fetch
+          git add .
+          git commit -m "Update documentation files"
+          git push
