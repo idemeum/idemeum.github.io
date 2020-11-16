@@ -37,7 +37,7 @@ menu_settings:
         url: /blog
         icon: ni-books text-success
       - title: Docs
-        url:
+        url: /docs
         icon: ni-settings text-default
       - title: Submit product idea
         url: 'https://roadmap.idemeum.com/roadmaps/5fb1f2eac80bbc00293063d0/public#ideas'
