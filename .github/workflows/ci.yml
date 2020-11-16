@@ -18,6 +18,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: git fetch
       - run: mkdocs build
-      - run: git add.
+      - run: git add .
       - run: git commit - M "Adding docuemntation files"
       - run: git push
