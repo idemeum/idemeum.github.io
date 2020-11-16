@@ -25,5 +25,7 @@ jobs:
       - run: ls -a
       - run: git status
       - run: git add .
+      - run: git config --global user.email "nik@idemeum.com"
+      - run: git config --global user.name "Nikolay"
       - run: git commit -m "Adding documentation files"
       - run: git push
