@@ -1,6 +1,6 @@
 # Welcome
 
-We are currently working on a product launch, therefore the dcumentation will be launched soon.
+We are currently working on a product launch, therefore the documentation will be launched soon.
 
 Stay tuned.
 
