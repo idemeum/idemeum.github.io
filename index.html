@@ -6,23 +6,32 @@ description: Decentralized digital identity platform
 description: idemeum blog
 featured_image: /assets/img/home-background/home-background.jpg
 ---
-<div class="page-header page-header-small fullWidth">
-  <div class="page-header-image"
-    style="background-image: url({{ page.featured_image | relative_url }});"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-7 mr-auto text-left d-flex justify-content-center flex-column">
-          <p class="lead mt-0" style="color:#e3e3e3;">idemeum</p>
-          <h3 class="display-3" style="color:#e3e3e3;">Making digital identity simple, secure, and private.</h3>
-          <div class="buttons">
-            <a href="/contact" class="btn btn-primary">
-              Want to learn more?
-            </a>
+<header class="header-1 fullWidth">
+    <div class="page-header">
+      <div class="page-header-image" style="background-image: url('{{ '/assets/img/home-background/home-background.png' | relative_url }}')"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-7 mr-auto text-left d-flex justify-content-center flex-column">
+            <p class="lead mt-0">idemeum</p>
+            <h3 class="display-3">Making digital identity simple, secure, and private.</h3>
+            <div class="buttons">
+              <a href="/contact" class="btn btn-primary">
+                Want to learn more?
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </header>
+
+
+{% include /landing-page/idemeum.html %}
+{% include /landing-page/passwordless-intro.html %}
+{% include /landing-page/verification-intro.html %}
+{% include /landing-page/privacy-intro.html %}
+{% include /landing-page/overload.html %}
+
 
   <script>
   	var ps_config = {
