@@ -31,24 +31,31 @@ blog_settings:
   # 3. Add a color of the icon - text-primary, text-success, text-info, text-danger, text-warning and text-default all work!
 menu_settings:
   menu_items:
-    #- title: 'Pricing'
-      #url: /pricing
-    - title: 'Resources'
-      submenu_items:
-      - title: Blog
-        url: /blog
-        icon: ni-books text-success
-      - title: Docs
-        url: /docs
-        icon: ni-settings text-default
-      - title: Submit product idea
-        url: 'https://roadmap.idemeum.com/roadmaps/5fb1f2eac80bbc00293063d0/public#ideas'
-        icon: ni-bulb-61 text-primary
-    - title: 'About us'
-      submenu_items:
-      - title: Contact us
-        url: /contact
-        icon: ni-collection text-success
+  #- title: 'Pricing'
+    #url: /pricing
+  - title: 'For enterprises'
+    submenu_items:
+    - title: Verified Passwordless MFA
+      url: /mfa/
+      icon: fa fa-key text-primary
+    #- title: Passwordless Remote Onboarding
+      #url: /blog/
+      #icon: fa fa-briefcase text-success
+  - title: 'Resources'
+    submenu_items:
+    - title: Blog
+      url: /blog/
+      icon: ni-settings text-default
+    - title: Submit product idea
+      url: 'https://roadmap.idemeum.com/roadmaps/5fb1f2eac80bbc00293063d0/public#ideas'
+      icon: ni-bulb-61 text-primary
+  - title: Docs
+    url: /docs/
+  - title: 'About us'
+    submenu_items:
+    - title: Contact us
+      url: /contact/
+      icon: fa fa-envelope text-info
 
 footer_settings:
   footer_tagline: idemeum
