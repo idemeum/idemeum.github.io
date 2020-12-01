@@ -1,5 +1,5 @@
 # Welcome to idemeum documentation
 
-We are currently working on a product launch, therefore the dcumentation will be launched soon.
+We are currently working on our product launch, therefore the documentation will be launched soon.
 
-Stay tuned. 
+Stay tuned.
