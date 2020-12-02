@@ -1,6 +1,6 @@
 ---
 title: True Verified Passwordless MFA
-subtitle: Eliminate your password the right way
+subtitle: Eliminate your passwords the right way
 featured_image: /assets/img/mfa/mfa.png
 ---
 
