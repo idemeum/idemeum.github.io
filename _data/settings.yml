@@ -36,7 +36,7 @@ menu_settings:
   - title: 'For enterprises'
     submenu_items:
     - title: Verified Passwordless MFA
-      url: /mfa/
+      url: /mfa
       icon: fa fa-key text-primary
     #- title: Passwordless Remote Onboarding
       #url: /blog/
@@ -54,7 +54,7 @@ menu_settings:
   - title: 'About us'
     submenu_items:
     - title: Contact us
-      url: /contact/
+      url: /contact
       icon: fa fa-envelope text-info
 
 footer_settings:
