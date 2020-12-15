@@ -43,7 +43,7 @@ featured_image: /assets/img/mfa/mfa.png
     </div>
 
     <div class="row">
-      <div class="col-lg-4 mx-auto d-flex align-items-stretch">
+      <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
         <div class="card" style="width: 20rem;">
           <img class="card-img-top" src="./assets/img/mfa/save-costs.png" alt="Save costs">
           <div class="card-body">
@@ -53,7 +53,7 @@ featured_image: /assets/img/mfa/mfa.png
         </div>
       </div>
 
-      <div class="col-lg-4 mx-auto d-flex align-items-stretch">
+      <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
         <div class="card" style="width: 20rem;">
           <img class="card-img-top" src="./assets/img/mfa/security.png" alt="Card image cap">
           <div class="card-body">
@@ -63,7 +63,7 @@ featured_image: /assets/img/mfa/mfa.png
         </div>
       </div>
 
-      <div class="col-lg-4 mx-auto d-flex align-items-stretch">
+      <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
         <div class="card" style="width: 20rem;">
           <img class="card-img-top" src="./assets/img/mfa/productive.png" alt="Card image cap">
           <div class="card-body">
@@ -104,9 +104,6 @@ featured_image: /assets/img/mfa/mfa.png
 <div class="section bg-primary">
   <div class="container">
 
-
-
-
     <div class="row">
       <div class="col-lg-8 text-center mx-auto">
         <h6 class="text-uppercase text-neutral">Meet idemeum</h6>
@@ -116,18 +113,13 @@ featured_image: /assets/img/mfa/mfa.png
       </div>
     </div>
 
-
-
-
-
-
     <div class="row">
-      <div class="col-lg-8 text-center mx-auto">
-        <div class="card card-blog card-background" data-animation="zooming" style="margin-bottom: 0;">
+      <div class="col-lg-7 text-center mx-auto">
+        <div class="card card-blog card-background" data-animation="true">
           <div class="full-background" style="background-image: url('./assets/img/mfa/video-mfa-intro.png"></div>
-          <div class="card-body justify-content-center d-flex flex-column">
-            <div class="">
-              <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-video">Watch video</button>
+          <div class="card-body">
+            <div class="content-bottom">
+              <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-video"><span class="btn-inner--icon"><i class="ni ni-button-play"></i></span> Watch video</button>
             </div>
           </div>
         </div>
@@ -137,7 +129,7 @@ featured_image: /assets/img/mfa/mfa.png
 </div>
 
 <!-- mfa intro video modal -->
-<div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
   <div class="modal-dialog modal-success modal-dialog-centered modal-lg" role="document">
     <div class="modal-content bg-gradient-success">
       <div class="modal-header">
@@ -148,8 +140,8 @@ featured_image: /assets/img/mfa/mfa.png
       </div>
       <div class="modal-body">
         <!-- Video explainer -->
-        <iframe id="video" width="576" height="423" class="embed-responsive" src="https://www.youtube.com/embed/vroZj3XDlp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- ENd of video -->
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe id="video" src='https://www.youtube.com/embed/vroZj3XDlp8' frameborder='0' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <!-- End of video -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
