@@ -13,20 +13,6 @@ featured_image: /assets/img/deployment/onboarding.jpg
         <p>idemeum will integrate into your existing device deployment flows to provide passwordless experience to your employees. It can be a zero-touch deployment, user-initiated enrollment, Windows, Mac, or Chromebook - idemeum covers it all.</p>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-12">
-        <div class="row text-center">
-          <!-- Embed the video here -->
-          <div class="col-lg-11 mx-auto">
-            <video class="embed-responsive" autoplay loop>
-              <source src="./assets/img/deployment/device_onboarding_front_video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-          </div>
-          <!-- End of video section -->
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
