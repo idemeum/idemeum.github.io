@@ -70,9 +70,20 @@
                     <a href="{{ post.url | relative_url }}">
                         <div class="card-body">
                             <div class="content-bottom">
-                                <h6 class="card-category text-white opacity-8">{{ post.date | date_to_long_string }}
-                                </h6>
                                 <h5 class="card-title">{{ post.title }}</h5>
+
+                                {% for author in site.data.settings.authors %}
+                                    {% if post.author == author[1].name %}
+                                        <div class="author mt-3" style="display: flex;">
+                                            <img src=" {{author[1].picture}}" alt="..." class="avatar img-raised">
+                                            <div class="text" style="left: 5px">
+                                            <span class="text-white opacity-8 ">{{author[1].name}}</span>
+                                            <div class="meta">{{ post.date | date_to_long_string }}</div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+
                             </div>
                         </div>
                     </a>
@@ -143,16 +154,16 @@
                                             <img src=" {{author[1].picture}}" alt="..." class="avatar img-raised">
                                             <div class="text">
                                             <span class="name"></span>
-                                                
+
                                             {{author[1].name}}
-                                        
+
                                                 </span>
                                             <div class="meta">{{ post.date | date_to_long_string }}</div>
                                             </div>
                                         </div>
                                     {% endif %}
                                 {% endfor %}
-    
+
                             </div>
                         </div>
                     </div>

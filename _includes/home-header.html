@@ -1,0 +1,45 @@
+<header class="header bg-primary">
+  <div style="min-height: 100vh; max-height: 999px; padding: 0; align-items: center; display: flex; overflow: hidden; box-sizing: border-box;">
+    <div class="container" style="padding-top: 80px">
+      <div class="row align-items-center text-left">
+        <div class="col-lg-6 col-12">
+          <h6 class="text-uppercase" style="color: #B1C9F9;">idemeum</h6>
+          <h3 class="display-3" style="color: #FFFFFF;">Digital identity made simple, secure, and private</h3>
+          <div class="row row-input mt-3">
+            <div class="col-sm-12 col-12">
+              <a href="/contact"><button type="submit" class="btn btn-success">Request demo</button></a>
+              <!-- Button for modal -->
+              <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-video">Watch video</button>
+              <!-- Modal -->
+              <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+                <div class="modal-dialog modal-success modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content bg-gradient-success">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal-title-notification">Welcome to idemeum!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Video explainer -->
+                      <iframe id="video" width="576" height="423" class="embed-responsive" src="https://www.youtube.com/embed/d-MCTl1iJio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <!-- ENd of video -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 pl-0">
+          <div class="image container">
+          <img src="{{ '/assets/img/home-background/home-background.png' | relative_url }}" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
