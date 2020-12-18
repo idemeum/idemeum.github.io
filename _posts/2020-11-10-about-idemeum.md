@@ -4,6 +4,7 @@ date: 2020-11-10 00:00:00
 description: In this post you will learn a little more about what idemeum is and what problems it is solving for users and enterprises.
 featured_image: /assets/img/blogs/about-idemeum/image-about-idemeum.jpg
 author: Nikolay
+type: blog-post
 ---
 
 **Welcome to idemeum!**

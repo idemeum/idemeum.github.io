@@ -4,6 +4,7 @@ date: 2020-11-12 00:00:00
 description: Security is one of the core principles of idemeum. Security is applied from the ground up in everything we do. We are obsessed with securing your data to the highest standards.
 featured_image: /assets/img/blogs/idemeum-security/security.jpg
 author: Nikolay
+type: blog-post
 ---
 
 Our mission is to make digital identity simple, secure, and private.

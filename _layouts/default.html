@@ -35,10 +35,6 @@
   <!-- CSS Files -->
   <link rel="stylesheet" href="{{ "/assets/styles/styles.css" | relative_url }}" rel="stylesheet">
 
-
-
-
-
   {% if site.data.settings.advanced_settings.analytics_code %}
   <!-- Analytics Code -->
   {{ site.data.settings.advanced_settings.analytics_code }}
@@ -60,6 +56,32 @@
     {% include home-header.html %}
   {% endif %}
 
+  {% if page.type == "blog-post" %}
+  <div class="page-header header-filter">
+    <div class="page-header-image" style="background-image: url({{ page.featured_image | relative_url }});"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center pt-8">
+          <h2 class="display-2 text-white">{{ page.title }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="floating-box bg-default">
+          <div class="box text-center">
+            <div class="icon icon-shape bg-primary icon-xl rounded-circle text-white">
+              <i class="ni ni-book-bookmark"></i>
+            </div>
+          </div>
+          <blockquote class="blockquote text-center mt-2">
+            <p class="mb-0 text-white">Posted {{ page.date | date_to_long_string }}</p>
+          </blockquote>
+          <h2 class="lead text-white pl-5 pr-5 pb-5 text-left">{{page.description}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
   <div class="wrapper page">
     {% if page.url != "/" and page.collection != "posts" and page.type != "blogListing" and page.type != "myType" and page.type != "contact" and page.type != "login-page" %}
     <!-- Is not a blog post or blog archive or contact page -->
@@ -79,6 +101,7 @@
     </div>
 
     {% elsif page.title%}
+
     <!-- Is a page without a banner -->
     <div class="container contentWrapper pb-2">
       <div class="text-left mt-5 mb-3">
@@ -91,7 +114,8 @@
     {% endif %}
     {% endif %}
 
-    {% if page.type == "home-page" or page.type == "managed"  %}
+
+    {% if page.type == "home-page" or page.type == "managed" or page.type == "blogListing"%}
       {{content}}
 
       {% elsif page.title%}

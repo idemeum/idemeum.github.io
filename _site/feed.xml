@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-14T19:18:46-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">idemeum.github.io</title><entry><title type="html">idemeum approach to security</title><link href="http://localhost:4000/blog/idemeum-security" rel="alternate" type="text/html" title="idemeum approach to security" /><published>2020-11-11T16:00:00-08:00</published><updated>2020-11-11T16:00:00-08:00</updated><id>http://localhost:4000/blog/idemeum-security</id><content type="html" xml:base="http://localhost:4000/blog/idemeum-security">&lt;p&gt;Our mission is to make digital identity simple, secure, and private.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-18T15:03:27-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">idemeum.github.io</title><entry><title type="html">Why did we make idemeum verified?</title><link href="http://localhost:4000/blog/idemeum-verification" rel="alternate" type="text/html" title="Why did we make idemeum verified?" /><published>2020-12-16T16:00:00-08:00</published><updated>2020-12-16T16:00:00-08:00</updated><id>http://localhost:4000/blog/idemeum-verification</id><content type="html" xml:base="http://localhost:4000/blog/idemeum-verification">&lt;h2 id=&quot;why-do-we-need-to-verify-digital-identity&quot;&gt;Why do we need to verify digital identity?&lt;/h2&gt;
+
+&lt;p&gt;Identity plays a major role in everyday life. It’s the key that determines the particular transactions in which we can rightfully participate as well as the information we’re entitled to access.&lt;/p&gt;
+
+&lt;p&gt;However, in a world that’s increasingly governed by digital transactions and data, our existing methods for verifying someone’s identity are far from adequate.&lt;/p&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+  &lt;strong&gt;4.7B&lt;/strong&gt; compromised credentials across major cyber security breaches from 2013 to 2018&lt;br /&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+  &lt;strong&gt;$1.9B&lt;/strong&gt; losses related to identity fraud in 2019
+&lt;/blockquote&gt;
+
+&lt;p&gt;Remember this meme? It was drawn by &lt;a href=&quot;https://en.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you're_a_dog&quot;&gt;Peter Steiner&lt;/a&gt; and published by The New Yorker on July 5, 1993. It is still as true today as ever.&lt;/p&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;&quot;On the Internet, nobody knows you're a dog&quot;&lt;/blockquote&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+
+&lt;img src=&quot;/assets/img/blogs/idemeum-verified/idog.png&quot; style=&quot;width: 100%&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The cartoon implies the ability to send and receive messages — or to create and maintain a website — behind a mask of anonymity. “Nobody knows” is there because Internet protocols require no user to confirm or prove one’s own identity.&lt;/p&gt;
+
+&lt;p&gt;While there are situations where identity proofing is not required or is even undesirable (use cases where anonymity or pseudonymity is required), there are others where it is important to reliably establish an association with a real-life subject. Examples include obtaining health care or executing financial transactions. There are also situations where the association is required for regulatory reasons (the financial industry’s ‘Know Your Customer’ requirements, established in the implementation of the USA PATRIOT Act of 2001) or to establish accountability for high-risk actions (changing the release rate of water from a dam).&lt;/p&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;When accessing some low-risk digital services, “being a dog” is just fine; while other, high-risk services need a level of confidence that the digital identity accessing the service is the legitimate proxy to the real-life subject.
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;when-do-we-verify-digital-identity&quot;&gt;When do we verify digital identity?&lt;/h2&gt;
+&lt;p&gt;To answer this question let’s take a look at the simplistic diagram of identity lifecycle and get some terminology in place.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/idemeum-verified/lifecycle.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I can access any service, I need to prove my identity so that a credential can be created, and I can be enrolled as valid subject within the identity system. Therefore, &lt;mark&gt;identity proofing&lt;/mark&gt; is all about establishing that an applicant is who they claim to be. At this point I will also create an authenticator (password, PIN, certificate, etc.) that will be linked to my digital identity.&lt;/p&gt;
+
+&lt;p&gt;When I return to the service, I need to provide reasonable risk-based assurance that I am the same person who previously accessed the service. Hence, &lt;mark&gt;authentication&lt;/mark&gt; establishes that a subject attempting to access a digital service is in control of one or more valid authenticators associated with the subject’s digital identity.&lt;/p&gt;
+
+&lt;p&gt;And finally, once I am authenticated, the service needs to know what privileges I can be granted. &lt;mark&gt;Authorization&lt;/mark&gt; helps with that, as it is the process of giving the user permission to access a specific resource or function.&lt;/p&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;So, identity proofing typically happens at &quot;before&quot; phase. However, it would be also useful to extend the trust all the way to &quot;during&quot; phase, so that when the user returns to the service, we not only assure that he has a valid authenticator in possession and control, but also assure his identity.&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;how-does-identity-verification-work&quot;&gt;How does identity verification work?&lt;/h2&gt;
+&lt;p&gt;When identity proofing is done, it needs to be done at a certain “Identity Assurance Level (IAL)”. &lt;a href=&quot;https://www.nist.gov&quot;&gt;National Institute of Standards and Technology (NIST)&lt;/a&gt; sets requirements for each of the 3 &lt;a href=&quot;https://pages.nist.gov/800-63-3/sp800-63a.html&quot;&gt;levels&lt;/a&gt;, based on the required security level and assumed risk.&lt;/p&gt;
+
+&lt;p&gt;&lt;mark&gt;IAL1&lt;/mark&gt;: There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as such.&lt;/p&gt;
+
+&lt;p&gt;&lt;mark&gt;IAL2&lt;/mark&gt;: Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity. IAL2 introduces the need for either remote or physically-present identity proofing.&lt;/p&gt;
+
+&lt;p&gt;&lt;mark&gt;IAL3&lt;/mark&gt;: Physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative.&lt;/p&gt;
+
+&lt;p&gt;The process of identity verification is progressing across 3 phase. First, the document and additional context need to be &lt;mark&gt;collected&lt;/mark&gt;. Second, the supplied information is &lt;mark&gt;validated&lt;/mark&gt; to make sure the documents are valid, not expired, or forged, etc.. And finally, the identity is &lt;mark&gt;verified&lt;/mark&gt; by matching the document with the photo supplied by the subject. At this phase, &lt;a href=&quot;https://www.liveness.com&quot;&gt;liveness detection&lt;/a&gt; is typically performed to make sure the system is interfacing with a physically present human being and not an inanimate spoof artifact.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-do-we-do-identity-verification&quot;&gt;Where do we do identity verification?&lt;/h2&gt;
+&lt;p&gt;Remote identity proofing services are becoming more and more prevalent across online services. Service owners, especially in the financial industry, are integrating identity verification product in order to minimize the impact of ID fraud, which has been steadily increasing recently.&lt;/p&gt;
+
+&lt;p&gt;Interestingly enough, things are quite different on the enterprise identity side.&lt;/p&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+  71% of surveyed enterprises reported password lockout issues and sign-in challenges
+  &lt;footer class=&quot;blockquote-footer mt-3&quot;&gt;&lt;a href=&quot;https://hitachi-id.com/cgi-bin/emaildoc?document=identity-and-access-management-trends-during-covid-19.pdf&quot; target=&quot;_blank&quot;&gt;Hitachi ID survey&lt;/a&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Enterprises are still leveraging insecure methods as it relates to digital identity onboarding and proofing. Credentials are distributed over email or SMS, or often times managers print them and distribute physically. Even when magic links or one times tokens are used instead of passwords, those are still relying on email for distribution. Think about it - when someone clicks on that magic link or uses one-time password, how do we know that is a real employee and not some hacker?&lt;/p&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+  Enterprises have no way of knowing the identity of employee they are providing access to systems and critical resources.
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;idemeum-can-help&quot;&gt;idemeum can help&lt;/h2&gt;
+&lt;p&gt;idemeum solves the problem of insecure employee enrollment by providing built-in identity verification.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+&lt;img src=&quot;/assets/img/blogs/idemeum-verified/verification.png&quot; style=&quot;width: 40%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;With idemeum app users can upload the ID document and their photo and quickly verify digital identity. idemeum follows IAL level 2 NIST recommendations. As a result of the verification, all verified identity claims are stored on a mobile device only. No PII is maintained or stored in the idemeum backend.&lt;/p&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+  idemeum does not store any user identifiable information in the backend.
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is important to note that idemeum extends the identity trust beyond just initial identity verification and enrollment. Every time the user authenticates or accesses corporate resources, the identity is assured using idemeum app. Therefore, enterprises can have an assurance that only verified and legitimate user are accessing the resources, and not some hackers who gained access to issues authenticators.&lt;/p&gt;
+
+&lt;p&gt;If you want to learn more, &lt;a href=&quot;https://idemeum.com/contact&quot;&gt;contact idemeum&lt;/a&gt; so that we can show you a quick demo.&lt;/p&gt;</content><author><name>Nikolay</name></author><summary type="html">Why do we need to verify digital identity?</summary></entry><entry><title type="html">idemeum approach to security</title><link href="http://localhost:4000/blog/idemeum-security" rel="alternate" type="text/html" title="idemeum approach to security" /><published>2020-11-11T16:00:00-08:00</published><updated>2020-11-11T16:00:00-08:00</updated><id>http://localhost:4000/blog/idemeum-security</id><content type="html" xml:base="http://localhost:4000/blog/idemeum-security">&lt;p&gt;Our mission is to make digital identity simple, secure, and private.&lt;/p&gt;
 
 &lt;p&gt;Security if one of the core principles that is applied to everything we do - mobile, backend, DevOps, it does not matter, security is fundamental and key.&lt;/p&gt;
 

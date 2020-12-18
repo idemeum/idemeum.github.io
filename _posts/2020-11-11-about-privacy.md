@@ -4,6 +4,7 @@ date: 2020-11-11 00:00:00
 description: idemeum was designed with the complete user privacy in mind. Let's take a look at how idemeum handles personal data.
 featured_image: /assets/img/blogs/about-privacy/image-about-privacy.jpg
 author: Nikolay
+type: blog-post
 ---
 
 <p>Privacy of your data is paramount to us.</p>
