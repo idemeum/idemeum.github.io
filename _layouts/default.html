@@ -56,7 +56,7 @@
     {% include home-header.html %}
   {% endif %}
 
-  {% if page.type == "blog-post" %}
+  {% if page.type == "blog-post" or page.type == "blog-post-wide" %}
   <div class="page-header header-filter" style="max-height: 1500px ;">
     <div class="page-header-image" style="background-image: url({{ page.featured_image | relative_url }});"></div>
     <div class="container">
@@ -65,7 +65,7 @@
           <h2 class="display-2 text-white">{{ page.title }}</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="floating-box bg-default">
           <div class="box text-center">
             <div class="icon icon-shape bg-primary icon-xl rounded-circle text-white">
@@ -115,7 +115,7 @@
     {% endif %}
 
 
-    {% if page.type == "home-page" or page.type == "managed" or page.type == "blogListing"%}
+    {% if page.type == "home-page" or page.type == "managed" or page.type == "blogListing" or page.type == "blog-post-wide"%}
       {{content}}
 
       {% elsif page.title%}

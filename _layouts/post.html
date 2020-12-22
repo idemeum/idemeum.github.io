@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+
+{% if page.type == "blog-post-wide" %}
+  {{ page.content }}
+
+{% elsif page.title%}
 <section class="section">
   <div class="container">
     <div class="row">
@@ -14,6 +19,7 @@ layout: default
     </div>
   </div>
 </section>
+{% endif %}
 
 {% if site.data.settings.blog_settings.read_more == "yes" %}
 <section class="blogs-1">

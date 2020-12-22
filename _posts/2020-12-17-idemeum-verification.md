@@ -1,7 +1,7 @@
 ---
 title: Why did we make idemeum verified?
 date: 2020-12-17 00:00:00
-description: Enterprises are still leveraging insecure methods for digital identity onboarding and proofing. Credentials and one time tokens are distributed over email, and no identity verification is done for corporate access. <br><br>When someone clicks on that magic link or uses one-time password, how do we know that is a real employee and not some determined hacker? <br><br>idemeum can help by providing built-in ID document verification, and extending identity trust beyond initial enrollment. idemeum verifies the user for every authentication, whereby providing corporate access to only verified and legitimate users.
+description: Enterprises are still leveraging insecure methods for digital identity onboarding and proofing. Credentials and one time tokens are distributed over email, and no identity verification is done for corporate access. How do we differentiate a real employee vs. some determined hacker?
 featured_image: /assets/img/blogs/idemeum-verified/idemeum-verified.jpg
 author: Nikolay
 type: blog-post
@@ -13,20 +13,13 @@ Identity plays a major role in everyday life. It’s the key that determines the
 However, in a world that’s increasingly governed by digital transactions and data, our existing methods for verifying someone's identity are far from adequate.
 
 <blockquote class="blockquote">
-  <strong>4.7B</strong> compromised credentials across major cyber security breaches from 2013 to 2018<br>
+  In 2019 alone financial losses due to identity fraud totaled $1.9B
 </blockquote>
 
-<blockquote class="blockquote">
-  <strong>$1.9B</strong> losses related to identity fraud in 2019
-</blockquote>
-
-Remember this meme? It was drawn by [Peter Steiner](https://en.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you're_a_dog) and published by The New Yorker on July 5, 1993. It is still as true today as ever.
-
-<blockquote class="blockquote">"On the Internet, nobody knows you're a dog"</blockquote>
+Remember the meme "On the Internet, nobody knows you're a dog"? It was drawn by [Peter Steiner](https://en.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you're_a_dog) and published by The New Yorker on July 5, 1993. It is still as true today as ever.
 
 <div style="text-align: center">
-
-<img src="/assets/img/blogs/idemeum-verified/idog.png" style="width: 100%">
+  <img src="/assets/img/blogs/idemeum-verified/idog.png" style="width: 100%">
 </div>
 
 The cartoon implies the ability to send and receive messages — or to create and maintain a website — behind a mask of anonymity. "Nobody knows" is there because Internet protocols require no user to confirm or prove one's own identity.
