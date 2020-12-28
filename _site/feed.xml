@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-22T01:33:40-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">idemeum.github.io</title><entry><title type="html">Why did we make idemeum verified?</title><link href="http://localhost:4000/blog/idemeum-verification" rel="alternate" type="text/html" title="Why did we make idemeum verified?" /><published>2020-12-16T16:00:00-08:00</published><updated>2020-12-16T16:00:00-08:00</updated><id>http://localhost:4000/blog/idemeum-verification</id><content type="html" xml:base="http://localhost:4000/blog/idemeum-verification">&lt;h2 id=&quot;why-do-we-need-to-verify-digital-identity&quot;&gt;Why do we need to verify digital identity?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-28T00:53:10-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">idemeum.github.io</title><entry><title type="html">Why did we make idemeum verified?</title><link href="http://localhost:4000/blog/idemeum-verification" rel="alternate" type="text/html" title="Why did we make idemeum verified?" /><published>2020-12-16T16:00:00-08:00</published><updated>2020-12-16T16:00:00-08:00</updated><id>http://localhost:4000/blog/idemeum-verification</id><content type="html" xml:base="http://localhost:4000/blog/idemeum-verification">&lt;h2 id=&quot;why-do-we-need-to-verify-digital-identity&quot;&gt;Why do we need to verify digital identity?&lt;/h2&gt;
 
 &lt;p&gt;Identity plays a major role in everyday life. It’s the key that determines the particular transactions in which we can rightfully participate as well as the information we’re entitled to access.&lt;/p&gt;
 
@@ -8,7 +8,7 @@
   In 2019 alone financial losses due to identity fraud totaled $1.9B
 &lt;/blockquote&gt;
 
-&lt;p&gt;Remember the meme “On the Internet, nobody knows you’re a dog”? It was drawn by &lt;a href=&quot;https://en.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you're_a_dog&quot;&gt;Peter Steiner&lt;/a&gt; and published by The New Yorker on July 5, 1993. It is still as true today as ever.&lt;/p&gt;
+&lt;p&gt;Remember the meme “On the Internet, nobody knows you’re a dog”? It was drawn by &lt;a href=&quot;https://en.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you're_a_dog&quot;&gt;&lt;strong&gt;Peter Steiner&lt;/strong&gt;&lt;/a&gt; and published by The New Yorker on July 5, 1993. It is still as true today as ever.&lt;/p&gt;
 
 &lt;div style=&quot;text-align: center&quot;&gt;
   &lt;img src=&quot;/assets/img/blogs/idemeum-verified/idog.png&quot; style=&quot;width: 100%&quot; /&gt;
@@ -24,26 +24,26 @@
 &lt;h2 id=&quot;when-do-we-verify-digital-identity&quot;&gt;When do we verify digital identity?&lt;/h2&gt;
 &lt;p&gt;To answer this question let’s take a look at the simplistic diagram of identity lifecycle and get some terminology in place.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/idemeum-verified/lifecycle.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/idemeum-verified/identity-lifecycle.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Before I can access any service, I need to prove my identity so that a credential can be created, and I can be enrolled as valid subject within the identity system. Therefore, &lt;mark&gt;identity proofing&lt;/mark&gt; is all about establishing that an applicant is who they claim to be. At this point I will also create an authenticator (password, PIN, certificate, etc.) that will be linked to my digital identity.&lt;/p&gt;
+&lt;p&gt;Before I can access any service, I need to prove my identity so that a credential can be created, and I can be enrolled as valid subject within the identity system. Therefore, &lt;strong&gt;identity proofing&lt;/strong&gt; is all about establishing that an applicant is who they claim to be. At this point I will also create an authenticator (password, PIN, certificate, etc.) that will be linked to my digital identity.&lt;/p&gt;
 
-&lt;p&gt;When I return to the service, I need to provide reasonable risk-based assurance that I am the same person who previously accessed the service. Hence, &lt;mark&gt;authentication&lt;/mark&gt; establishes that a subject attempting to access a digital service is in control of one or more valid authenticators associated with the subject’s digital identity.&lt;/p&gt;
+&lt;p&gt;When I return to the service, I need to provide reasonable risk-based assurance that I am the same person who previously accessed the service. Hence, &lt;strong&gt;authentication&lt;/strong&gt; establishes that a subject attempting to access a digital service is in control of one or more valid authenticators associated with the subject’s digital identity.&lt;/p&gt;
 
-&lt;p&gt;And finally, once I am authenticated, the service needs to know what privileges I can be granted. &lt;mark&gt;Authorization&lt;/mark&gt; helps with that, as it is the process of giving the user permission to access a specific resource or function.&lt;/p&gt;
+&lt;p&gt;And finally, once I am authenticated, the service needs to know what privileges I can be granted. &lt;strong&gt;Authorization&lt;/strong&gt; helps with that, as it is the process of giving the user permission to access a specific resource or function.&lt;/p&gt;
 
 &lt;blockquote class=&quot;blockquote&quot;&gt;So, identity proofing typically happens at &quot;before&quot; phase. However, it would be also useful to extend the trust all the way to &quot;during&quot; phase, so that when the user returns to the service, we not only assure that he has a valid authenticator in possession and control, but also assure his identity.&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;how-does-identity-verification-work&quot;&gt;How does identity verification work?&lt;/h2&gt;
-&lt;p&gt;When identity proofing is done, it needs to be done at a certain “Identity Assurance Level (IAL)”. &lt;a href=&quot;https://www.nist.gov&quot;&gt;National Institute of Standards and Technology (NIST)&lt;/a&gt; sets requirements for each of the 3 &lt;a href=&quot;https://pages.nist.gov/800-63-3/sp800-63a.html&quot;&gt;levels&lt;/a&gt;, based on the required security level and assumed risk.&lt;/p&gt;
+&lt;p&gt;When identity proofing is done, it needs to be done at a certain “Identity Assurance Level (IAL)”. &lt;a href=&quot;https://www.nist.gov&quot;&gt;&lt;strong&gt;National Institute of Standards and Technology (NIST)&lt;/strong&gt;&lt;/a&gt; sets requirements for each of the &lt;a href=&quot;https://pages.nist.gov/800-63-3/sp800-63a.html&quot;&gt;&lt;strong&gt;3 levels&lt;/strong&gt;&lt;/a&gt;, based on the required security level and assumed risk.&lt;/p&gt;
 
-&lt;p&gt;&lt;mark&gt;IAL1&lt;/mark&gt;: There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as such.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Identity Assurance Level 1 (IAL1)&lt;/strong&gt;: There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as such.&lt;/p&gt;
 
-&lt;p&gt;&lt;mark&gt;IAL2&lt;/mark&gt;: Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity. IAL2 introduces the need for either remote or physically-present identity proofing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Identity Assurance Level 2 (IAL2)&lt;/strong&gt;: Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity. IAL2 introduces the need for either remote or physically-present identity proofing.&lt;/p&gt;
 
-&lt;p&gt;&lt;mark&gt;IAL3&lt;/mark&gt;: Physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Identity Assurance Level 3 (IAL3)&lt;/strong&gt;: Physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative.&lt;/p&gt;
 
-&lt;p&gt;The process of identity verification is progressing across 3 phase. First, the document and additional context need to be &lt;mark&gt;collected&lt;/mark&gt;. Second, the supplied information is &lt;mark&gt;validated&lt;/mark&gt; to make sure the documents are valid, not expired, or forged, etc.. And finally, the identity is &lt;mark&gt;verified&lt;/mark&gt; by matching the document with the photo supplied by the subject. At this phase, &lt;a href=&quot;https://www.liveness.com&quot;&gt;liveness detection&lt;/a&gt; is typically performed to make sure the system is interfacing with a physically present human being and not an inanimate spoof artifact.&lt;/p&gt;
+&lt;p&gt;The process of identity verification is progressing across 3 phase. First, the document and additional context need to be &lt;strong&gt;collected&lt;/strong&gt;. Second, the supplied information is &lt;strong&gt;validated&lt;/strong&gt; to make sure the documents are valid, not expired, or forged, etc.. And finally, the identity is &lt;strong&gt;verified&lt;/strong&gt; by matching the document with the photo supplied by the subject. At this phase, &lt;a href=&quot;https://www.liveness.com&quot;&gt;&lt;strong&gt;liveness detection&lt;/strong&gt;&lt;/a&gt; is typically performed to make sure the system is interfacing with a physically present human being and not an inanimate spoof artifact.&lt;/p&gt;
 
 &lt;h2 id=&quot;where-do-we-do-identity-verification&quot;&gt;Where do we do identity verification?&lt;/h2&gt;
 &lt;p&gt;Remote identity proofing services are becoming more and more prevalent across online services. Service owners, especially in the financial industry, are integrating identity verification product in order to minimize the impact of ID fraud, which has been steadily increasing recently.&lt;/p&gt;
@@ -76,44 +76,82 @@
 
 &lt;p&gt;It is important to note that idemeum extends the identity trust beyond just initial identity verification and enrollment. Every time the user authenticates or accesses corporate resources, the identity is assured using idemeum app. Therefore, enterprises can have an assurance that only verified and legitimate user are accessing the resources, and not some hackers who gained access to issues authenticators.&lt;/p&gt;
 
-&lt;p&gt;If you want to learn more, &lt;a href=&quot;https://idemeum.com/contact&quot;&gt;contact idemeum&lt;/a&gt; so that we can show you a quick demo.&lt;/p&gt;</content><author><name>Nikolay</name></author><summary type="html">Why do we need to verify digital identity?</summary></entry><entry><title type="html">idemeum approach to security</title><link href="http://localhost:4000/blog/idemeum-security" rel="alternate" type="text/html" title="idemeum approach to security" /><published>2020-11-11T16:00:00-08:00</published><updated>2020-11-11T16:00:00-08:00</updated><id>http://localhost:4000/blog/idemeum-security</id><content type="html" xml:base="http://localhost:4000/blog/idemeum-security">&lt;p&gt;Our mission is to make digital identity simple, secure, and private.&lt;/p&gt;
+&lt;p&gt;If you want to learn more, &lt;a href=&quot;https://idemeum.com/contact&quot;&gt;&lt;strong&gt;contact idemeum&lt;/strong&gt;&lt;/a&gt; so that we can show you a quick demo.&lt;/p&gt;</content><author><name>Nikolay</name></author><summary type="html">Why do we need to verify digital identity?</summary></entry><entry><title type="html">How secure is idemeum?</title><link href="http://localhost:4000/blog/idemeum-security" rel="alternate" type="text/html" title="How secure is idemeum?" /><published>2020-11-11T16:00:00-08:00</published><updated>2020-11-11T16:00:00-08:00</updated><id>http://localhost:4000/blog/idemeum-security</id><content type="html" xml:base="http://localhost:4000/blog/idemeum-security">&lt;h2 id=&quot;security-as-part-of-our-mission&quot;&gt;Security as part of our mission&lt;/h2&gt;
 
-&lt;p&gt;Security if one of the core principles that is applied to everything we do - mobile, backend, DevOps, it does not matter, security is fundamental and key.&lt;/p&gt;
+&lt;p&gt;Our mission is to make digital identity private, secure, and simple.&lt;/p&gt;
 
-&lt;p&gt;What is more, authentication is mission critical to businesses and individuals. Therefore, we designed idemeum in accordance with the latest best practices as it relates to Confidentiality, Integrity, and Availability (&lt;a href=&quot;https://en.wikipedia.org/wiki/Information_security&quot;&gt;CIA triad&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Security is one of the core principles that is applied to everything we do - mobile, backend, DevOps, it does not matter, security is fundamental and key.&lt;/p&gt;
 
-&lt;p&gt;We are also conducting continuous threat modeling and evaluation to make sure we harden idemeum even further.&lt;/p&gt;
+&lt;p&gt;What is more, authentication is mission critical to businesses and individuals. Therefore, we designed idemeum in accordance with the latest best practices as it relates to &lt;a href=&quot;https://en.wikipedia.org/wiki/Information_security&quot;&gt;&lt;strong&gt;CIA triad of confidentiality, integrity, and availability&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3&gt;How do we keep your data secure?&lt;/h3&gt;
+&lt;h4 id=&quot;security-starts-with-people&quot;&gt;Security starts with people&lt;/h4&gt;
+&lt;p&gt;idemeum team brings together years of cybersecurity experience, and we have top mobile, backend, and network security engineers. We have expertise working for the largest Fortune 500 companies across high tech and financial sector.&lt;/p&gt;
 
-&lt;h5&gt;idemeum backend&lt;/h5&gt;
+&lt;h4 id=&quot;standardized-security-processes&quot;&gt;Standardized security processes&lt;/h4&gt;
 
-&lt;p&gt;For idemeum backend we have taken a radical new approach by storing your personal data on your mobile device &lt;strong&gt;ONLY&lt;/strong&gt;. What that means is that we have no users’ digital identity data in our backend. Not only is it important from the privacy standpoint, but it also reduces attack surface significantly. If our backend gets compromised, attackers will get nothing from it, as there is not valuable user data there.&lt;/p&gt;
+&lt;p&gt;We are conducting continuous threat modeling and evaluation to make sure we harden idemeum even further. idemeum builds security into each step of our operations, including code release, upgrades, patch management, security policies and more.&lt;/p&gt;
 
-&lt;h5&gt;idemeum mobile application&lt;/h5&gt;
+&lt;h4 id=&quot;security-by-design&quot;&gt;Security by design&lt;/h4&gt;
 
-&lt;p&gt;On a mobile side, we are follow general mobile security best practices, including &lt;a href=&quot;https://owasp.org/www-project-mobile-security/&quot;&gt;OWASP Mobile Top 10&lt;/a&gt;, in order to protect idemeum mobile application. We leverage security measures such as hardware based key encryption, jailbreak detection, data encryption, liveness detection and others.&lt;/p&gt;
+&lt;p&gt;For &lt;strong&gt;idemeum backend&lt;/strong&gt; we have taken a radical new approach by storing your personal data on your mobile device only. What that means is that we have no users’ digital identity data in our backend. Not only is it important from the privacy standpoint, but it also reduces attack surface significantly. If our backend gets compromised, attackers will get nothing from it, as there is not valuable user data there.&lt;/p&gt;
 
-&lt;h5&gt;idemeum authentication&lt;/h5&gt;
+&lt;p&gt;On a &lt;strong&gt;mobile side&lt;/strong&gt;, we are following general mobile security best practices, including &lt;a href=&quot;https://owasp.org/www-project-mobile-security/&quot;&gt;&lt;strong&gt;OWASP Mobile Top 10&lt;/strong&gt;&lt;/a&gt;, in order to protect idemeum mobile application. We leverage security measures such as hardware based key encryption, jailbreak detection, data encryption, liveness detection and others.&lt;/p&gt;
 
-&lt;p&gt;idemeum leverages biometric based authentication that is using biometric sensors on Apple and Google mobile devices. We are using FIDO2 protocol (developed by &lt;a href=&quot;https://fidoalliance.org&quot;&gt;FIDO Alliance&lt;/a&gt;) that is becoming the de-facto standard in the identity industry. The FIDO Alliance developed FIDO Authentication standards based on public key cryptography for authentication that is more secure than passwords and SMS OTPs, simpler for consumers to use, and easier for service providers to deploy and manage. FIDO Authentication enables password-only logins to be replaced with secure and fast login experiences across websites and apps.&lt;/p&gt;
+&lt;p&gt;idemeum leverages &lt;strong&gt;biometric based authentication&lt;/strong&gt; that is using biometric sensors on iOS and Android mobile devices. We are using FIDO2 protocol (developed by &lt;a href=&quot;https://fidoalliance.org&quot;&gt;&lt;strong&gt;FIDO Alliance&lt;/strong&gt;&lt;/a&gt;) that is becoming the de-facto standard in the identity industry. The FIDO Alliance developed FIDO Authentication standards based on public key cryptography for authentication that is more secure than passwords and SMS OTPs, simpler for consumers to use, and easier for service providers to deploy and manage. FIDO Authentication enables password-only logins to be replaced with secure and fast login experiences across websites and apps. For public-key cryptography idemeum keeps only the public key on our servers and stores private keys on your devices in a tamper-proof secure element.&lt;/p&gt;
 
-&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
-&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/11UfySDn7_I&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</content><author><name>Nikolay</name></author><summary type="html">Our mission is to make digital identity simple, secure, and private.</summary></entry><entry><title type="html">idemeum privacy</title><link href="http://localhost:4000/blog/about-privacy" rel="alternate" type="text/html" title="idemeum privacy" /><published>2020-11-10T16:00:00-08:00</published><updated>2020-11-10T16:00:00-08:00</updated><id>http://localhost:4000/blog/about-privacy</id><content type="html" xml:base="http://localhost:4000/blog/about-privacy">&lt;p&gt;Privacy of your data is paramount to us.&lt;/p&gt;
+&lt;p&gt;If you want to learn more, &lt;a href=&quot;https://idemeum.com/contact&quot;&gt;&lt;strong&gt;contact idemeum&lt;/strong&gt;&lt;/a&gt; so that we can show you a quick demo and tell you more about our product.&lt;/p&gt;</content><author><name>Nikolay</name></author><summary type="html">Security as part of our mission</summary></entry><entry><title type="html">Why did we make idemeum decentralized?</title><link href="http://localhost:4000/blog/about-privacy" rel="alternate" type="text/html" title="Why did we make idemeum decentralized?" /><published>2020-11-10T16:00:00-08:00</published><updated>2020-11-10T16:00:00-08:00</updated><id>http://localhost:4000/blog/about-privacy</id><content type="html" xml:base="http://localhost:4000/blog/about-privacy">&lt;h2 id=&quot;how-is-digital-identity-evolving&quot;&gt;How is digital identity evolving?&lt;/h2&gt;
 
-&lt;p&gt;That is why we designed idemeum to be 100% privacy enabled.&lt;/p&gt;
+&lt;p&gt;Today digital identity is typically managed at enterprise or application level. What that means is that when you sign up for a service or get hired by a company, your digital identity is created for you, and it is stored at a centralized database owned by a service provider. To access service or corporate resources, we have to prove our digital identity by presenting username / password combination.&lt;/p&gt;
 
-&lt;div class=&quot;alert alert-default&quot; role=&quot;alert&quot;&gt;
-Unlike any other solution on the market today, any details you add to your digital identity are stored only on your phone only.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/about-privacy/centralized-identity-model.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-We do not store any of your data in our backend.
-&lt;/div&gt;
+&lt;p&gt;This &lt;strong&gt;centralized model&lt;/strong&gt; is not convenient for us users - we have to constantly create accounts and memorize numerous password combinations. Moreover, these central databases become honeypots for attackers, who target these databases with persistence and advanced tools in order to steal our personal information and monetize it by committing identity fraud or selling it on a dark web.&lt;/p&gt;
 
-&lt;h6&gt;Your data only on mobile device&lt;/h6&gt;
-&lt;p&gt;When you create your idemeum identity and add personal details, such as email, phone number, or driver’s license, all information is stored on your mobile device. We leverage state of the art mobile security practices to protect your information, such as storing your data in the secure areas of mobile operating system and using public key encryption to protect your data.&lt;/p&gt;
+&lt;blockquote class=&quot;blockquote&quot;&gt;“Today’s digital identity frameworks are centralized, suffer from a lack of trust, aren’t portable, and don’t give consumers control.”
+&lt;footer class=&quot;blockquote-footer&quot;&gt;&lt;a href=&quot;https://www.forrester.com/report/New+Tech+Decentralized+Digital+Identity+DDID+Q1+2020/-/E-RES147115&quot; target=&quot;_blank&quot;&gt;Forrester research&lt;/a&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
 
-&lt;h6&gt;Anonymized data in the backend&lt;/h6&gt;
-&lt;p&gt;When your application registers with our backend, there is only anonymized data that we use to enable the authentication. We do NOT store any of your personal details, such as email address, phone number, or any information from your IDs.&lt;/p&gt;</content><author><name>Nikolay</name></author><summary type="html">Privacy of your data is paramount to us.</summary></entry><entry><title type="html">idemeum is how people identify themselves online</title><link href="http://localhost:4000/blog/about-idemeum" rel="alternate" type="text/html" title="idemeum is how people identify themselves online" /><published>2020-11-09T16:00:00-08:00</published><updated>2020-11-09T16:00:00-08:00</updated><id>http://localhost:4000/blog/about-idemeum</id><content type="html" xml:base="http://localhost:4000/blog/about-idemeum">&lt;div class=&quot;section&quot;&gt;
+&lt;p&gt;At the same time centralized model is not desirable for service providers - credentials get compromised and lead to costly cyber breaches, or they simply get forgotten which leads to password resets and costly support calls.&lt;/p&gt;
+
+&lt;p&gt;As a result, industry moved to a &lt;strong&gt;federated&lt;/strong&gt; identity model where a single party becomes in charge of creating and managing digital identities for a group of different enterprises and services. The most used federation providers are Google and Facebook, where you can use your social network account to log in and sign up for other services.&lt;/p&gt;
+
+&lt;p&gt;Federated model provides better user experience, however it has similar drawbacks. Federated model creates massive pools of data that can be monetized and also serve as a central point of failure. With federated model users have no control over their digital identity since they do not know what data is exactly collected and what it is used for. A recent example is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Facebook–Cambridge_Analytica_data_scandal&quot;&gt;&lt;strong&gt;Cambridge Analytica scandal&lt;/strong&gt;&lt;/a&gt; where Facebook gave unfettered and unauthorized access to personally identifiable information (PII) of more than 87 million Facebook users without their consent to the data firm Cambridge Analytica.&lt;/p&gt;
+
+&lt;h2 id=&quot;we-made-idemeum-decentralized&quot;&gt;We made idemeum decentralized&lt;/h2&gt;
+
+&lt;p&gt;We built idemeum to be &lt;strong&gt;decentralized&lt;/strong&gt; so that we can enable 100% user privacy. idemeum removes the need for a central trusted authority. Users store their digital identity on mobile devices and decide what and with who they want to share their personal information.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at how idemeum if different from centralized and federated models.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Control&lt;/strong&gt;: with idemeum you have full control of your digital identity.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;User experience&lt;/strong&gt;: idemeum simplifies sign-in and sign-up experience. No more passwords to type, and no more lengthy forms to fill out - access the service with a click of a button.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: security is way better with idemeum as users are no longer using passwords, and enterprises are no longer maintaining centralized honeypots of PII information.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fraud&lt;/strong&gt;: idemeum reduces identity fraud as there are no more credentials and passwords to re-use.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Portability&lt;/strong&gt;: with idemeum your digital identity is portable. You can bring our identity to a new place of work, or use it when signing up for a new service. No need to constantly recreate your digital self.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-does-idemeum-enable-100-privacy&quot;&gt;How does idemeum enable 100% privacy?&lt;/h2&gt;
+
+&lt;p&gt;The first principle of idemeum is “privacy by design”. We do not store any PII information in our backend. Let’s take a look at some high level technical information to understand how idemeum works.&lt;/p&gt;
+
+&lt;p&gt;When you create your idemeum on a digital device, you are assigned a &lt;a href=&quot;https://www.w3.org/TR/did-core/&quot;&gt;&lt;strong&gt;Decentralized Identifier (DID)&lt;/strong&gt;&lt;/a&gt; that uniquely represents your digital identity among others. You DID is a globally unique persistent identifier that does not require a centralized registration authority because it is generated and registered cryptographically.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/about-privacy/decentralized-idemeum.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;idemeum also generates an asymmetric cryptographic key pair that will be unique for your digital identity. Also known as &lt;a href=&quot;https://en.wikipedia.org/wiki/Public-key_cryptography&quot;&gt;&lt;strong&gt;public-key cryptography&lt;/strong&gt;&lt;/a&gt; this style of cryptography uses a public key to encrypt data that can only be decrypted with a paired private key. Public key, which can be known to public, is stored in idemeum backend and is associated with your DID. Private key, which must be kept secret, is safely stored on your mobile device and is protected by hardware based security.&lt;/p&gt;
+
+&lt;p&gt;idemeum uses asymmetric cryptography to authenticate your identity. When you log in to an online resource, idemeum backend sends your app a challenge with the request to sign it with your private key. By scanning your biometric with idemeum app you automatically unlock your private key, sign the requested challenge, and send it back to our backend. This way we can always know that you are who you claim to be.&lt;/p&gt;
+
+&lt;p&gt;No passwords needed - instead we leverage the power of asymmetric cryptography and biometric based authentication.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/about-privacy/authn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you create your idemeum profile and add identity claims such as phone number, email address, or ID document, all information is safely stored on your mobile device only. We not no store any of your personal information in our backend.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-primary&quot; role=&quot;alert&quot;&gt;
+  idemeum is a decentralized identity platform - we do not store any of your personal information in our cloud. We fundamentally believe in digital identity privacy, and we made idemeum to be private-by-design.
+&lt;/div&gt;</content><author><name>Nikolay</name></author><summary type="html">How is digital identity evolving?</summary></entry><entry><title type="html">idemeum is how people identify themselves online</title><link href="http://localhost:4000/blog/about-idemeum" rel="alternate" type="text/html" title="idemeum is how people identify themselves online" /><published>2020-11-09T16:00:00-08:00</published><updated>2020-11-09T16:00:00-08:00</updated><id>http://localhost:4000/blog/about-idemeum</id><content type="html" xml:base="http://localhost:4000/blog/about-idemeum">&lt;div class=&quot;section&quot;&gt;
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-lg-12 mx-auto&quot;&gt;
@@ -194,7 +232,7 @@ We do not store any of your data in our backend.
         &lt;blockquote class=&quot;blockquote&quot;&gt;Digital identity is so critical to everything we do digitally, yet it gets compromised in almost every cyber security breach.&lt;/blockquote&gt;
         &lt;p&gt;Every now and then we would hear the news and learn about yet another data breach where identity compromise would be at the core of it. And then we realized - we are not equipped with proper tools to protect our identity. We keep using old inefficient architectures and tools that have been invented years ago.&lt;/p&gt;
         &lt;blockquote class=&quot;blockquote&quot;&gt;First passwords probably arrived at the Massachusetts Institute of Technology in the mid-1960s.&lt;/blockquote&gt;
-        &lt;p&gt;That is when we embraced on a journey to address the problems of &lt;mark&gt;identity privacy&lt;/mark&gt;, &lt;mark&gt;fraud&lt;/mark&gt;, and &lt;mark&gt;passwords.&lt;/mark&gt;&lt;/p&gt;
+        &lt;p&gt;That is when we embraced on a journey to address the problems of &lt;strong&gt;identity privacy&lt;/strong&gt;, &lt;strong&gt;fraud&lt;/strong&gt;, and &lt;strong&gt;passwords&lt;/strong&gt;.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-lg-6 mx-auto&quot;&gt;
       &lt;div class=&quot;image-container&quot;&gt;
@@ -217,7 +255,7 @@ We do not store any of your data in our backend.
         &lt;h3 class=&quot;display-4&quot;&gt;Why idemeum enables 100% privacy&lt;/h3&gt;
         &lt;p&gt;As organizations store user accounts and credentials in centralized databases, hackers compromise these systems and release lists of usernames and passwords on the open web. We have a single point of failure that can be exploited with devastating results. The more we follow the centralized model, the more we sacrifice our privacy and security.
         &lt;/p&gt;
-        &lt;p&gt;Use &lt;mark&gt;social login&lt;/mark&gt; you would say? Sounds interesting, but... Are you ok with large social login providers knowing exactly when and where you log into? Knowing what services you use? It is quite a trade off - to forgo your privacy for simplicity and convenience. What is more, if your social account gets locked or disabled, you will lose access to everything you accessed with it.
+        &lt;p&gt;Use &lt;strong&gt;social login&lt;/strong&gt; you would say? Sounds interesting, but... Are you ok with large social login providers knowing exactly when and where you log into? Knowing what services you use? It is quite a trade off - to forgo your privacy for simplicity and convenience. What is more, if your social account gets locked or disabled, you will lose access to everything you accessed with it.
         &lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -254,7 +292,7 @@ We do not store any of your data in our backend.
         &lt;/div&gt;
         &lt;div class=&quot;col-lg-6&quot;&gt;
           &lt;h3 class=&quot;display-4&quot;&gt;Why idemeum eliminates passwords&lt;/h3&gt;
-          &lt;p&gt;We have &lt;mark&gt;&quot;simple strings of characters&quot;&lt;/mark&gt; that can ruin our lives and reveal everything about us. Your email. Your bank account. Your files. Your private photos. Your location. No matter how complex, no matter how unique, our passwords can no longer protect us. We constantly try to patch passwords, but we are unsuccessful. For instance, despite the obvious benefits of &lt;mark&gt;multi-factor authentication&lt;/mark&gt;, organizations tend to leverage this technology on a selective basis. Why? Enterprises are yet to determine what IT assets require MFA, and how to deal with user experience compromises.
+          &lt;p&gt;We have &lt;strong&gt;&quot;simple strings of characters&quot;&lt;/strong&gt; that can ruin our lives and reveal everything about us. Your email. Your bank account. Your files. Your private photos. Your location. No matter how complex, no matter how unique, our passwords can no longer protect us. We constantly try to patch passwords, but we are unsuccessful. For instance, despite the obvious benefits of &lt;strong&gt;multi-factor authentication&lt;/strong&gt;, organizations tend to leverage this technology on a selective basis. Why? Enterprises are yet to determine what IT assets require MFA, and how to deal with user experience compromises.
           &lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;

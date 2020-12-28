@@ -88,7 +88,7 @@ type: blog-post-wide
         <blockquote class="blockquote">Digital identity is so critical to everything we do digitally, yet it gets compromised in almost every cyber security breach.</blockquote>
         <p>Every now and then we would hear the news and learn about yet another data breach where identity compromise would be at the core of it. And then we realized - we are not equipped with proper tools to protect our identity. We keep using old inefficient architectures and tools that have been invented years ago.</p>
         <blockquote class="blockquote">First passwords probably arrived at the Massachusetts Institute of Technology in the mid-1960s.</blockquote>
-        <p>That is when we embraced on a journey to address the problems of <mark>identity privacy</mark>, <mark>fraud</mark>, and <mark>passwords.</mark></p>
+        <p>That is when we embraced on a journey to address the problems of <strong>identity privacy</strong>, <strong>fraud</strong>, and <strong>passwords</strong>.</p>
       </div>
       <div class="col-lg-6 mx-auto">
       <div class="image-container">
@@ -111,7 +111,7 @@ type: blog-post-wide
         <h3 class="display-4">Why idemeum enables 100% privacy</h3>
         <p>As organizations store user accounts and credentials in centralized databases, hackers compromise these systems and release lists of usernames and passwords on the open web. We have a single point of failure that can be exploited with devastating results. The more we follow the centralized model, the more we sacrifice our privacy and security.
         </p>
-        <p>Use <mark>social login</mark> you would say? Sounds interesting, but... Are you ok with large social login providers knowing exactly when and where you log into? Knowing what services you use? It is quite a trade off - to forgo your privacy for simplicity and convenience. What is more, if your social account gets locked or disabled, you will lose access to everything you accessed with it.
+        <p>Use <strong>social login</strong> you would say? Sounds interesting, but... Are you ok with large social login providers knowing exactly when and where you log into? Knowing what services you use? It is quite a trade off - to forgo your privacy for simplicity and convenience. What is more, if your social account gets locked or disabled, you will lose access to everything you accessed with it.
         </p>
       </div>
     </div>
@@ -148,7 +148,7 @@ type: blog-post-wide
         </div>
         <div class="col-lg-6">
           <h3 class="display-4">Why idemeum eliminates passwords</h3>
-          <p>We have <mark>"simple strings of characters"</mark> that can ruin our lives and reveal everything about us. Your email. Your bank account. Your files. Your private photos. Your location. No matter how complex, no matter how unique, our passwords can no longer protect us. We constantly try to patch passwords, but we are unsuccessful. For instance, despite the obvious benefits of <mark>multi-factor authentication</mark>, organizations tend to leverage this technology on a selective basis. Why? Enterprises are yet to determine what IT assets require MFA, and how to deal with user experience compromises.
+          <p>We have <strong>"simple strings of characters"</strong> that can ruin our lives and reveal everything about us. Your email. Your bank account. Your files. Your private photos. Your location. No matter how complex, no matter how unique, our passwords can no longer protect us. We constantly try to patch passwords, but we are unsuccessful. For instance, despite the obvious benefits of <strong>multi-factor authentication</strong>, organizations tend to leverage this technology on a selective basis. Why? Enterprises are yet to determine what IT assets require MFA, and how to deal with user experience compromises.
           </p>
         </div>
       </div>
