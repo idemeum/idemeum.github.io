@@ -2,7 +2,7 @@
 
 This theme is a collaboration between [Creative Tim](https://creative-tim.com) and [Jekyll Themes](https://jekyllthemes.io).
 
-This readme file covers all of the **Jekyll-specific features** only. If you need help with using the Argon design system itself, you should visit the [documentation page](https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html) or [contact the Creative Tim team](https://www.creative-tim.com/contact-us) for support.
+This readme file covers all of the **Jekyll-specific features** only. If you need help with using the Argon design system itself, you should visit the [documentation page](https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html) or [contact the Creative Tim team](https://www.creative-tim.com/contact-us) for support.  s
 
 ---
 
