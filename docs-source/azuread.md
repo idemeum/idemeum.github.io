@@ -6,7 +6,7 @@ idemeum integrates with [Azure Active Directory (AAD)](https://azure.microsoft.c
 
 | Service | Description |
 | ------- | ----------- |
-| [**Passwordless MFA**](https://idemeum.com/mfa) | Eliminate passwords when users access your SSO and O365 resources. No enrollment, no user sync, easy and simple. idemeum supports cloud-only as well as hybrid deployment models. |
+| [**Passwordless MFA**](https://idemeum.com/mfa) | Eliminate passwords when users access your SSO and O365 resources. No enrollment, no user sync, easy and simple. idemeum supports cloud-only as well as hybrid deployment models. | 
 
 ## How is O365 deployed?
 
