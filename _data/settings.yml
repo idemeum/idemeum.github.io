@@ -48,8 +48,8 @@ menu_settings:
       #icon: ni-bulb-61 text-primary
   - title: Blog
     url: /blog/
-  #- title: Docs
-    #url: /docs/
+  - title: Docs
+    url: /docs/
   - title: 'About us'
     submenu_items:
     - title: About idemeum

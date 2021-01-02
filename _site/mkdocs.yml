@@ -1,10 +1,14 @@
 site_name: idemeum documentation
-
+site_description: Digital identity for the online world
+copyright: Copyright 2021 idemeum
 docs_dir: docs-source
 site_dir: docs
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
+  language: en
   custom_dir: docs-source/overrides
   font:
     text: Inter
@@ -13,24 +17,29 @@ theme:
   favicon: assets/idemeum-favicon.png
   features:
     - navigation.instant
+    - navigation.sections
     - navigation.tabs
 
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - toc:
-      permalink: true
-      toc_depth: 3
   - attr_list
+  - admonition
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - abbr
+  - def_list
+  - footnotes
 
 nav:
-  - 'HOME': index.md
-  - 'DOCS':
-    - About: about.md
-    - Configuration: configuration.md
-  - INTEGRATIONS:
-    - IDP integrations: idp.md
+  - Home: index.md
+  - Enterprise idemeum:
+    - Overview: enterprise-overview.md
+    - IDP integrations:
+      - Azure AD (B2B): azuread.md
+      - Okta: okta.md
 
 plugins:
   - search
@@ -43,8 +52,3 @@ extra:
   social:
     - icon: fontawesome/brands/youtube
       link: https://youtube.com/channel/UCyPMNEEfPuRlcWVmGKGb6ug
-
-extra_css:
-  - stylesheets/extra.css
-
-copyright: Copyright 2020 idemeum
