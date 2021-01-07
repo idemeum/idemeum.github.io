@@ -31,65 +31,59 @@ featured_image: /assets/img/videos/videos.jpg
 <!-- Enterprise videos -->
 <div class="section bg-secondary">
   <div class="container">
-    <div class="row mb-4">
-      <h3 class="display-3">Enterprise Passwordless MFA integrations</h3>
-      <p class="lead mt-1">Learn how idemeum can be easily plugged into enterprise identity infrastructure to enable true passwordless experience. idemeum makes every login not just passwordless but also trusted.
-      </p>
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h3 class="display-3">Enterprise Passwordless MFA integrations</h3>
+        <p class="lead mt-1">Learn how idemeum can be easily plugged into enterprise identity infrastructure to enable true passwordless experience. idemeum makes every login not just passwordless but also trusted.</p>
+        </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
-        <div class="card" data-animation="zooming">
-          <img class="card-img-top" src="/assets/img/videos/workspace_video.png">
-          <div class="card-body">
-            <h4 class="card-title">Google Workspace</h4>
-            <p class="card-text">Protect your Google Workspace with Passwordless MFA.</p>
-          </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-workspace">Watch video</button>
-          </div>
+    <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
+      <div class="card" data-animation="zooming">
+        <img class="card-img-top" src="/assets/img/videos/workspace_video.png">
+        <div class="card-body">
+          <h4 class="card-title">Google Workspace</h4>
+          <p class="card-text">Protect your Google Workspace with Passwordless MFA.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-workspace">Watch video</button>
         </div>
       </div>
-
-
-      <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/videos/o365_video.png">
-          <div class="card-body">
-            <h4 class="card-title">Office 365</h4>
-            <p class="card-text">Protect your Microsoft O365 resources with Passwordless MFA.</p>
-          </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-o365">Watch video</button>
-          </div>
+    </div>
+    <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
+      <div class="card">
+        <img class="card-img-top" src="/assets/img/videos/o365_video.png">
+        <div class="card-body">
+          <h4 class="card-title">Office 365</h4>
+          <p class="card-text">Protect your Microsoft O365 resources with Passwordless MFA.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-o365">Watch video</button>
         </div>
       </div>
-
-
-      <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/videos/okta_video.png">
-          <div class="card-body">
-            <h4 class="card-title">Okta</h4>
-            <p class="card-text">Protect your Okta applications with idemeum Verified Passwordless MFA.</p>
-          </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-okta">Watch video</button>
-          </div>
+    </div>
+    <div class="col-lg-4 mx-auto d-flex align-items-stretch justify-content-center">
+      <div class="card">
+        <img class="card-img-top" src="/assets/img/videos/okta_video.png">
+        <div class="card-body">
+          <h4 class="card-title">Okta</h4>
+          <p class="card-text">Protect your Okta applications with idemeum Verified Passwordless MFA.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-okta">Watch video</button>
         </div>
       </div>
-
+    </div>
     </div>
   </div>
 </div>
-
-
 
 <!-- modal Google Workspace -->
 <div class="modal fade bd-example-modal-lg" id="modal-workspace" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
   <div class="modal-dialog modal-success modal-dialog-centered modal-lg" role="document">
     <div class="modal-content bg-gradient-success">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal-title-notification">idemeum passwordless MFA integration with Google Workspace</h5>
+        <h5 class="modal-title" id="modal-title-notification">idemeum integration with Google Workspace</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -111,7 +105,7 @@ featured_image: /assets/img/videos/videos.jpg
   <div class="modal-dialog modal-success modal-dialog-centered modal-lg" role="document">
     <div class="modal-content bg-gradient-success">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal-title-notification">idemeum passwordless MFA integration with Microsoft Office 365</h5>
+        <h5 class="modal-title" id="modal-title-notification">idemeum integration with Microsoft Office 365</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -133,7 +127,7 @@ featured_image: /assets/img/videos/videos.jpg
   <div class="modal-dialog modal-success modal-dialog-centered modal-lg" role="document">
     <div class="modal-content bg-gradient-success">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal-title-notification">idemeum passwordless MFA integration with Microsoft Office 365</h5>
+        <h5 class="modal-title" id="modal-title-notification">idemeum integration with Okta</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -155,7 +149,7 @@ featured_image: /assets/img/videos/videos.jpg
   <div class="modal-dialog modal-success modal-dialog-centered modal-lg" role="document">
     <div class="modal-content bg-gradient-success">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal-title-notification">idemeum passwordless MFA integration with Microsoft Office 365</h5>
+        <h5 class="modal-title" id="modal-title-notification">About idemeum</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -171,9 +165,6 @@ featured_image: /assets/img/videos/videos.jpg
     </div>
   </div>
 </div>
-
-
-
 
 <!-- Contact us for demo -->
 <div id="main" class="container mt-5">
