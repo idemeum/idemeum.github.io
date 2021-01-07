@@ -25,4 +25,4 @@ idemeum offers a variety of use cases for enterprises, including [Verified Passw
 
 idemeum is very simple to deploy and POC, as there are no on-premises components or user sync requirements. As simple as connect idemeum cloud service with your identity infrastructure.
 
-[Learn more](#Enterprise idemeum){: .md-button .md-button--primary }
+[Learn more](/enterprise-overview/){: .md-button .md-button--primary }

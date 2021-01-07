@@ -9,7 +9,6 @@ extra_css:
 theme:
   name: material
   language: en
-  custom_dir: docs-source/overrides
   font:
     text: Inter
     code: Inter

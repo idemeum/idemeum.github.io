@@ -41,20 +41,24 @@ menu_settings:
     - title: Passwordless Device Deployment
       url: /deployment
       icon: fa fa-briefcase text-success
-  #- title: 'Resources'
-    #submenu_items:
+  - title: 'Resources'
+    submenu_items:
+     - title: Blog
+       url: /blog/
+       icon: ni ni-books text-warning
+     - title: Videos
+       url: /videos/
+       icon: ni ni-tv-2 text-info
     #- title: Submit product idea
       #url: 'https://roadmap.idemeum.com/roadmaps/5fb1f2eac80bbc00293063d0/public#ideas'
       #icon: ni-bulb-61 text-primary
-  - title: Blog
-    url: /blog/
   - title: Docs
     url: /docs/
   - title: 'About us'
     submenu_items:
     - title: About idemeum
       url: /blog/about-idemeum
-      icon: ni ni-spaceship text-default
+      icon: ni ni-spaceship text-success
     - title: Contact us
       url: /contact
       icon: fa fa-envelope text-warning
