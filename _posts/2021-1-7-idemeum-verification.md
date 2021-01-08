@@ -1,6 +1,6 @@
 ---
 title: Why did we make idemeum verified?
-date: 2020-12-17 00:00:00
+date: 2021-1-7 00:00:00
 description: Enterprises are still leveraging insecure methods for digital identity onboarding and proofing. Credentials and one time tokens are distributed over email, and no identity verification is done for corporate access. How do we differentiate a real employee vs. some determined hacker?
 featured_image: /assets/img/blogs/idemeum-verified/idemeum-verified.jpg
 author: Nikolay

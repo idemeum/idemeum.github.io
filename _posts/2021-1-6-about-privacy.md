@@ -1,6 +1,6 @@
 ---
 title: Why did we make idemeum decentralized?
-date: 2020-11-11 00:00:00
+date: 2021-1-6 00:00:00
 description: idemeum is a decentralized identity platform that gives people the power to control their digital identity, improves end user experience, and helps enterprises strengthen data privacy.
 featured_image: /assets/img/blogs/about-privacy/image-about-privacy.jpg
 author: Nikolay

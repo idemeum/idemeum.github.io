@@ -1,6 +1,6 @@
 ---
 title: idemeum is how people identify themselves online
-date: 2020-11-10 00:00:00
+date: 2021-1-5 00:00:00
 description: At idemeum we are passionate about making digital identity simple, secure, and private. idemeum is all about you. Use idemeum to explore this digital world. The world where your digital identity is yours, where you do not have to use passwords, and where you enjoy the experience of using it.
 featured_image: /assets/img/blogs/about-idemeum/image-about-idemeum.jpg
 author: Nikolay

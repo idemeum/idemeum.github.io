@@ -1,6 +1,6 @@
 ---
 title: How secure is idemeum?
-date: 2020-11-12 00:00:00
+date: 2021-1-8 00:00:00
 description: Security is one of our core principles, and protecting people's digital identity is always first priority. We are obsessed with securing your data to the highest standards.
 featured_image: /assets/img/blogs/idemeum-security/security.jpg
 author: Nikolay
@@ -32,4 +32,4 @@ On a **mobile side**, we are following general mobile security best practices, i
 
 idemeum leverages **biometric based authentication** that is using biometric sensors on iOS and Android mobile devices. We are using FIDO2 protocol (developed by [**FIDO Alliance**](https://fidoalliance.org)) that is becoming the de-facto standard in the identity industry. The FIDO Alliance developed FIDO Authentication standards based on public key cryptography for authentication that is more secure than passwords and SMS OTPs, simpler for consumers to use, and easier for service providers to deploy and manage. FIDO Authentication enables password-only logins to be replaced with secure and fast login experiences across websites and apps. For public-key cryptography idemeum keeps only the public key on our servers and stores private keys on your devices in a tamper-proof secure element.
 
-If you want to learn more, [**contact idemeum**](https://idemeum.com/contact) so that we can show you a quick demo and tell you more about our product. 
+If you want to learn more, [**contact idemeum**](https://idemeum.com/contact) so that we can show you a quick demo and tell you more about our product.
