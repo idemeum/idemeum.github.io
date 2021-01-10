@@ -118,7 +118,7 @@
     {% if page.type == "home-page" or page.type == "managed" or page.type == "blogListing" or page.type == "blog-post-wide"%}
       {{content}}
 
-      {% elsif page.title%}
+      {% elsif page.title or page.description %}
         <div id="main" class="container">
           {{content}}
         </div>
