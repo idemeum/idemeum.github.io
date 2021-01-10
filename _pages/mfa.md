@@ -220,7 +220,7 @@ featured_image: /assets/img/mfa/mfa.png
           <img class="card-img-top" src="./assets/img/mfa/growth.png">
           <div class="card-body">
             <h5 class="card-title">Get productive</h5>
-            <p>save hours by experiencing faster login speeds, and delight users with semaless user experience.</p>
+            <p>Save hours by experiencing faster login speeds, and delight users with seamless user experience.</p>
           </div>
         </div>
       </div>
