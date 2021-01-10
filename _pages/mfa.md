@@ -75,7 +75,7 @@ featured_image: /assets/img/mfa/mfa.png
       <div class="col-lg-12 mx-auto">
         <h6 class="text-uppercase">How is idemeum different?</h6>
         <h3 class="display-3">We built idemeum to stand out</h3>
-        <p class="lead">idemeum is like no other MFA solution on the market. We designed completely decentralized architecture that allows idemeum to <strong class="text-primary">deploy in minutes</strong>, <strong class="text-success">eliminate passwords end to end</strong>, <strong class="text-info">protect employees agains identity fraud</strong>, and <strong class="text-default">enable the experience your users will love</strong>.
+        <p class="lead">idemeum is like no other MFA solution on the market. We designed completely decentralized architecture that allows idemeum to deploy in minutes, eliminate passwords end to end, protect employees agains identity fraud, and enable the experience your users will love.
         </p>
       </div>
     </div>
