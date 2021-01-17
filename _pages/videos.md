@@ -10,26 +10,48 @@ featured_image: /assets/img/videos/videos.jpg
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
-
+        <h6 class="text-uppercase">Explainer video</h6>
         <h3 class="display-3">What is idemeum?</h3>
         <p class="lead mt-1">Need to quickly understand what idemeum is all about? Watch this video explainer, and it will bring you up to speed with what we envisioned idemeum to be.</p>
       </div>
       <div class="col-lg-6 mx-auto">
-        <div class="card card-blog card-background" data-animation="zooming">
-          <div class="full-background" style="background-image: url('/assets/img/videos/explainer.png"></div>
-            <div class="card-body">
-              <div class="content-bottom">
-                <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-explainer"><span class="btn-inner--icon"><i class="ni ni-button-play"></i></span> Watch video</button>
-              </div>
-            </div>
-          </div>
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/RGUxA5GRVQg?rel=0&modestbranding=1&autohide=1' frameborder='0' allowfullscreen></iframe></div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Enterprise videos -->
+<!-- Explainer video -->
 <div class="section bg-secondary">
+  <div class="container">
+    <div class="row" style="flex-wrap: wrap-reverse;">
+    <div class="col-lg-6 mx-auto">
+      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/CPXcj5XvTPQ?rel=0&modestbranding=1&autohide=1' frameborder='0' allowfullscreen></iframe></div>
+    </div>
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">Enterprise demo</h6>
+        <h3 class="display-3">Employee onboarding with Passwordless MFA</h3>
+        <p class="lead mt-1">Watch how idemeum can transform your employee onboarding. Reduce onboarding time, enable secure and seamless MFA enrollment, and connect it all with passwordless experience.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Enterprise videos -->
+<div class="section">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 mx-auto">
