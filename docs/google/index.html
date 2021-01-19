@@ -370,9 +370,79 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Google Cloud Identity
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Google Cloud Identity
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-idemeum-help-secure-google-workspace-deployments" class="md-nav__link">
+    How can idemeum help secure Google Workspace deployments?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-the-integration-work" class="md-nav__link">
+    How does the integration work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrate-idemeum-with-google-cloud-identity" class="md-nav__link">
+    Integrate idemeum with Google Cloud Identity
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrate idemeum with Google Cloud Identity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-request-idemeum-tenant" class="md-nav__link">
+    1. 🤝 Request idemeum tenant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-google-cloud-identity-for-federation" class="md-nav__link">
+    2. ⚙️ Configure Google Cloud Identity for federation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-test-user-sign-in" class="md-nav__link">
+    3. 🧪 Test user sign-in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -408,6 +478,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-idemeum-help-secure-google-workspace-deployments" class="md-nav__link">
+    How can idemeum help secure Google Workspace deployments?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-the-integration-work" class="md-nav__link">
+    How does the integration work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrate-idemeum-with-google-cloud-identity" class="md-nav__link">
+    Integrate idemeum with Google Cloud Identity
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrate idemeum with Google Cloud Identity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-request-idemeum-tenant" class="md-nav__link">
+    1. 🤝 Request idemeum tenant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-google-cloud-identity-for-federation" class="md-nav__link">
+    2. ⚙️ Configure Google Cloud Identity for federation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-test-user-sign-in" class="md-nav__link">
+    3. 🧪 Test user sign-in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -419,9 +545,109 @@
               
                 
                 
-                <h1 id="integrate-idemeum-with-google-workspace">Integrate idemeum with Google workspace</h1>
+                <h1 id="integrate-idemeum-with-google-workspace"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></span> Integrate idemeum with Google workspace</h1>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/dYK3jojNQXg?rel=0&modestbranding=1&autohide=1' frameborder='0' allowfullscreen></iframe></div>
+
+<h2 id="how-can-idemeum-help-secure-google-workspace-deployments">How can idemeum help secure Google Workspace deployments?</h2>
+<p>idemeum integrates with <a href="https://cloud.google.com/identity">Google Cloud Identity</a> directly over SAML and provides the following services:</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://idemeum.com/mfa"><strong>Passwordless MFA</strong></a></td>
+<td>Eliminate passwords when users access your SSO applications. No enrollment, no user sync, easy and simple.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-does-the-integration-work">How does the integration work?</h2>
+<p>idemeum integrates with Google Cloud Identity in minutes. As idemeum is decentralized, there is no need to synchronize users to idemeum from Active or LDAP directory, or deploy any additional servers and connectors. Simply federate your Google Cloud Identity tenant with idemeum over SAML protocol.</p>
+<p><img alt="" src="../assets/google/google.png" /></p>
+<p>👨‍💻 In the diagram above, we see the deployment where <strong>Google Cloud Identity</strong> is deployed as a primary IDP and all applications are federated directly with it. When user is trying to authenticate to any corporate application or Google Workspace, the sign in request is sent first to Google Cloud Identity, and is then subsequently redirected to idemeum. idemeum performs Passwordless Multi-Factor authentication and returns necessary user information to Google Cloud Identity, which in turn forwards that user information to federated application. As a result users can access application without any passwords.</p>
+<h2 id="integrate-idemeum-with-google-cloud-identity">Integrate idemeum with Google Cloud Identity</h2>
+<p>We are going to go through simple three steps to integrate idemeum with your Google Workspace environment.</p>
+<ol>
+<li>Request idemeum tenant</li>
+<li>Configure Google Cloud Identity for federation</li>
+<li>Test user sign-in</li>
+</ol>
+<h3 id="1-request-idemeum-tenant">1. 🤝 Request idemeum tenant</h3>
+<p>👉 As a first step, reach out to idemeum team at <strong><a href="mailto:support@idemeum.com">support@idemeum.com</a></strong> with the request to provision idemeum tenant.</p>
+<p>Please, let us know that you will be integrating idemeum with Google Workspace.</p>
+<p>We will need several things from you:</p>
+<ol>
+<li>
+<p><strong>Preferred tenant name</strong> - we will provision a tenant name for you based on your preferences. The tenant name will be in the form of <code>&lt;your company&gt;.idemeum.com</code>.</p>
+</li>
+<li>
+<p><strong>Company logo</strong> - share your company logo with us so that we can display it on every login page request as well as in the application, when users log into your company resources. We will need the image in the <code>png</code> or <code>jpeg</code> format.</p>
+</li>
+</ol>
+<p>As a result, we will share the following with you:</p>
+<ul>
+<li><strong>IdP Single Sign-On URL</strong> - you will need this URI to configure Google Cloud Identity federation with idemeum. This is the URL where Google Cloud Identity will send SAML requests to.</li>
+<li><strong>IdP Signature Certificate</strong> - you will need this certificate to establish secure trust between Google Cloud Identity and idemeum.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When we provision idemeum tenant for you, your tenant's metadata XML file will be accessible using this link <code>https://&lt;your tenant name&gt;/api/saml/metadata/idp.xml</code>. All configuration parameters listed above can be extracted from this SAML metadata file.</p>
+</div>
+<h3 id="2-configure-google-cloud-identity-for-federation">2. ⚙️ Configure Google Cloud Identity for federation</h3>
+<ol>
+<li>Sign in to your Google Workspace Admin portal</li>
+<li>Navigate to <code>Security</code>, scroll down and find the section <code>Set up single sign-on (SSO) with a third party IdP</code>. Click on that section to set up idemeum as 3rd party IDP.
+  <img alt="" src="../assets/google/idp.png" /></li>
+<li>Configure the following settings:<ul>
+<li><strong>Set up SSO with third-party identity provider</strong> - enable checkbox</li>
+<li><strong>Sign-in page URL</strong> - enter the URL that we shared with you after tenant creation. You can always get that data from your idemeum SAML XML file.</li>
+<li><strong>Sign-out page URL</strong> - enter <code>https://accounts.google.com</code></li>
+<li><strong>Verification certificate</strong> - upload the certificate that we shared with you. You can always get that data from your idemeum SAML XML file.</li>
+<li>Leave other fields blank.</li>
+<li>Click <code>Save</code></li>
+</ul>
+</li>
+</ol>
+<p>At this point you configured idemeum to become 3rd party IDP for Google Cloud Identity, and all authentication requests for your domain will be redirected to idemeum.</p>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>Authentication for admin console with Admin credentials is still handled by Google Cloud identity. All you need to do it to navigate to <code>https://admin.google.com/u/0/ac/home</code> and login with your admin credentials. Please refer to documentation <a href="https://support.google.com/a/answer/6341409?hl=en&amp;ref_topic=7556907">here</a>.</p>
+</div>
+<h3 id="3-test-user-sign-in">3. 🧪 Test user sign-in</h3>
+<p>Once you are done with configuration you can quickly test the user sign-in flow.</p>
+<ol>
+<li>
+<p>Open incognito browser window and navigate to your <strong><a href="https://accounts.google.com/">accounts.google.com/</a></strong>.
+  <img alt="" src="../assets/google/accounts.png" /></p>
+</li>
+<li>
+<p>Enter your email address with you domain, and you will be redirected to idemeum for sign in. You will need to scan QR code with idemeum app.
+  <img alt="" src="../assets/google/scan.png" /></p>
+</li>
+<li>
+<p>Once you scan the QR code with idemeum application and approve the sign in, you will be redirected to Google Workspace application catalog.
+  <img alt="" src="../assets/google/catalog.png" /></p>
+</li>
+</ol>
+<p>🎉 <strong>Congratulations!</strong> You have successfully integrated idemeum and protected your Google Workspace deployment with passwordless multi-factor authentication.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://support.google.com/a/answer/60224?hl=en&amp;ref_topic=7556907&amp;visit_id=637466828028738286-4181606564&amp;rd=1">Set up SSO via a third party Identity provider</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://support.google.com/a/answer/9225455?hl=en&amp;ref_topic=7579248">Understanding SAML secure sign-in</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://support.google.com/a/answer/9225455?hl=en&amp;ref_topic=7579248">SSO assertion requirements</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
               
