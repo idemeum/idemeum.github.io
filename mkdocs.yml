@@ -16,7 +16,7 @@ theme:
   logo: assets/idemeum-logo.svg
   favicon: assets/idemeum-favicon.png
   features:
-    - navigation.instant
+    #- navigation.instant
     - navigation.sections
     - navigation.tabs
     - navigation.expand
