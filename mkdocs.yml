@@ -1,4 +1,5 @@
 site_name: idemeum
+site_url: https://idemeum.com
 site_description: Digital identity for the online world
 copyright: Copyright 2021 idemeum
 docs_dir: docs-source
@@ -6,7 +7,7 @@ site_dir: docs
 extra_css:
   - stylesheets/extra.css
 
-theme:
+theme: 
   name: material
   custom_dir: docs-source/material
   language: en
@@ -46,6 +47,7 @@ nav:
       - Azure AD (B2B): azuread.md
       - Worspace ONE Access: ws1access.md
       - Okta: okta.md
+      - Google Cloud Identity: google.md
 
 plugins:
   - search

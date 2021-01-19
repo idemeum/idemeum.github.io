@@ -40,7 +40,7 @@ All additional Microsoft documentation and useful links can be found in [footnot
 
 As a first step, reach out to idemeum team at [support@idemeum.com](mailto:support@idemeum.com) with the request to provision idemeum tenant. Please, let us know that you will be integrating idemeum with Azure AD.
 
-We will need two things from you:
+We will need several things from you:
 
 1. **Preferred tenant name** - we will provision a tenant name for you based on your preferences. The tenant name will be in the form of `<your company>.idemeum.com`.
 

@@ -32,7 +32,7 @@ We are going to go through simple three steps to integrate idemeum with your WS1
 
 As a first step, reach out to idemeum team at [support@idemeum.com](mailto:support@idemeum.com) with the request to provision idemeum tenant. Please, let us know that you will be integrating idemeum with Workspace ONE Access.
 
-We will need two things from you:
+We will need several things from you:
 
 1. **Preferred tenant name** - we will provision a tenant name for you based on your preferences. The tenant name will be in the form of `<your company>.idemeum.com`.
 
@@ -43,7 +43,7 @@ We will need two things from you:
 As a result of tenant provisioning we will share the SAML XML metadata file URL with you that you will need to use to set up federation with WS1 Access.
 
 !!! tip "Tip"
-    Metadata XML fill link will have the following format `https://<your tenant name>/api/saml/metadata/idp.xml`.
+    Metadata XML file link will have the following format `https://<your tenant name>/api/saml/metadata/idp.xml`.
 
 ### 2. Configure Workspace ONE Access for federation
 
