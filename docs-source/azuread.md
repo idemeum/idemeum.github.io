@@ -1,12 +1,14 @@
 # :fontawesome-brands-microsoft: Integrate idemeum with Azure AD (B2B)
 
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/1wWA4ic2uAM?rel=0&modestbranding=1&autohide=1' frameborder='0' allowfullscreen></iframe></div>
+
 ## How can idemeum help secure O365?
 
 idemeum integrates with [Azure Active Directory (AAD)](https://azure.microsoft.com/en-us/services/active-directory/) directly over SAML and provides the following services:
 
 | Service | Description |
 | ------- | ----------- |
-| [**Passwordless MFA**](https://idemeum.com/mfa) | Eliminate passwords when users access your SSO and O365 resources. No enrollment, no user sync, easy and simple. idemeum supports cloud-only as well as hybrid deployment models. | 
+| [**Passwordless MFA**](https://idemeum.com/mfa) | Eliminate passwords when users access your SSO and O365 resources. No enrollment, no user sync, easy and simple. idemeum supports cloud-only as well as hybrid deployment models. |
 
 ## How is O365 deployed?
 
@@ -24,7 +26,7 @@ idemeum can be federated directly with AAD using SAML protocol. When federating 
 
 ![](assets/azuread/deployment.png)
 
-## Intergate idemeum with Azure AD
+## Integrate idemeum with Azure AD
 
 We are going to go through simple three steps to integrate idemeum with your Microsoft identity environment.
 
@@ -36,12 +38,11 @@ All additional Microsoft documentation and useful links can be found in [footnot
 
 ### ⚙️ 1. Request idemeum tenant
 
-As a first step, reach out to idemeum team at `support@idemeum.com` with the request to provision idemeum tenant. We will need two things from you:
+As a first step, reach out to idemeum team at [support@idemeum.com](mailto:support@idemeum.com) with the request to provision idemeum tenant. Please, let us know that you will be integrating idemeum with Azure AD.
 
-1. **Preferred tenant name** - we will provision a tenant name for you based on you preferences. The tenant name will be in the form of:
+We will need two things from you:
 
-    !!! tip "Tenant name"
-        `<your company>.idemeum.com`
+1. **Preferred tenant name** - we will provision a tenant name for you based on your preferences. The tenant name will be in the form of `<your company>.idemeum.com`.
 
 2. **Company logo** - share your company logo with us so that we can display it on every login page request as well as in the application, when users log into your company resources. We will need the image in the `png` or `jpeg` format.
 
@@ -51,6 +52,9 @@ As a result of tenant provisioning we will share the configuration details with 
 * `$LogOffUrl` - SAML LogOff URL.
 * `$SigningCert` - signing certificate to establish federation trust.
 * `$IssuerUri` - URI to identify idemeum in SAML responses.
+
+!!! tip "Tip"
+    You can always get this and additional information from your SAML metadata XML file. You can access this information by using the following link `https://<your tenant name>/api/saml/metadata/idp.xml`. Replace ^^[your tenant name]^^ with your actual tenant name that we will provision for you.
 
 ### 🧑🏿‍🤝‍🧑🏼 2. Configure Azure AD for federation
 

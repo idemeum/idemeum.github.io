@@ -37,19 +37,6 @@ featured_image: /assets/img/videos/videos.jpg
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Enterprise videos -->
 <div class="section">
   <div class="container">
