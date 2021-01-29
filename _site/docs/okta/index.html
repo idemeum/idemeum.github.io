@@ -11,27 +11,29 @@
       
       
       
+        <link rel="canonical" href="https://idemeum.com/okta/">
+      
       <link rel="shortcut icon" href="../assets/idemeum-favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
     
     
       
-        <title>Okta - idemeum documentation</title>
+        <title>Okta - idemeum</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.21aed14c.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
-        
-      
-    
-    
-    
+      <link rel="stylesheet" href="../assets/stylesheets/main.15aa0b43.min.css">
       
         
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="../assets/stylesheets/palette.75751829.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,400i,700%7CInter&display=fallback">
         <style>body,input{font-family:"Inter",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Inter",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
@@ -59,13 +61,14 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
       
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-idemeum-documentation" class="md-skip">
+        <a href="#integrate-idemeum-with-okta" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +81,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="idemeum documentation" class="md-header-nav__button md-logo" aria-label="idemeum documentation">
+    <a href="https://idemeum.com" title="idemeum" class="md-header-nav__button md-logo" aria-label="idemeum">
       
   <img src="../assets/idemeum-logo.svg" alt="logo">
 
@@ -87,18 +90,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
-            idemeum documentation
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            idemeum
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             
               Okta
             
           </span>
         </div>
-      
+      </div>
     </div>
     
       <label class="md-header-nav__button md-icon" for="__search">
@@ -140,17 +145,16 @@
       
         
           
-
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
+  
+  
+
+
   <li class="md-tabs__item">
-    
-    
     <a href=".." class="md-tabs__link">
       Home
     </a>
@@ -160,11 +164,26 @@
         
   
   
-    <li class="md-tabs__item">
-      
+
+
+  <li class="md-tabs__item">
+    <a href="../intro/" class="md-tabs__link">
+      Intro
+    </a>
+  </li>
+
       
         
-      
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../enterprise-overview/" class="md-tabs__link md-tabs__link--active">
         Enterprise idemeum
       </a>
@@ -181,19 +200,25 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="idemeum documentation" class="md-nav__button md-logo" aria-label="idemeum documentation">
+    <a href="https://idemeum.com" title="idemeum" class="md-nav__button md-logo" aria-label="idemeum">
       
   <img src="../assets/idemeum-logo.svg" alt="logo">
 
     </a>
-    idemeum documentation
+    idemeum
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -203,110 +228,263 @@
       
 
 
-  <li class="md-nav__item">
-    <a href=".." class="md-nav__link">
-      Home
-    </a>
-  </li>
-
-    
-      
-      
-      
-
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
   
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    <label class="md-nav__link" for="nav-2">
-      Enterprise idemeum
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Enterprise idemeum" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon"></span>
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        Intro
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      
+      <label class="md-nav__link" for="nav-3">
         Enterprise idemeum
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../enterprise-overview/" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
-    <label class="md-nav__link" for="nav-2-2">
-      IDP integrations
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="IDP integrations" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-2">
         <span class="md-nav__icon md-icon"></span>
-        IDP integrations
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Enterprise idemeum" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Enterprise idemeum
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
           
-          
-
-
-  <li class="md-nav__item">
-    <a href="../azuread/" class="md-nav__link">
-      Azure AD (B2B)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enterprise-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
   
 
-
-  <li class="md-nav__item md-nav__item--active">
+          
+            
+  
+  
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+  
+  
     
       
     
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Okta
-    </a>
-    
-  </li>
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+      
+      <label class="md-nav__link" for="nav-3-2">
+        IDP integrations
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="IDP integrations" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-2">
+          <span class="md-nav__icon md-icon"></span>
+          IDP integrations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azuread/" class="md-nav__link">
+        Azure AD (B2B)
+      </a>
+    </li>
+  
 
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ws1access/" class="md-nav__link">
+        Worspace ONE Access
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Okta
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Okta
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-idemeum-help-secure-okta-deployments" class="md-nav__link">
+    How can idemeum help secure Okta deployments?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-the-integration-work" class="md-nav__link">
+    How does the integration work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrate-idemeum-with-okta_1" class="md-nav__link">
+    Integrate idemeum with Okta
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrate idemeum with Okta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-request-idemeum-tenant" class="md-nav__link">
+    1. 🤝 Request idemeum tenant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-set-up-verified-login" class="md-nav__link">
+    2. ✔️ Set up verified login
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-configure-okta-for-federation" class="md-nav__link">
+    3. ⚙️ Configure Okta for federation
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ⚙️ Configure Okta for federation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-3rd-party-idp" class="md-nav__link">
+    Configure 3rd party IDP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-routing-rule" class="md-nav__link">
+    Configure routing rule
+  </a>
+  
+</li>
         
       </ul>
     </nav>
-  </li>
-
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-test-user-sign-in" class="md-nav__link">
+    4. 🧪 Test user sign-in
+  </a>
+  
+</li>
         
       </ul>
     </nav>
-  </li>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../google/" class="md-nav__link">
+        Google Cloud Identity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
 
     
   </ul>
@@ -316,7 +494,8 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -325,6 +504,89 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-idemeum-help-secure-okta-deployments" class="md-nav__link">
+    How can idemeum help secure Okta deployments?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-the-integration-work" class="md-nav__link">
+    How does the integration work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrate-idemeum-with-okta_1" class="md-nav__link">
+    Integrate idemeum with Okta
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrate idemeum with Okta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-request-idemeum-tenant" class="md-nav__link">
+    1. 🤝 Request idemeum tenant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-set-up-verified-login" class="md-nav__link">
+    2. ✔️ Set up verified login
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-configure-okta-for-federation" class="md-nav__link">
+    3. ⚙️ Configure Okta for federation
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ⚙️ Configure Okta for federation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-3rd-party-idp" class="md-nav__link">
+    Configure 3rd party IDP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-routing-rule" class="md-nav__link">
+    Configure routing rule
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-test-user-sign-in" class="md-nav__link">
+    4. 🧪 Test user sign-in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -337,9 +599,177 @@
               
                 
                 
-                <h1 id="welcome-to-idemeum-documentation">Welcome to idemeum documentation</h1>
-<p>We are currently working on our product launch, therefore the documentation will be launched soon.</p>
-<p>Stay tuned.</p>
+                <h1 id="integrate-idemeum-with-okta">Integrate idemeum with Okta</h1>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/6_zlInkDaSU?rel=0&modestbranding=1&autohide=1' frameborder='0' allowfullscreen></iframe></div>
+
+<h2 id="how-can-idemeum-help-secure-okta-deployments">How can idemeum help secure Okta deployments?</h2>
+<p>idemeum integrates with <a href="https://www.okta.com/">Okta</a> directly over SAML and provides the following services:</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://idemeum.com/mfa"><strong>Passwordless MFA</strong></a></td>
+<td>Eliminate passwords when users access your SSO applications. No enrollment, no user sync, easy and simple.</td>
+</tr>
+<tr>
+<td><a href="https://idemeum.com/blog/idemeum-verification"><strong>Verified log in</strong></a></td>
+<td>idemeum has built in document verification. When integrated with Okta, idemeum can log in users not just using their email address, but also verified first name and last name, whereby making every login trusted and verified and reducing identity fraud.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-does-the-integration-work">How does the integration work?</h2>
+<p>idemeum integrates with Okta in minutes. As idemeum is decentralized, there is no need to synchronize users to idemeum from Active Directory, or deploy any additional servers and connectors. Simply federate your Okta tenant with idemeum over SAML protocol.</p>
+<p><img alt="" src="../assets/okta/okta_diagram.png" /></p>
+<p>In the diagram above, we see the deployment where Okta is deployed as a primary IDP and all applications are federated directly with Okta. When user is trying to authenticate to any corporate application, the sign in request is sent first to Okta, and is then subsequently redirected to idemeum. idemeum performs Passwordless Multi-Factor authentication and returns necessary user information to Okta, which in turn forwards that user information to federated application. As a result users can access application without any passwords.</p>
+<div class="admonition info">
+<p class="admonition-title">idemeum differentiation</p>
+<p>The key difference to note here is that you can configure idemeum to release not just email, but also first name and last name for employee. When all these claims are processed for authentication, the match is done not just with email but with verified ID document information. Therefore, every login becomes trusted.</p>
+</div>
+<h2 id="integrate-idemeum-with-okta_1">Integrate idemeum with Okta</h2>
+<p>We are going to go through simple four steps to integrate idemeum with your Okta identity environment.</p>
+<ol>
+<li>Request idemeum tenant</li>
+<li>Set up verified login (optional)</li>
+<li>Configure Okta for federation</li>
+<li>Test user sign-in</li>
+</ol>
+<h3 id="1-request-idemeum-tenant">1. 🤝 Request idemeum tenant</h3>
+<p>👉 As a first step, reach out to idemeum team at <strong><a href="mailto:support@idemeum.com">support@idemeum.com</a></strong> with the request to provision idemeum tenant.</p>
+<p>Please, let us know that you will be integrating idemeum with Okta and whether you want to use verified login or not.</p>
+<p>We will need several things from you:</p>
+<ol>
+<li>
+<p><strong>Preferred tenant name</strong> - we will provision a tenant name for you based on your preferences. The tenant name will be in the form of <code>&lt;your company&gt;.idemeum.com</code>.</p>
+</li>
+<li>
+<p><strong>Company logo</strong> - share your company logo with us so that we can display it on every login page request as well as in the application, when users log into your company resources. We will need the image in the <code>png</code> or <code>jpeg</code> format.</p>
+</li>
+<li>
+<p><strong>Okta SAML IDP metadata</strong> -  we will need your Okta IDP metadata file, so that we can configure SAML trust on our end.</p>
+</li>
+</ol>
+<p>As a result, we will share the following with you:</p>
+<ul>
+<li><strong>IDP issuer URI</strong> - you will need this URI to configure Okta federation with idemeum. This URI can always be extracted from your idemeum SAML metadata file.</li>
+<li><strong>IdP Single Sign-On URL</strong> - you will need this URI to configure Okta federation with idemeum. This is the URL where Okta will send SAML requests to.</li>
+<li><strong>IdP Signature Certificate</strong> - you will need this certificate to establish secure trust between Okta and idemeum.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When we provision idemeum tenant for you, your tenant's metadata XML file will be accessible using this link <code>https://&lt;your tenant name&gt;/api/saml/metadata/idp.xml</code>. All configuration parameters listed above can be extracted from this SAML metadata file.</p>
+</div>
+<h3 id="2-set-up-verified-login">2. ✔️ Set up verified login</h3>
+<p>This step is optional. You can login your users and match the account using only email address. This is what most of the commercial identity solutions do today. However, idemeum offers an opportunity to increase identity trust and login your users with not just email, but a combination of <strong>email + firstName + lastName</strong>.</p>
+<p>To make it work, we will need to create a custom attribute for Okta users, say <strong>verifiedIdentity</strong> and populate it with a combination of email + firstName + lastName. When idemeum will return verified user claims, Okta will match them against this custom attribute.</p>
+<p>In this case we are going to be working with Active Directory users that you are synchronizing to Okta tenant.</p>
+<p><img alt="" src="../assets/okta/attributes.png" /></p>
+<ol>
+<li>Login to your Okta tenant with admin account</li>
+<li>Navigate to <code>Directory</code> -&gt; <code>Profile editor</code>
+  <img alt="" src="../assets/okta/profile_editor.png" /></li>
+<li>Choose <code>User(default)</code> profile, click <code>Add Attribute</code> and create custom attribute that you will be using for user matching. In our case we are creating an attribute with the display name <code>Verified Identity</code> and variable name <code>verifiedIdentity</code>. We are not making this attribute required.
+  <img alt="" src="../assets/okta/custom_attribute.png" /></li>
+<li>
+<p>Now navigate to <code>Directory</code> -&gt; <code>Profile editor</code> and then choose your Active Directory integration and click <code>Mappings</code>. Scroll all the way down to find custom attribute that we created. And now create a custom mapping for this attribute.
+  <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">toLowerCase</span><span class="p">(</span><span class="n">appuser</span><span class="p">.</span><span class="n">firstName</span><span class="p">)</span> <span class="p">+</span> <span class="s1">&#39;_&#39;</span> <span class="p">+</span> <span class="n">toLowerCase</span><span class="p">(</span><span class="n">appuser</span><span class="p">.</span><span class="n">lastName</span><span class="p">)</span> <span class="p">+</span> <span class="s1">&#39;_&#39;</span> <span class="p">+</span> <span class="n">toLowerCase</span><span class="p">(</span><span class="n">appuser</span><span class="p">.</span><span class="n">email</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+  <img alt="" src="../assets/okta/attribute_mapping.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>What this means is that when users will be synced from Active Directory, Okta will take a combination of <strong>firstName + lastName + email</strong> and will populate that combination into our custom attribute <strong>verifiedIdentity</strong>.</p>
+</div>
+</li>
+</ol>
+<p>At this point we have configured everything necessary to perform verified login with claims passed from idemeum. Now we can move to the next step of configuring SAML federation between Okta and idemeum.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>At this point you will need to force sync users from Active Directory to make sure custom attributes get populated for all your existing or new users.</p>
+</div>
+<h3 id="3-configure-okta-for-federation">3. ⚙️ Configure Okta for federation</h3>
+<h4 id="configure-3rd-party-idp">Configure 3rd party IDP</h4>
+<ol>
+<li>Navigate to <code>Security</code> -&gt; <code>Identity Providers</code> -&gt; <code>Add Identity Provider</code> -&gt; <code>Add SAML 2.0 IDP</code>
+  <img alt="" src="../assets/okta/idp.png" /></li>
+<li>
+<p>Let's configure the following options.</p>
+<ul>
+<li><strong>Name</strong> - assign a name to your IDP, for example <code>idemeum SAML</code></li>
+<li><strong>IDP username</strong> - create custom string for this attribute
+  <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">String</span><span class="p">.</span><span class="n">toLowerCase</span><span class="p">(</span><span class="n">idpuser</span><span class="p">.</span><span class="n">firstName</span><span class="p">)</span> <span class="p">+</span> <span class="s1">&#39;_&#39;</span> <span class="p">+</span> <span class="n">String</span><span class="p">.</span><span class="n">toLowerCase</span><span class="p">(</span><span class="n">idpuser</span><span class="p">.</span><span class="n">lastName</span><span class="p">)</span> <span class="p">+</span> <span class="s1">&#39;_&#39;</span> <span class="p">+</span> <span class="n">idpuser</span><span class="p">.</span><span class="n">email</span>
+</code></pre></div>
+</td></tr></table></li>
+<li><strong>Match against</strong> - choose the display name of the custom attribute your created in the previous section.</li>
+<li><strong>Account Link Policy</strong> - choose <code>Automatic</code></li>
+<li><strong>Account Link Restriction</strong> - choose <code>None</code></li>
+<li><strong>If match not found</strong> - choose <code>Redirect to Okta sign-in page</code></li>
+<li><strong>IDP issuer URI</strong> - enter the URI that we shared with you. You will always have that available in your idemeum metadata file.</li>
+<li><strong>IdP Single Sign-On URL</strong> - enter the URL that we shared with you. You will always have that available in your idemeum metadata file.</li>
+<li><strong>IdP Signature Certificate</strong> - enter the certificate that we shared with you. You will always have that available in your idemeum metadata file.</li>
+<li><strong>Request Binding</strong> - make sure you have <code>HTTP POST</code> selected.</li>
+</ul>
+<p>You can leave other parameters with default settings.</p>
+</li>
+<li>
+<p>Save your identity provider configuration.</p>
+</li>
+<li>Return to <code>Identity Providers</code> section, expand the details of the identity provider you just created by clicking on the arrow next to IDP name, download metadata file and share with our <strong><a href="mailto:support@idemeum.com">support team</a></strong>. We will need this information to establish trust between your Okta tenant and idemeum.
+  <img alt="" src="../assets/okta/metadata.png" /></li>
+</ol>
+<p>At this point you created identity provider in Okta to federate all authentication requests with idemeum. As a next step you need to apply this identity provider in Okta Routing Rules.</p>
+<h4 id="configure-routing-rule">Configure routing rule</h4>
+<ol>
+<li>
+<p>Navigate to <code>Security</code> -&gt; <code>Identity Providers</code> -&gt; <code>Routing Rules</code>. In this case we are going to create a new routing rule for passwordless authentication.
+  <img alt="" src="../assets/okta/rule.png" /></p>
+<p>As you can see we are keeping default configuration, but we are using our <code>idemeum SAML</code> identity provider for authentication.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Once you enable a routing rule, all authentication requests will be redirected to idemeum. If for any reason the idemeum authentication does not work, and you need to log into Okta admin account with username and password, you can always use the backdoor entry that bypasses routing rules. You can access it by using the following link <code>https://&lt;your Okta tenant&gt;/login/default</code></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In this case we enabled idemeum authentication for all users in Okta. If you want to configure a small group of users to try out idemeum, you can always create a special group, put your test users in that group, and assign routing rule only to this group. To do that you can use <code>User matches</code> configuration in the routing rule set up.</p>
+</div>
+</li>
+<li>
+<p>It is also recommended that you customize Sign-Out page when routing rule is enabled with idemeum. To do that, navigate to <code>Settings</code> -&gt; <code>Customization</code>, and click <code>Edit</code> in the <code>Sign-Out Page</code> section. Choose <code>Use a custom sign-out page</code> and enter any page, for example <code>https://okta.com</code>. Click <code>Save</code>.
+  <img alt="" src="../assets/okta/customize.png" /></p>
+</li>
+</ol>
+<h3 id="4-test-user-sign-in">4. 🧪 Test user sign-in</h3>
+<p>Once you are done with configuration you can quickly test the user sign-in flow.</p>
+<ol>
+<li>
+<p>Open incognito browser window and navigate to your Okta tenant URL. Once you do that you will be redirected to idemeum for login. You will see the QR code that you will need to scan with the idemeum application.
+  <img alt="" src="../assets/okta/signin.png" /></p>
+</li>
+<li>
+<p>Once you scan the QR code with idemeum application and approve the sign in, you will be redirected to Okta application catalog.
+  <img alt="" src="../assets/okta/catalog.png" /></p>
+</li>
+</ol>
+<p>🎉 <strong>Congratulations!</strong> You have successfully integrated idemeum and protected your Okta deployment with passwordless multi-factor authentication.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://developer.okta.com/docs/guides/add-an-external-idp/saml2/configure-idp-in-okta/">Create an Identity Provider in Okta</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://help.okta.com/en/prod/Content/Topics/Security/Identity_Providers.htm">Identity Providers in Okta</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://help.okta.com/en/prod/Content/Topics/Security/configure-routing-rules.htm">Configure routing rules in Okta</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
               
@@ -358,7 +788,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../azuread/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../ws1access/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -367,11 +797,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Azure AD (B2B)
+                Worspace ONE Access
               </div>
             </div>
           </a>
         
+        
+          <a href="../google/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Google Cloud Identity
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
@@ -401,6 +845,15 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
       </a>
     
+      
+      
+        
+        
+      
+      <a href="https://www.linkedin.com/company/idemeum/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
   </div>
 
     </div>
@@ -409,15 +862,15 @@
       
     </div>
     
-      <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "..",
-          features: ['navigation.instant', 'navigation.sections', 'navigation.tabs'],
+          features: ['navigation.sections', 'navigation.tabs', 'navigation.expand'],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

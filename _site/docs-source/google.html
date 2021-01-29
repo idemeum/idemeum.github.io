@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+
+  <!-- Page Info -->
+  <link rel="shortcut icon" href="/assets/img/favicon/idemeum-favicon.png">
+  <title>:fontawesome-brands-google: Integrate idemeum with Google workspace – idemeum digital identity</title>
+  <meta name="description" content="">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+    content=":fontawesome-brands-google: Integrate idemeum with Google workspace – idemeum digital identity">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image:src" content="">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title"
+    content=":fontawesome-brands-google: Integrate idemeum with Google workspace – idemeum digital identity" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+
+  <!--  Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link href="/assets/css/font-awesome.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/assets/styles/styles.css" rel="stylesheet">
+
+  
+
+  
+
+</head>
+
+<body>
+  
+    
+  <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg bg-primary navbar-dark headroom">
+    
+
+        <div class="container">
+          
+          <a href="/" class="navbar-brand mr-lg-5">
+            <img src="/assets/img/logo/idemeum-logo.png">
+          </a>
+          
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  
+                  <a href="/">
+                    <img src="/assets/img/logo/idemeum-logo.png">
+                  </a>
+                  
+                </div>
+                <div class="col-6 collapse-close">
+                  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+              
+                
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">For enterprises</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      
+                      <a class="dropdown-item" href="/mfa">
+                        <i class="ni fa fa-key text-primary"></i>
+                        Verified Passwordless MFA
+                      </a>
+                      
+                      <a class="dropdown-item" href="/deployment">
+                        <i class="ni fa fa-briefcase text-success"></i>
+                        Passwordless Device Deployment
+                      </a>
+                      
+                    </div>
+                  </li>
+                
+              
+                
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">Resources</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      
+                      <a class="dropdown-item" href="/blog/">
+                        <i class="ni ni ni-books text-warning"></i>
+                        Blog
+                      </a>
+                      
+                      <a class="dropdown-item" href="/videos">
+                        <i class="ni ni ni-tv-2 text-info"></i>
+                        Videos
+                      </a>
+                      
+                    </div>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/docs/" class="nav-link">
+                      <span class="nav-link-inner--text">Docs</span>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">About us</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      
+                      <a class="dropdown-item" href="/blog/about-idemeum">
+                        <i class="ni ni ni-spaceship text-success"></i>
+                        About idemeum
+                      </a>
+                      
+                      <a class="dropdown-item" href="/contact">
+                        <i class="ni fa fa-envelope text-warning"></i>
+                        Contact us
+                      </a>
+                      
+                    </div>
+                  </li>
+                
+              
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  
+
+  
+
+  
+
+  <div class="wrapper page">
+    
+    <!-- Is not a blog post or blog archive or contact page -->
+    
+
+    <!-- Is a page without a banner -->
+    <div class="container contentWrapper pb-2">
+      <div class="text-left mt-5 mb-3">
+        <h3 class="display-2">:fontawesome-brands-google: Integrate idemeum with Google workspace</h3>
+        
+      </div>
+    </div>
+    
+    
+
+
+    
+        <div id="main" class="container">
+          <h1 id="fontawesome-brands-google-integrate-idemeum-with-google-workspace">:fontawesome-brands-google: Integrate idemeum with Google workspace</h1>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/dYK3jojNQXg?rel=0&amp;modestbranding=1&amp;autohide=1" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h2 id="how-can-idemeum-help-secure-google-workspace-deployments">How can idemeum help secure Google Workspace deployments?</h2>
+
+<p>idemeum integrates with <a href="https://cloud.google.com/identity">Google Cloud Identity</a> directly over SAML and provides the following services:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://idemeum.com/mfa"><strong>Passwordless MFA</strong></a></td>
+      <td>Eliminate passwords when users access your SSO applications. No enrollment, no user sync, easy and simple.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="how-does-the-integration-work">How does the integration work?</h2>
+
+<p>idemeum integrates with Google Cloud Identity in minutes. As idemeum is decentralized, there is no need to synchronize users to idemeum from Active or LDAP directory, or deploy any additional servers and connectors. Simply federate your Google Cloud Identity tenant with idemeum over SAML protocol.</p>
+
+<p><img src="/docs-source/assets/google/google.png" alt="" /></p>
+
+<p>👨‍💻 In the diagram above, we see the deployment where <strong>Google Cloud Identity</strong> is deployed as a primary IDP and all applications are federated directly with it. When user is trying to authenticate to any corporate application or Google Workspace, the sign in request is sent first to Google Cloud Identity, and is then subsequently redirected to idemeum. idemeum performs Passwordless Multi-Factor authentication and returns necessary user information to Google Cloud Identity, which in turn forwards that user information to federated application. As a result users can access application without any passwords.</p>
+
+<h2 id="integrate-idemeum-with-google-cloud-identity">Integrate idemeum with Google Cloud Identity</h2>
+
+<p>We are going to go through simple three steps to integrate idemeum with your Google Workspace environment.</p>
+
+<ol>
+  <li>Request idemeum tenant</li>
+  <li>Configure Google Cloud Identity for federation</li>
+  <li>Test user sign-in</li>
+</ol>
+
+<h3 id="1--request-idemeum-tenant">1. 🤝 Request idemeum tenant</h3>
+<p>👉 As a first step, reach out to idemeum team at <strong><a href="mailto:support@idemeum.com">support@idemeum.com</a></strong> with the request to provision idemeum tenant.</p>
+
+<p>Please, let us know that you will be integrating idemeum with Google Workspace.</p>
+
+<p>We will need several things from you:</p>
+
+<ol>
+  <li>
+    <p><strong>Preferred tenant name</strong> - we will provision a tenant name for you based on your preferences. The tenant name will be in the form of <code class="language-plaintext highlighter-rouge">&lt;your company&gt;.idemeum.com</code>.</p>
+  </li>
+  <li>
+    <p><strong>Company logo</strong> - share your company logo with us so that we can display it on every login page request as well as in the application, when users log into your company resources. We will need the image in the <code class="language-plaintext highlighter-rouge">png</code> or <code class="language-plaintext highlighter-rouge">jpeg</code> format.</p>
+  </li>
+</ol>
+
+<p>As a result, we will share the following with you:</p>
+
+<ul>
+  <li><strong>IdP Single Sign-On URL</strong> - you will need this URI to configure Google Cloud Identity federation with idemeum. This is the URL where Google Cloud Identity will send SAML requests to.</li>
+  <li><strong>IdP Signature Certificate</strong> - you will need this certificate to establish secure trust between Google Cloud Identity and idemeum.</li>
+</ul>
+
+<p>!!! tip “Tip”
+    When we provision idemeum tenant for you, your tenant’s metadata XML file will be accessible using this link <code class="language-plaintext highlighter-rouge">https://&lt;your tenant name&gt;/api/saml/metadata/idp.xml</code>. All configuration parameters listed above can be extracted from this SAML metadata file.</p>
+
+<h3 id="2-️-configure-google-cloud-identity-for-federation">2. ⚙️ Configure Google Cloud Identity for federation</h3>
+
+<ol>
+  <li>Sign in to your Google Workspace Admin portal</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">Security</code>, scroll down and find the section <code class="language-plaintext highlighter-rouge">Set up single sign-on (SSO) with a third party IdP</code>. Click on that section to set up idemeum as 3rd party IDP.
+  <img src="/docs-source/assets/google/idp.png" alt="" /></li>
+  <li>Configure the following settings:
+    <ul>
+      <li><strong>Set up SSO with third-party identity provider</strong> - enable checkbox</li>
+      <li><strong>Sign-in page URL</strong> - enter the URL that we shared with you after tenant creation. You can always get that data from your idemeum SAML XML file.</li>
+      <li><strong>Sign-out page URL</strong> - enter <code class="language-plaintext highlighter-rouge">https://accounts.google.com</code></li>
+      <li><strong>Verification certificate</strong> - upload the certificate that we shared with you. You can always get that data from your idemeum SAML XML file.</li>
+      <li>Leave other fields blank.</li>
+      <li>Click <code class="language-plaintext highlighter-rouge">Save</code></li>
+    </ul>
+  </li>
+</ol>
+
+<p>At this point you configured idemeum to become 3rd party IDP for Google Cloud Identity, and all authentication requests for your domain will be redirected to idemeum.</p>
+
+<p>!!! info “Note”
+    Authentication for admin console with Admin credentials is still handled by Google Cloud identity. All you need to do it to navigate to <code class="language-plaintext highlighter-rouge">https://admin.google.com/u/0/ac/home</code> and login with your admin credentials. Please refer to documentation <a href="https://support.google.com/a/answer/6341409?hl=en&amp;ref_topic=7556907">here</a>.</p>
+
+<h3 id="3--test-user-sign-in">3. 🧪 Test user sign-in</h3>
+
+<p>Once you are done with configuration you can quickly test the user sign-in flow.</p>
+
+<ol>
+  <li>
+    <p>Open incognito browser window and navigate to your <strong><a href="https://accounts.google.com/">accounts.google.com/</a></strong>.
+  <img src="/docs-source/assets/google/accounts.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Enter your email address with you domain, and you will be redirected to idemeum for sign in. You will need to scan QR code with idemeum app.
+  <img src="/docs-source/assets/google/scan.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Once you scan the QR code with idemeum application and approve the sign in, you will be redirected to Google Workspace application catalog.
+  <img src="/docs-source/assets/google/catalog.png" alt="" /></p>
+  </li>
+</ol>
+
+<p>🎉 <strong>Congratulations!</strong> You have successfully integrated idemeum and protected your Google Workspace deployment with passwordless multi-factor authentication.</p>
+
+
+        </div>
+        </div>
+    
+
+
+  
+    <footer class="footer mt-5 pt-4">
+  <div class="container">
+    <div class="row row-grid align-items-center mb-2 mt-2">
+      <div class="col-lg-6">
+        <h4 class="mb-0 font-weight-light">Digital identity for the online world.</h4>
+      </div>
+      <div class="col-lg-6 text-lg-right">
+        
+    
+
+    
+
+    
+
+    
+    <button onclick="location.href='https://youtube.com/channel/UCyPMNEEfPuRlcWVmGKGb6ug';" rel="nofollow" class="btn btn-icon-only btn-youtube rounded-circle" data-toggle="tooltip" data-original-title="Youtube">
+        <span class="btn-inner--icon">
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+        </span>
+    </button>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <button onclick="location.href='https://www.linkedin.com/company/idemeum/';" rel="nofollow" class="btn btn-icon-only btn-linkedin rounded-circle" data-toggle="tooltip" data-original-title="Linkedin">
+        <span class="btn-inner--icon">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </span>
+    </button>
+    
+
+      </div>
+    </div>
+    <hr>
+    <div class="row align-items-center justify-content-md-between">
+      <div class="col-md-6">
+        <div class="copyright">
+          <span> © 2021 idemeum</a></span><br>
+          <span> Palo Alto, CA</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-footer justify-content-end">
+          
+          
+
+          
+          
+          
+
+          
+          
+          
+          <li class="nav-item">
+            <a href="/docs/" class="nav-link">
+              <span class="nav-link-inner--text">Docs</span>
+            </a>
+          </li>
+          
+          
+          
+
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--   Core JS Files   -->
+<script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="/assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the Carousel, full documentation here: http://jedrzejchalubek.com/ -->
+<script src="/assets/js/plugins/glide.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://flatpickr.js.org/ -->
+<script src="/assets/js/plugins/moment.min.js"></script>
+<!--	Plugin for Select, full documentation here: https://joshuajohnson.co.uk/Choices/ -->
+<script src="/assets/js/plugins/choices.min.js" type="text/javascript"></script>
+<!--  Plugin for the DateTimePicker, full documentation here: https://flatpickr.js.org/ -->
+<script src="/assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="/assets/js/plugins/jasny-bootstrap.min.js"></script>
+<!-- Plugin for Headrom, full documentation here: https://wicky.nillia.ms/headroom.js/ -->
+<script src="/assets/js/plugins/headroom.min.js"></script>
+<!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+
+<script>
+  // Blog Post Carousel
+  if (document.querySelector('.blogGlide') !== null) {
+    new Glide('.blogGlide', {
+      type: 'carousel',
+      startAt: 0,
+      focusAt: 2,
+      perTouch: 1,
+      perView: 4
+    }).mount();
+  }
+
+  if (document.querySelector('.glide') !== null) {
+    // Generic
+     new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      focusAt: 2,
+      perTouch: 1,
+      perView: 4
+    }).mount();
+  }
+
+  if (document.querySelector('.testimonial-glide') !== null) {
+    // Testimonial Carousel
+    new Glide('.testimonial-glide', {
+      type: 'carousel',
+      startAt: 0,
+      focusAt: 2,
+      perTouch: 1,
+      perView: 4
+    }).mount();
+  }
+
+</script>
+
+<script>
+  $(function () {
+    var navOffset = $('#navbar-main').height();
+    $('.contentWrapper').css('padding-top', navOffset * 2 + 'px');
+  });
+</script>
+
+
+
+<script src="/assets/js/argon-design-system.min.js?v=1.0.0" type="text/javascript"></script>
+
+  
+
+  
+
+</body>
+
+</html>
+</body>
+
+</html>

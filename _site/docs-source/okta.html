@@ -7,19 +7,19 @@
 
   <!-- Page Info -->
   <link rel="shortcut icon" href="/assets/img/favicon/idemeum-favicon.png">
-  <title>Welcome to idemeum documentation – idemeum digital identity</title>
+  <title>Integrate idemeum with Okta – idemeum digital identity</title>
   <meta name="description" content="">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title"
-    content="Welcome to idemeum documentation – idemeum digital identity">
+    content="Integrate idemeum with Okta – idemeum digital identity">
   <meta name="twitter:description" content="">
   <meta name="twitter:image:src" content="">
 
   <!-- Facebook OpenGraph -->
   <meta property="og:title"
-    content="Welcome to idemeum documentation – idemeum digital identity" />
+    content="Integrate idemeum with Okta – idemeum digital identity" />
   <meta property="og:description" content="" />
   <meta property="og:image" content="" />
 
@@ -170,7 +170,7 @@
     <!-- Is a page without a banner -->
     <div class="container contentWrapper pb-2">
       <div class="text-left mt-5 mb-3">
-        <h3 class="display-2">Welcome to idemeum documentation</h3>
+        <h3 class="display-2">Integrate idemeum with Okta</h3>
         
       </div>
     </div>
@@ -180,11 +180,188 @@
 
     
         <div id="main" class="container">
-          <h1 id="welcome-to-idemeum-documentation">Welcome to idemeum documentation</h1>
+          <h1 id="integrate-idemeum-with-okta">Integrate idemeum with Okta</h1>
 
-<p>We are currently working on our product launch, therefore the documentation will be launched soon.</p>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/6_zlInkDaSU?rel=0&amp;modestbranding=1&amp;autohide=1" frameborder="0" allowfullscreen=""></iframe></div>
 
-<p>Stay tuned.</p>
+<h2 id="how-can-idemeum-help-secure-okta-deployments">How can idemeum help secure Okta deployments?</h2>
+
+<p>idemeum integrates with <a href="https://www.okta.com/">Okta</a> directly over SAML and provides the following services:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://idemeum.com/mfa"><strong>Passwordless MFA</strong></a></td>
+      <td>Eliminate passwords when users access your SSO applications. No enrollment, no user sync, easy and simple.</td>
+    </tr>
+    <tr>
+      <td><a href="https://idemeum.com/blog/idemeum-verification"><strong>Verified log in</strong></a></td>
+      <td>idemeum has built in document verification. When integrated with Okta, idemeum can log in users not just using their email address, but also verified first name and last name, whereby making every login trusted and verified and reducing identity fraud.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="how-does-the-integration-work">How does the integration work?</h2>
+
+<p>idemeum integrates with Okta in minutes. As idemeum is decentralized, there is no need to synchronize users to idemeum from Active Directory, or deploy any additional servers and connectors. Simply federate your Okta tenant with idemeum over SAML protocol.</p>
+
+<p><img src="/docs-source/assets/okta/okta_diagram.png" alt="" /></p>
+
+<p>In the diagram above, we see the deployment where Okta is deployed as a primary IDP and all applications are federated directly with Okta. When user is trying to authenticate to any corporate application, the sign in request is sent first to Okta, and is then subsequently redirected to idemeum. idemeum performs Passwordless Multi-Factor authentication and returns necessary user information to Okta, which in turn forwards that user information to federated application. As a result users can access application without any passwords.</p>
+
+<p>!!! info “idemeum differentiation”
+    The key difference to note here is that you can configure idemeum to release not just email, but also first name and last name for employee. When all these claims are processed for authentication, the match is done not just with email but with verified ID document information. Therefore, every login becomes trusted.</p>
+
+<h2 id="integrate-idemeum-with-okta-1">Integrate idemeum with Okta</h2>
+
+<p>We are going to go through simple four steps to integrate idemeum with your Okta identity environment.</p>
+
+<ol>
+  <li>Request idemeum tenant</li>
+  <li>Set up verified login (optional)</li>
+  <li>Configure Okta for federation</li>
+  <li>Test user sign-in</li>
+</ol>
+
+<h3 id="1--request-idemeum-tenant">1. 🤝 Request idemeum tenant</h3>
+<p>👉 As a first step, reach out to idemeum team at <strong><a href="mailto:support@idemeum.com">support@idemeum.com</a></strong> with the request to provision idemeum tenant.</p>
+
+<p>Please, let us know that you will be integrating idemeum with Okta and whether you want to use verified login or not.</p>
+
+<p>We will need several things from you:</p>
+
+<ol>
+  <li>
+    <p><strong>Preferred tenant name</strong> - we will provision a tenant name for you based on your preferences. The tenant name will be in the form of <code class="language-plaintext highlighter-rouge">&lt;your company&gt;.idemeum.com</code>.</p>
+  </li>
+  <li>
+    <p><strong>Company logo</strong> - share your company logo with us so that we can display it on every login page request as well as in the application, when users log into your company resources. We will need the image in the <code class="language-plaintext highlighter-rouge">png</code> or <code class="language-plaintext highlighter-rouge">jpeg</code> format.</p>
+  </li>
+  <li>
+    <p><strong>Okta SAML IDP metadata</strong> -  we will need your Okta IDP metadata file, so that we can configure SAML trust on our end.</p>
+  </li>
+</ol>
+
+<p>As a result, we will share the following with you:</p>
+
+<ul>
+  <li><strong>IDP issuer URI</strong> - you will need this URI to configure Okta federation with idemeum. This URI can always be extracted from your idemeum SAML metadata file.</li>
+  <li><strong>IdP Single Sign-On URL</strong> - you will need this URI to configure Okta federation with idemeum. This is the URL where Okta will send SAML requests to.</li>
+  <li><strong>IdP Signature Certificate</strong> - you will need this certificate to establish secure trust between Okta and idemeum.</li>
+</ul>
+
+<p>!!! tip “Tip”
+    When we provision idemeum tenant for you, your tenant’s metadata XML file will be accessible using this link <code class="language-plaintext highlighter-rouge">https://&lt;your tenant name&gt;/api/saml/metadata/idp.xml</code>. All configuration parameters listed above can be extracted from this SAML metadata file.</p>
+
+<h3 id="2-️-set-up-verified-login">2. ✔️ Set up verified login</h3>
+
+<p>This step is optional. You can login your users and match the account using only email address. This is what most of the commercial identity solutions do today. However, idemeum offers an opportunity to increase identity trust and login your users with not just email, but a combination of <strong>email + firstName + lastName</strong>.</p>
+
+<p>To make it work, we will need to create a custom attribute for Okta users, say <strong>verifiedIdentity</strong> and populate it with a combination of email + firstName + lastName. When idemeum will return verified user claims, Okta will match them against this custom attribute.</p>
+
+<p>In this case we are going to be working with Active Directory users that you are synchronizing to Okta tenant.</p>
+
+<p><img src="/docs-source/assets/okta/attributes.png" alt="" /></p>
+
+<ol>
+  <li>Login to your Okta tenant with admin account</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">Directory</code> -&gt; <code class="language-plaintext highlighter-rouge">Profile editor</code>
+  <img src="/docs-source/assets/okta/profile_editor.png" alt="" /></li>
+  <li>Choose <code class="language-plaintext highlighter-rouge">User(default)</code> profile, click <code class="language-plaintext highlighter-rouge">Add Attribute</code> and create custom attribute that you will be using for user matching. In our case we are creating an attribute with the display name <code class="language-plaintext highlighter-rouge">Verified Identity</code> and variable name <code class="language-plaintext highlighter-rouge">verifiedIdentity</code>. We are not making this attribute required.
+  <img src="/docs-source/assets/okta/custom_attribute.png" alt="" /></li>
+  <li>Now navigate to <code class="language-plaintext highlighter-rouge">Directory</code> -&gt; <code class="language-plaintext highlighter-rouge">Profile editor</code> and then choose your Active Directory integration and click <code class="language-plaintext highlighter-rouge">Mappings</code>. Scroll all the way down to find custom attribute that we created. And now create a custom mapping for this attribute.
+    <pre><code class="language-PowerShell">  toLowerCase(appuser.firstName) + '_' + toLowerCase(appuser.lastName) + '_' + toLowerCase(appuser.email)
+</code></pre>
+    <p><img src="/docs-source/assets/okta/attribute_mapping.png" alt="" /></p>
+
+    <p>!!! info “Info”
+     What this means is that when users will be synced from Active Directory, Okta will take a combination of <strong>firstName + lastName + email</strong> and will populate that combination into our custom attribute <strong>verifiedIdentity</strong>.</p>
+  </li>
+</ol>
+
+<p>At this point we have configured everything necessary to perform verified login with claims passed from idemeum. Now we can move to the next step of configuring SAML federation between Okta and idemeum.</p>
+
+<p>!!! tip “Tip”
+    At this point you will need to force sync users from Active Directory to make sure custom attributes get populated for all your existing or new users.</p>
+
+<h3 id="3-️-configure-okta-for-federation">3. ⚙️ Configure Okta for federation</h3>
+
+<p>####Configure 3rd party IDP</p>
+
+<ol>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">Security</code> -&gt; <code class="language-plaintext highlighter-rouge">Identity Providers</code> -&gt; <code class="language-plaintext highlighter-rouge">Add Identity Provider</code> -&gt; <code class="language-plaintext highlighter-rouge">Add SAML 2.0 IDP</code>
+  <img src="/docs-source/assets/okta/idp.png" alt="" /></li>
+  <li>Let’s configure the following options.
+    <ul>
+      <li><strong>Name</strong> - assign a name to your IDP, for example <code class="language-plaintext highlighter-rouge">idemeum SAML</code></li>
+      <li><strong>IDP username</strong> - create custom string for this attribute
+        <pre><code class="language-PowerShell">String.toLowerCase(idpuser.firstName) + '_' + String.toLowerCase(idpuser.lastName) + '_' + idpuser.email
+</code></pre>
+      </li>
+      <li><strong>Match against</strong> - choose the display name of the custom attribute your created in the previous section.</li>
+      <li><strong>Account Link Policy</strong> - choose <code class="language-plaintext highlighter-rouge">Automatic</code></li>
+      <li><strong>Account Link Restriction</strong> - choose <code class="language-plaintext highlighter-rouge">None</code></li>
+      <li><strong>If match not found</strong> - choose <code class="language-plaintext highlighter-rouge">Redirect to Okta sign-in page</code></li>
+      <li><strong>IDP issuer URI</strong> - enter the URI that we shared with you. You will always have that available in your idemeum metadata file.</li>
+      <li><strong>IdP Single Sign-On URL</strong> - enter the URL that we shared with you. You will always have that available in your idemeum metadata file.</li>
+      <li><strong>IdP Signature Certificate</strong> - enter the certificate that we shared with you. You will always have that available in your idemeum metadata file.</li>
+      <li><strong>Request Binding</strong> - make sure you have <code class="language-plaintext highlighter-rouge">HTTP POST</code> selected.</li>
+    </ul>
+
+    <p>You can leave other parameters with default settings.</p>
+  </li>
+  <li>Save your identity provider configuration.</li>
+  <li>Return to <code class="language-plaintext highlighter-rouge">Identity Providers</code> section, expand the details of the identity provider you just created by clicking on the arrow next to IDP name, download metadata file and share with our <strong><a href="mailto:support@idemeum.com">support team</a></strong>. We will need this information to establish trust between your Okta tenant and idemeum.
+  <img src="/docs-source/assets/okta/metadata.png" alt="" /></li>
+</ol>
+
+<p>At this point you created identity provider in Okta to federate all authentication requests with idemeum. As a next step you need to apply this identity provider in Okta Routing Rules.</p>
+
+<h4 id="configure-routing-rule">Configure routing rule</h4>
+
+<ol>
+  <li>
+    <p>Navigate to <code class="language-plaintext highlighter-rouge">Security</code> -&gt; <code class="language-plaintext highlighter-rouge">Identity Providers</code> -&gt; <code class="language-plaintext highlighter-rouge">Routing Rules</code>. In this case we are going to create a new routing rule for passwordless authentication.
+  <img src="/docs-source/assets/okta/rule.png" alt="" /></p>
+
+    <p>As you can see we are keeping default configuration, but we are using our <code class="language-plaintext highlighter-rouge">idemeum SAML</code> identity provider for authentication.</p>
+
+    <p>!!! Warning “Warning”
+     Once you enable a routing rule, all authentication requests will be redirected to idemeum. If for any reason the idemeum authentication does not work, and you need to log into Okta admin account with username and password, you can always use the backdoor entry that bypasses routing rules. You can access it by using the following link <code class="language-plaintext highlighter-rouge">https://&lt;your Okta tenant&gt;/login/default</code></p>
+
+    <p>!!! tip “Tip”
+     In this case we enabled idemeum authentication for all users in Okta. If you want to configure a small group of users to try out idemeum, you can always create a special group, put your test users in that group, and assign routing rule only to this group. To do that you can use <code class="language-plaintext highlighter-rouge">User matches</code> configuration in the routing rule set up.</p>
+  </li>
+  <li>
+    <p>It is also recommended that you customize Sign-Out page when routing rule is enabled with idemeum. To do that, navigate to <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Customization</code>, and click <code class="language-plaintext highlighter-rouge">Edit</code> in the <code class="language-plaintext highlighter-rouge">Sign-Out Page</code> section. Choose <code class="language-plaintext highlighter-rouge">Use a custom sign-out page</code> and enter any page, for example <code class="language-plaintext highlighter-rouge">https://okta.com</code>. Click <code class="language-plaintext highlighter-rouge">Save</code>.
+  <img src="/docs-source/assets/okta/customize.png" alt="" /></p>
+  </li>
+</ol>
+
+<h3 id="4--test-user-sign-in">4. 🧪 Test user sign-in</h3>
+
+<p>Once you are done with configuration you can quickly test the user sign-in flow.</p>
+
+<ol>
+  <li>
+    <p>Open incognito browser window and navigate to your Okta tenant URL. Once you do that you will be redirected to idemeum for login. You will see the QR code that you will need to scan with the idemeum application.
+  <img src="/docs-source/assets/okta/signin.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Once you scan the QR code with idemeum application and approve the sign in, you will be redirected to Okta application catalog.
+  <img src="/docs-source/assets/okta/catalog.png" alt="" /></p>
+  </li>
+</ol>
+
+<p>🎉 <strong>Congratulations!</strong> You have successfully integrated idemeum and protected your Okta deployment with passwordless multi-factor authentication.</p>
+
 
         </div>
         </div>
