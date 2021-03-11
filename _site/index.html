@@ -80,73 +80,10 @@
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
               
                 
-                  <li class="nav-item dropdown">
-                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
-                      <span class="nav-link-inner--text">For enterprises</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      
-                      <a class="dropdown-item" href="/mfa">
-                        <i class="ni fa fa-key text-primary"></i>
-                        Verified Passwordless MFA
-                      </a>
-                      
-                      <a class="dropdown-item" href="/deployment">
-                        <i class="ni fa fa-briefcase text-success"></i>
-                        Passwordless Device Deployment
-                      </a>
-                      
-                    </div>
-                  </li>
-                
-              
-                
-                  <li class="nav-item dropdown">
-                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
-                      <span class="nav-link-inner--text">Resources</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      
-                      <a class="dropdown-item" href="/blog/">
-                        <i class="ni ni ni-books text-warning"></i>
-                        Blog
-                      </a>
-                      
-                      <a class="dropdown-item" href="/videos">
-                        <i class="ni ni ni-tv-2 text-info"></i>
-                        Videos
-                      </a>
-                      
-                    </div>
-                  </li>
-                
-              
-                
                   <li class="nav-item">
-                    <a href="/docs/" class="nav-link">
-                      <span class="nav-link-inner--text">Docs</span>
+                    <a href="/contact" class="nav-link">
+                      <span class="nav-link-inner--text">Contact us</span>
                     </a>
-                  </li>
-                
-              
-                
-                  <li class="nav-item dropdown">
-                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
-                      <span class="nav-link-inner--text">About us</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      
-                      <a class="dropdown-item" href="/blog/about-idemeum">
-                        <i class="ni ni ni-spaceship text-success"></i>
-                        About idemeum
-                      </a>
-                      
-                      <a class="dropdown-item" href="/contact">
-                        <i class="ni fa fa-envelope text-warning"></i>
-                        Contact us
-                      </a>
-                      
-                    </div>
                   </li>
                 
               
@@ -159,46 +96,38 @@
   
 
   
-    <header class="header bg-primary page-header-small">
-  <div style="min-height: 100vh; max-height: 999px; padding: 0; align-items: center; display: flex; overflow: hidden; box-sizing: border-box;">
-    <div class="container" style="padding-top: 80px">
-      <div class="row align-items-center text-left">
-        <div class="col-lg-6 col-12">
-          <h6 class="text-uppercase" style="color: #B1C9F9;">idemeum</h6>
-          <h3 class="display-3" style="color: #FFFFFF;">We make digital identity simple, secure, and private.</h3>
-          <div class="row row-input mt-3 mb-4">
-            <div class="col-sm-12 col-12">
-              <a href="/contact"><button type="submit" class="btn btn-success">Request demo</button></a>
-              <!-- Button for modal -->
-              <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-video">Watch video</button>
-              <!-- Modal -->
-              <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-                <div class="modal-dialog modal-success modal-dialog-centered modal-lg" role="document">
-                  <div class="modal-content bg-gradient-success">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modal-title-notification">Welcome to idemeum!</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <!-- Video explainer -->
-                      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe id="video" src='https://www.youtube.com/embed/RGUxA5GRVQg' frameborder='0' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                      <!-- ENd of video -->
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <script src="/assets/js/typeit.min.js"></script>
+
+<header class="header-2 skew-separator">
+  <div class="page-header bg-primary" >
+    <div class="page-header-image" style="background-image: url('/assets/img/home-background/component11.png')"></div>
+    <div class="container pt-200">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+
+          <p id="myElement" class=" text-white mb-4" style="letter-spacing: 0.2em; font-size: 1.6275rem;"></p>
+
+          <script>
+            new TypeIt("#myElement", {
+              speed: 100,
+              startDelay: 900,
+              loop: true
+              })
+                .type("Login with ", {delay: 200})
+                .type("<strong><i>one-click</i></strong>", {delay: 1500})
+                .delete(9, {speed: 150, delay: 200} )
+                .type("<strong><i>biometrics</i></strong>",{delay: 1500})
+                .delete(10, {speed: 150, delay: 200})
+                .type("<strong><i>mobile app</i></strong.",{delay: 1500})
+                .go()
+          </script>
+
+          <h2 class="display-2 text-white">All-in-one <mark style="color: #FFC463; background-color: #3E79F1">passwordless</mark> platform</h2>
         </div>
-        <div class="col-lg-6 col-12 pl-0">
-          <div class="image container">
-          <img src="/assets/img/home-background/home-background.png" width="100%">
-          </div>
+      </div>
+      <div class="row">
+        <div class="floating-box">
+
         </div>
       </div>
     </div>
@@ -214,202 +143,7 @@
 
 
     
-      <!-- What is idemeum intro -->
-<div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 mx-auto justify-content-center d-flex flex-column">
-        <h6 class="text-uppercase">What is idemeum?</h6>
-        <h3 class="display-3">idemeum is your digital identity</h3>
-        <p class="lead">idemeum turns your mobile device into personal universal digital identity. It eliminates passwords, protects you against identity fraud, and enables 100% privacy.</p>
-      </div>
-      <div class="col-lg-7 mx-auto">
-        <div class="image-container">
-          <img src="./assets/img/landing/phone-intro.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h6 class="text-uppercase">How does it work?</h6>
-        <h3 class="display-3">We do things differently</h3>
-        <p class='lead'>We are passionate about making digital identity radically better. Meet Decentralzied, Verified, Mobile Identity Platform.</p>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card bg-gradient-success">
-          <div class="card-body">
-            <h6 class="category text-white"><i class="fa fa-arrows-alt"></i></h6>
-            <h4 class="card-title text-white">Decentralized</h4>
-            <p class="card-description text-white">All user information is stored safely and securely on users' mobile devices. We store zero PII information in our backend.</p>
-            <div class="card-footer">
-              <div class="author">
-                <span>idemeum is private by design.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card bg-gradient-warning">
-          <div class="card-body">
-            <h6 class="category text-white"><i class="fa fa-id-card-o"></i></h6>
-            <h4 class="card-title text-white">Verified</h4>
-            <p class="card-description text-white">When users create their identity, we remotely verify all information, such as email address, phone number, and ID document.</p>
-            <div class="card-footer">
-              <div class="author">
-                <span>We reduce identity fraud and increase online trust. </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card bg-gradient-info">
-          <div class="card-body">
-            <h6 class="category text-white"><i class="fa fa-phone-square"></i></h6>
-            <h4 class="card-title text-white">Mobile</h4>
-            <p class="card-description text-white">Mobile device replaces passwords and becomes universal digital identity. To access resources users leverage cryptography and biometric sensors on their devices.</p>
-            <div class="card-footer">
-              <div class="author">
-                <span>We simplify user experience.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Statistics information -->
-<div class="section bg-primary">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <h6 class="text-uppercase text-neutral">Change is needed now</h6>
-        <h3 class="display-3 text-neutral">Most data breaches are caused by digital identity problems</h3>
-        <p class="text-neutral">Cyberattacks aren’t slowing down, and it’s worth noting that many attacks have been successful without the use of advanced technology. All it takes is one compromised credential or one legacy application to cause a data breach.
-        </p>
-    </div>
-  </div>
-    <div class="row">
-      <div class="col-lg-6 col-12 bg-neutral justify-content-center flex-column d-flex">
-        <h4 class="text-default mb-4 mt-5 ml-4 mr-4">Over 80% of hacking breaches involve brute force or the use of lost or stolen credentials.</h4>
-        <p class="text-default mb-5 ml-4 mr-4" style="font-size: 1rem;"> - <a class="link-default" target="_blank" href="https://enterprise.verizon.com/resources/reports/dbir/">Verizon 2020 DBIR</a></p>
-      </div>
-      <div class="col-lg-6 col-12 bg-default justify-content-center flex-column d-flex">
-        <h4 class="text-neutral mb-4 mt-5 ml-4 mr-4"> Up to 73% of users duplicate their passwords in both their personal and work accounts.</h4>
-        <p class="text-neutral mb-5 ml-4 mr-4" style="font-size: 1rem;"> - <a class="link-white" target="_blank" href="https://securityboulevard.com/2020/04/8-scary-statistics-about-the-password-reuse-problem/">Security Boulevard</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- How can you use idemeum -->
-<div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <h6 class="text-uppercase">How does idemeum help?</h6>
-        <h3 class="display-3">Enterprise identity use cases</h3>
-        <p>Explore how idemeum platform can help your business to secure digital identity, reduce fraud, and enable cross-platform experience that your users will love.
-      </div>
-    </div>
-  </div>
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-lg-6 d-flex justify-content-center flex-column">
-        <h6 class="text-uppercase">01</h6>
-        <h3 class="display-4">Verified passwordless MFA</h3>
-        <p>At idemeum we re-imagined how passwordeless MFA shall be done. We removed major pain points from the equation. No lengthy and insecure enrollment, no user sync required, verified identity for every login and authenitcation, and cross-platform experience your users will love.
-        </p>
-        <a href="/mfa">
-          <button type="submit" class="btn btn-outline-success">Learn more</button>
-        </a>
-      </div>
-      <div class="col-lg-6">
-        <div class="image-container">
-          <img src="./assets/img/landing/mfa-overview.png" alt="Decentralized platform">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="container">
-    <div class="row" style="flex-wrap: wrap-reverse;">
-      <div class="col-lg-6">
-        <div class="image-container">
-          <img src="./assets/img/landing/onboarding-overview.png" alt="Decentralized platform">
-        </div>
-      </div>
-      <div class="col-lg-6 d-flex justify-content-center flex-column">
-        <h6 class="text-uppercase">02</h6>
-        <h3 class="display-4">Passwordless device deployment</h3>
-        <p>idemeum enables passwordless device onboarding for your remote employees. idemeums integrates with ChromeOS, macOS, and Windows operating systems and major MDM vendors in order to deliver passwordless experience. idemeum covers automated and self-enrollement methods.
-        </p>
-        <a href="/deployment">
-          <button type="submit" class="btn btn-outline-primary">Learn more</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Contact us for demo -->
-<div id="main" class="container">
-<div class="section bg-primary">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 mx-auto text-center">
-          <h3 class=" display-3 text-neutral">See idemeum in action</h3>
-          <p class="text-neutral">Learn how idemeum is changing digital identity experience.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 mx-auto text-center">
-        <a href="/contact">
-          <button type="submit" class="btn btn-success">Request demo</button>
-        </a>
-          <button type="submit" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-video">Watch video</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Stop youtibe video in a div on click -->
-<script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
-<script>
-  $(document).ready(function(){
-      /* Get iframe src attribute value i.e. YouTube video url
-      and store it in a variable */
-      var url = $("#video").attr('src');
-      var autoplay = "?autoplay=1"
-      var res = url.concat(autoplay)
-
-      /* Assign empty url value to the iframe src attribute when
-      modal hide, which stop the video playing */
-      $("#modal-video").on('hide.bs.modal', function(){
-          $("#video").attr('src', '');
-      });
-
-      /* Assign the initially stored url back to the iframe src
-      attribute when modal is displayed again */
-      $("#modal-video").on('show.bs.modal', function(){
-          $("#video").attr('src', res);
-      });
-  });
-</script>
-
+      
 
       
 
@@ -419,7 +153,7 @@
   <div class="container">
     <div class="row row-grid align-items-center mb-2 mt-2">
       <div class="col-lg-6">
-        <h4 class="mb-0 font-weight-light">Digital identity for the online world.</h4>
+        <h4 class="mb-0 font-weight-light"></h4>
       </div>
       <div class="col-lg-6 text-lg-right">
         
@@ -430,12 +164,6 @@
     
 
     
-    <button onclick="location.href='https://youtube.com/channel/UCyPMNEEfPuRlcWVmGKGb6ug';" rel="nofollow" class="btn btn-icon-only btn-youtube rounded-circle" data-toggle="tooltip" data-original-title="Youtube">
-        <span class="btn-inner--icon">
-            <i class="fab fa-youtube" aria-hidden="true"></i>
-        </span>
-    </button>
-    
 
     
 
@@ -447,16 +175,6 @@
 
     
 
-    
-
-    
-
-    
-    <button onclick="location.href='https://www.linkedin.com/company/idemeum/';" rel="nofollow" class="btn btn-icon-only btn-linkedin rounded-circle" data-toggle="tooltip" data-original-title="Linkedin">
-        <span class="btn-inner--icon">
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
-        </span>
-    </button>
     
 
       </div>
@@ -473,23 +191,11 @@
         <ul class="nav nav-footer justify-content-end">
           
           
-
-          
-          
-          
-
-          
-          
-          
           <li class="nav-item">
-            <a href="/docs/" class="nav-link">
-              <span class="nav-link-inner--text">Docs</span>
+            <a href="/contact" class="nav-link">
+              <span class="nav-link-inner--text">Contact us</span>
             </a>
           </li>
-          
-          
-          
-
           
           
         </ul>
