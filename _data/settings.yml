@@ -59,6 +59,8 @@ menu_settings:
     #- title: About idemeum
       #url: /blog/about-idemeum
       #icon: ni ni-spaceship text-success
+    - title: Blog
+      url: "https://blog.idemeum.com"
     - title: Contact us
       url: /contact
       icon: fa fa-envelope text-warning
