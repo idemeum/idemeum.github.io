@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: idemeum digital identity
+  site_title: Passwordless identity platform
   favicon_image: "/assets/img/favicon/idemeum-favicon.png"
 
 header_settings:
@@ -8,7 +8,7 @@ header_settings:
   # Choose a color for your header [blue, dark, light].
   theme: blue
   # If the page has a featured image, it turns transparent if allow_transparent is set to "yes".
-  allow_transparent: "no"
+  allow_transparent: "yes"
 
 home_settings:
   # Choose a layout for your home page:
@@ -31,62 +31,63 @@ blog_settings:
   # 3. Add a color of the icon - text-primary, text-success, text-info, text-danger, text-warning and text-default all work!
 menu_settings:
   menu_items:
-  #- title: 'Pricing'
-    #url: /pricing
+  - title: Docs
+    url: https://docs.idemeum.com
+  - title: 'Pricing'
+    url: /pricing
   #- title: 'For enterprises'
     #submenu_items:
     #- title: Verified Passwordless MFA
       #url: /mfa
       #icon: fa fa-key text-primary
     #- title: Passwordless Device Deployment
-      #url: /deployment
-     # icon: fa fa-briefcase text-success
-  #- title: 'Resources'
-    #submenu_items:
-     #- title: Blog
-       #url: /blog/
-       #icon: ni ni-books text-warning
+     # url: /deployment
+      #icon: fa fa-briefcase text-success
+  - title: 'Resources'
+    submenu_items:
+     - title: Blog
+       url: https://blog.idemeum.com
+       icon: ni ni-books text-warning
+     - title: Live demo
+       url: https://jsdemo.idemeum.com
+       icon: ni ni-tv-2 text-success
      #- title: Videos
        #url: /videos
        #icon: ni ni-tv-2 text-info
     #- title: Submit product idea
       #url: 'https://roadmap.idemeum.com/roadmaps/5fb1f2eac80bbc00293063d0/public#ideas'
       #icon: ni-bulb-61 text-primary
-  #- title: Docs
-    #url: /docs/
-  #- title: 'About us'
-    #submenu_items:
-    #- title: About idemeum
-      #url: /blog/about-idemeum
-      #icon: ni ni-spaceship text-success
-    - title: Blog
-      url: "https://blog.idemeum.com"
+  - title: 'Company'
+    submenu_items:
+    - title: About idemeum
+      url: /about
+      icon: ni ni-spaceship text-success
     - title: Contact us
       url: /contact
       icon: fa fa-envelope text-warning
 
-#footer_settings:
-  #footer_tagline: Digital identity for the online world.
+footer_settings:
+  footer_tagline: Go passwordless with idemeum
 
 contact_settings:
-  form_action: 'https://formspree.io/f/mnqovleb'
+  form_action: 'https://formspree.io/f/mayanwpd'
   confirmation_url: '/thanks'
   email_subject: 'Contact submission FormSpree from idemeum website'
   send_button_text: 'Send Message'
 
 social_settings:
-  facebook_url: ''
-  twitter_url: ''
+  facebook_url: 'https://www.facebook.com/idemeum'
+  twitter_url: 'https://twitter.com/idemeum'
   instagram_url: ''
-  #youtube_url: 'https://youtube.com/channel/UCyPMNEEfPuRlcWVmGKGb6ug'
+  youtube_url: 'https://youtube.com/channel/UCyPMNEEfPuRlcWVmGKGb6ug'
   vimeo_url: ''
   pinterest_url: ''
   tumblr_url: ''
   dribbble_url: ''
   behance_url: ''
-  github_url: ''
+  github_url: 'https://github.com/idemeum'
   reddit_url: ''
-  #linkedin_url: 'https://www.linkedin.com/company/idemeum/'
+  linkedin_url: 'https://www.linkedin.com/company/idemeum/'
 
 authors:
   Nikolay:
