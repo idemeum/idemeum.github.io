@@ -53,7 +53,7 @@ featured_image: /assets/img/pricing/pricing.jpg
                   </div>
                 </li>
               </ul>
-              <a href="https://developer.idemeum.com" target="_blank"><button type="button" class="btn btn-primary mb-3">Start integrating</button></a>
+              <a href="https://developer.idemeum.com/devportal/index.html" target="_blank"><button type="button" class="btn btn-primary mb-3">Start integrating</button></a>
             </div>
           </div>
         </div>
