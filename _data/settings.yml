@@ -51,6 +51,9 @@ menu_settings:
      - title: Live demo
        url: https://jsdemo.idemeum.com
        icon: ni ni-tv-2 text-success
+     - title: Survey
+       icon: ni ni-tv-2 text-success
+       url: /survey
      #- title: Videos
        #url: /videos
        #icon: ni ni-tv-2 text-info
