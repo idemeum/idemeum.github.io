@@ -80,18 +80,28 @@
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
               
                 
-                  <li class="nav-item">
-                    <a href="https://docs.idemeum.com" class="nav-link">
-                      <span class="nav-link-inner--text">Docs</span>
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">For your customers</span>
                     </a>
-                  </li>
-                
-              
-                
-                  <li class="nav-item">
-                    <a href="/pricing" class="nav-link">
-                      <span class="nav-link-inner--text">Pricing</span>
-                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      
+                      <a class="dropdown-item" href="/forcustomers">
+                        <i class="ni ni ni-single-02 text-warning"></i>
+                        Passwordless app login
+                      </a>
+                      
+                      <a class="dropdown-item" href="https://jsdemo.idemeum.com">
+                        <i class="ni ni ni-tv-2 text-success"></i>
+                        App login demo
+                      </a>
+                      
+                      <a class="dropdown-item" href="/pricing">
+                        <i class="ni ni ni-money-coins text-primary"></i>
+                        Pricing
+                      </a>
+                      
+                    </div>
                   </li>
                 
               
@@ -107,14 +117,9 @@
                         Blog
                       </a>
                       
-                      <a class="dropdown-item" href="https://jsdemo.idemeum.com">
-                        <i class="ni ni ni-tv-2 text-success"></i>
-                        Live demo
-                      </a>
-                      
-                      <a class="dropdown-item" href="/survey">
-                        <i class="ni ni ni-tv-2 text-success"></i>
-                        Survey
+                      <a class="dropdown-item" href="https://docs.idemeum.com">
+                        <i class="ni ni ni-books text-primary"></i>
+                        Docs
                       </a>
                       
                     </div>
@@ -143,12 +148,6 @@
                 
               
 			  
- 			 <li class="nav-item">
- 			             <a href="https://developer.idemeum.com/devportal/index.html" class="btn btn-warning" target="_blank">
- 			               <i class="ni ni-basket d-lg-none"></i>
- 			               <span class="nav-link-inner--text">Try it</span>
- 			             </a>
- 			           </li>
 
             </ul>
           </div>
@@ -164,47 +163,6 @@
 
 
 <style>
-	@media only screen and (max-width:300px) {
-		
-		.ml15 {
-		  font-size: 2.5em;
-		}
-		
-		
-	}
-	
-    @media only screen and (min-width:300px) and (max-width:400px){
-		
-		.ml15 {
-		  font-size: 3em;
-		}
-		
-		
-	}
-
-	
-    @media only screen and (min-width:400px){
-		
-		.ml15 {
-		  font-size: 3.8em;
-		}
-		
-		
-	}
-
-		
-		.ml15 {
-		  font-weight: 800;
-		  text-transform: uppercase;
-		  letter-spacing: 0.2em;
-		}
-
-	
-
-	.ml15 .word {
-	  display: inline-block;
-	  line-height: 1em;
-	}
 	
 	.downArrow{
 		position: relative;
@@ -278,36 +236,28 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto text-center">
+			<h4 class="text-white mb-3" style="letter-spacing: 0.2em; font-size: 1.6275rem;">Passwordless future is here</h4>				
+			<h1 id="myElement" class="display-2 text-white mb-3"></h1>
 			
-		  <h1 class="ml15 text-white">
-		    <span class="word">Meet</span>
-		    <span class="word">idemeum</span>
-		  </h1>
+			           <script>
+			             new TypeIt("#myElement", {
+			               speed: 100,
+			               startDelay: 900,
+			               loop: true
+			               })
+			                 .type("Passwordless employee<br> ", {delay: 200})
+			                 .type("<strong style='color: #FFC463;'>Onboarding </strong>", {delay: 1500})
+			                 .delete(11, {speed: 150, delay: 200} )
+			                 .type("<strong style='color: #FFC463;'>Login </strong>",{delay: 1500})
+			                 .delete(6, {speed: 150, delay: 200})
+			                 .type("<strong style='color: #FFC463;'>Single Sign-On </strong.",{delay: 1500})
+						     .delete(15, {speed: 150, delay: 200})
+						     .type("<strong style='color: #FFC463;'>Multi-Factor Auth </strong.",{delay: 1500})
+			                 .go()
+			           </script>
 
-		  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-		  
-		  
-		  <script>
-			  
-			anime.timeline({loop: false})
-			  .add({
-			    targets: '.ml15 .word',
-			    scale: [14,1],
-			    opacity: [0,1],
-			    easing: "easeOutCirc",
-			    duration: 800,
-			    delay: (el, i) => 1000 * i
-			  })
-		  </script>
-		  
+		  <a href="https://tally.so/r/w2aQL3" target="_blank"><button type="button" class="btn btn-white mt-1">Request access</button></a>			
 
-          <h2 class="display-4" style="color: #FFC463;">Passwordless and private identity platform</h2>
-		  
-		  <p class="lead text-white">Basically, we give you a drop in SDK to make your app passwordless in minutes with one-click, biometric, or QR-code login flows</p>
-		  
-		  <a href="https://developer.idemeum.com/devportal/index.html" target="_blank"><button type="button" class="btn btn-white mt-1">Get started free</button></a>
-		  <a href="https://jsdemo.idemeum.com" target="_blank"><button type="button" class="btn btn-outline-white mt-1">Live demo</button></a>
-		  
 		  
 		  <div class="downArrow bounce">
 		    <svg enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M24.285,11.284L16,19.571l-8.285-8.288c-0.395-0.395-1.034-0.395-1.429,0  c-0.394,0.395-0.394,1.035,0,1.43l8.999,9.002l0,0l0,0c0.394,0.395,1.034,0.395,1.428,0l8.999-9.002  c0.394-0.395,0.394-1.036,0-1.431C25.319,10.889,24.679,10.889,24.285,11.284z" fill="#FFFFFF" id="Expand_More"/><g/><g/><g/><g/><g/><g/></svg>
@@ -333,215 +283,22 @@
       <link href="/assets/styles/prism.css" rel="stylesheet" />
 <script src="/assets/js/prism.js"></script>
 
-<!-- How is idemeum different? -->
-<div class="section">
+<!-- idemeum definition -->
+<div class="section mb-7 mt-7">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <h6 class="text-uppercase">How is idemeum different?</h6>
-        <h3 class="display-3">The only passwordless, private, and user-centric platform</h3>
-      </div>
+      <div class="col-lg-12 mx-auto">
+        <h3 class="display-1 mb-3">idemeum is a passwordless identity platform to secure your employees and customers.</h3>
+        <h4>Simply, we make your passwords disappear.</h4>
+        </p>
+	  </div>
     </div>
-    <div class="row mt-4">
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card bg-gradient-success">
-          <div class="card-body">
-            <h4 class="card-title text-white">Passwordless</h4>
-            <p class="card-description text-white">With one SDK you choose how you want to login your users: with one-click, biometrics, or QR-codes. No passwords involved.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card bg-gradient-info">
-          <div class="card-body">
-            <h4 class="card-title text-white">Private</h4>
-            <p class="card-description text-white">With client-side encryption we empower your users to own and control their data. Your users' data is none of our business. We make it private.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card bg-gradient-default">
-          <div class="card-body">
-            <h4 class="card-title text-white">Single Sign-on</h4>
-            <p class="card-description text-white">With Single Sign-On across domains and apps your users will love the experience. They won't even notice it.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
   </div>
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Login videos -->
-<div class="section">
-  <div class="container">
-    <div class="row">
-		<div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
-			<h6 class="text-uppercase">All-in-one SDK</h6>
-			<h3 class="display-3">Remove password friction for your users</h3>
-			<p class="lead">All you need is idemeum SDK and a couple of hours of your time. You can easily implement one-click, biometric, or QR code login flow for your desktop or mobile app.</p>
-			
-	        <a href="https://docs.idemeum.com/overview/oneclick/" target="_blank">
-	          <button type="submit" class="btn btn-outline-primary">About login flows</button>
-	        </a>
-		</div>
-		
-		<div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
-
-<div class="nav-wrapper">
-    <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">One-click</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Biometric</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">QR-code</a>
-        </li>
-    </ul>
-</div>
-<div class="card shadow">
-    <div class="card-body">
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-				
-				
-				
-<video width="100%" controls>
-  <source src="/assets/videos/one-click-animation.mp4" type="video/mp4">
-  <source type="video/webm" src="/assets/videos/one-click-animation.webm" />
-Your browser does not support the video tag.
-</video>
-            
-			
-			
-			
-			
-			</div>
-            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-				
-				
-				
-				
-<video width="100%" controls>
-  <source src="/assets/videos/biometric-animation.mp4" type="video/mp4">
-  <source type="video/webm" src="/assets/videos/biometric-animation.webm" />
-Your browser does not support the video tag.
-</video>
-
-</div>
-            
-			
-			
-			
-            <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
-				
-				
-				
-				
-<video width="100%" controls>
-  <source src="/assets/videos/qrcode-animation.mp4" type="video/mp4">
-  <source type="video/webm" src="/assets/videos/qrcode-animation.webm" />
-Your browser does not support the video tag.
-</video>
-
-</div>
-            
-				
-				
-				
-            </div>
-        </div>
-    </div>
-</div>
-
-<div>
-
-    </div>
-  </div>
-</div>
-</div>
-
-
-<!-- Code examples -->
-<div class="section">
-  <div class="container">
-    <div class="row" style="flex-wrap: wrap-reverse;">
-      <div class="col-lg-6 mx-auto">
-
-<pre><code class="language-javascript">var idemeum = new IdemeumManager(
-(clientId = "YOUR_CLIENT_ID")
-);
-
-function isUserLoggedIn() {
-    idemeum.isLoggedIn().then(
-        function(data) {
-            renderUserClaims();
-        },
-        function(errorData) {
-            html = `<button id="btn-login" onclick="login()">Log in</button>`;
-            document.getElementById("initial").innerHTML = html;
-        }
-    );
-}</code></pre>
-			
-			
-			
-			
-			
-
-      </div>
-      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
-        <h6 class="text-uppercase">How to integrate</h6>
-        <h3 class="display-3">Plug and play experience</h3>
-        <p class="lead">With just a few lines of code you can leverage idemeum SDK to implement passwordless for your mobile or desktop app. We make it simple.</p>
-        <a href="https://docs.idemeum.com/reference/sdkoverview/" target="_blank">
-          <button type="submit" class="btn btn-outline-primary">Start integrating</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- About security -->
-<div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
-        <h6 class="text-uppercase">About infrastructure</h6>
-        <h3 class="display-3">Secure and private by design</h3>
-        <p class="lead">With Privacy-aware Identity Architecture we make user data privacy and security part of our DNA. We engineered idemeum to combine best of both worlds - provide Single Sing-On yet enable digital identity privacy and modern security controls.</p>
-        <a href="https://docs.idemeum.com/overview/security/" target="_blank">
-          <button type="submit" class="btn btn-outline-primary">Learn more</button>
-        </a>
-      </div>
-      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
-          <div class="image-container">
-            <img src="./assets/img/architecture.png" alt="idemeum architecture">
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Statistics information -->
+<!-- Why passwordless -->
 <div class="section bg-secondary">
   <div class="container">
     <div class="row">
@@ -564,6 +321,198 @@ function isUserLoggedIn() {
     </div>
   </div>
 </div>
+
+
+<!-- everything we can do -->
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+		<h6 class="text-uppercase">Take a look at everything idemeum has to offer</h6>
+        <h3 class="display-3 mb-3">Passwordless is so much more than just employee login</h4>
+		
+		
+		<table class="table table-responsive-lg">
+		    <thead>
+		        <tr>
+		            <th>Onboarding</th>
+		            <th>Login</th>
+		            <th>Access</th>
+		            <th>Offboarding</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>
+						<button type="button" class="btn btn-sm btn-primary btn-tooltip mb-2 btn-round" data-toggle="tooltip" data-placement="top" title="Users create digital identity on a mobile device that is decentralized and private. All identity data is securely stored on a mobile device. Users control and own their identity." data-container="body" data-animation="true">Decentralized Mobile Identity</button><br>
+						<button type="button" class="btn btn-sm btn-primary btn-tooltip mb-2 btn-round" data-toggle="tooltip" data-placement="top" title="Employees onboard with a mobile app without admin involvement. No need to generate and share any tokens, passwords, or links." data-container="body" data-animation="true">Passwordless onboarding</button><br>
+						<button type="button" class="btn btn-sm btn-primary btn-tooltip mb-2 btn-round" data-toggle="tooltip" data-placement="top" title="Secure remote onboarding and provide access to employees who verify their identity with ID document." data-container="body" data-animation="true">ID verification</button><br>
+						<button type="button" class="btn btn-sm btn-primary btn-tooltip mb-2 btn-round" data-toggle="tooltip" data-placement="top" title="We integrate with your HR system as a master source of user data." data-container="body" data-animation="true">HR system as master</button>
+					
+					</td>
+		            <td>
+						<button type="button" class="btn btn-sm btn-success btn-tooltip mb-2 btn-round" data-toggle="tooltip" data-placement="top" title="Employees login with mobile devices using biometrics and device certificates. No need to deploy any additional MFA solutions." data-container="body" data-animation="true">Passwordless MFA</button><br>
+						<button type="button" class="btn btn-sm btn-success btn-tooltip mb-2 btn-round" data-toggle="tooltip" data-placement="top" title="Give employees 1-tap access to their apps, with Single Sign-On." data-container="body" data-animation="true">Single Sign-On</button>
+					
+		            <td>
+						<button type="button" class="btn btn-sm btn-default btn-tooltip mb-2 btn-round" data-toggle="tooltip" data-placement="top" title="Automatically add new employees to every app they need, based on role, department, and more so they're ready to work day one." data-container="body" data-animation="true">Automated app provisioning</button>
+		            </td>
+		            <td>
+						<button type="button" class="btn btn-sm btn-secondary btn-tooltip mb-2 btn-round" data-toggle="tooltip" data-placement="top" title="Disable employees' apps when they leave" data-container="body" data-animation="true">Automated de-provisioning</button><br>
+
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+	  </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- Decentralized identity -->
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">Decentralized mobile identity</h6>
+        <h3 class="display-3">Everything starts with a private mobile identity</h3>
+        <p>Every employee spends 2 minutes creating digital identity on a mobile phone. Identity data is securely stored on a mobile device and is not persisted in idemeum cloud.</p>
+        <a href="https://blog.idemeum.com/idemeum-app-beta-launch/" target="_blank">
+			
+		  <button class="btn btn-icon btn-2 btn-outline-primary" type="button">
+			<span class="btn-inner--text">Download idemeum</span>
+		  </button>
+		  
+        </a>
+		
+      </div>
+      <div class="col-lg-6 mx-auto" style="text-align: center">
+          <div class="image-container">
+            <img src="./assets/img/mobile_identity.png" alt="Mobile identity">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Code examples -->
+<div class="section">
+  <div class="container">
+    <div class="row" style="flex-wrap: wrap-reverse;">
+      <div class="col-lg-6 mx-auto" style="text-align: center">		
+        <div class="image-container">
+          <img src="./assets/img/macbook.png" alt="Passwordless onboarding">
+        </div>	
+      </div>
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">Passwordless onboarding</h6>
+        <h3 class="display-3">Onboard employees without password pain</h3>
+        <p class="lead">Forget about sending passwords, tokens, or magic links. Employees self onboard by simply scanning idemeum QR code.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ID verification -->
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">ID verification</h6>
+        <h3 class="display-3">Secure remote onboarding with ID verification</h3>
+        <p>Provide access to employees who verify their identity with government issued ID document.</p>		
+      </div>
+      <div class="col-lg-6 mx-auto" style="text-align: center">
+          <div class="image-container">
+            <img src="./assets/img/idverify.png" alt="ID verification" style="width: 250px">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- HR system integration -->
+<div class="section">
+  <div class="container">
+    <div class="row" style="flex-wrap: wrap-reverse;">
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column" style="text-align: center">		
+        <div class="image-container">
+          <img src="./assets/img/hrms.png" alt="HRMS integration">
+        </div>	
+      </div>
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">HRMS as as master</h6>
+        <h3 class="display-3">HR system as a source of user data</h3>
+        <p class="lead">idemeum integrates with most popular HR systems to perform HR driven provisioning. Any changes made to user information within an HR system are automatically communicated to idemeum and synced across applications.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- provisioning -->
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">User account provisioning</h6>
+        <h3 class="display-3">Automatically set up and disable apps when employees join or leave</h3>
+        <p>Automatically add new employees to every app they need, or revoke employee access during off-boarding. idemeum detects changes in the HR system and does all the work so you do not need to turn the accounts off.</p>		
+      </div>
+      <div class="col-lg-6 mx-auto" style="text-align: center">
+          <div class="image-container">
+            <img src="./assets/img/provision.png" alt="Provisioning">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Single Sign-On -->
+<div class="section bg-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h6 class="text-uppercase">Passwordless Single Sign-On</h6>
+        <h3 class="display-3">Offer employees 1-tap access to their apps with Single Sign-On</h3>
+        <p>idemeum SSO makes your whole company more productive and secure, by giving employees centralized and secure 1-click access to all their apps—right from their user portal. And most importantly idemeum SSO is passwordless. Every login is approved from a mobile device with biometrics.
+        </p>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-lg-10 mx-auto" style="text-align: center">
+          <div class="image-container">
+            <img src="./assets/img/catalog_apps.png" alt="ID verification">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- closing -->
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto text-center mt-7 mb-5">
+        <h3 class="display-1">idemeum, because passwordless first.</h3>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 
       
@@ -649,9 +598,7 @@ function isUserLoggedIn() {
                     <div class="column">
                       <h4 class="mt-3">Product</h4>
                       <ul>
-                        <li><a href="https://docs.idemeum.com/overview/oneclick/"><span>One-click</span></a></li>
-                        <li><a href="https://docs.idemeum.com/overview/biometric/"><span>Biometric</span></a></li>
-                        <li><a href="https://docs.idemeum.com/overview/loginapp/"><span>QR-code</span></a></li>
+                        <li><a href="https://idemeum.com/forcustomers/"><span>App login</span></a></li>
                       </ul>
                     </div>
                   </div>
@@ -661,7 +608,7 @@ function isUserLoggedIn() {
                       <ul>
                         <li class="nav-item">
                           <a href="https://jsdemo.idemeum.com">
-                            Live demo
+                            App login demo
                           </a>
                         </li>
                         <li class="nav-item">

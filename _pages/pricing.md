@@ -1,6 +1,6 @@
 ---
 title: Start using idemeum for free
-subtitle: Free forever for up to 1500 monthly active users
+subtitle: Free forever for up to 500 monthly active users
 featured_image: /assets/img/pricing/pricing.jpg
 ---
 
@@ -14,7 +14,7 @@ featured_image: /assets/img/pricing/pricing.jpg
             </div>
             <div class="card-body px-lg-6">
               <div class="display-2 text-white">$0</div>
-              <span class=" text-muted">for 1500 MAU</span>
+              <span class=" text-muted">for 500 MAU</span>
               <ul class="list-unstyled my-4">
                 <li>
                   <div class="d-flex align-items-center">

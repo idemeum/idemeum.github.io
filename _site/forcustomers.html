@@ -7,21 +7,21 @@
 
   <!-- Page Info -->
   <link rel="shortcut icon" href="/assets/img/favicon/idemeum-favicon.png">
-  <title>Why did we make idemeum decentralized? – Passwordless identity platform</title>
-  <meta name="description" content="idemeum is a decentralized identity platform that gives people the power to control their digital identity, improves end user experience, and helps enterprises strengthen data privacy.">
+  <title>Passwordless login for your mobile or desktop app – Passwordless identity platform</title>
+  <meta name="description" content="">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title"
-    content="Why did we make idemeum decentralized? – Passwordless identity platform">
-  <meta name="twitter:description" content="idemeum is a decentralized identity platform that gives people the power to control their digital identity, improves end user experience, and helps enterprises strengthen data privacy.">
-  <meta name="twitter:image:src" content="http://localhost:4000/assets/img/blogs/about-privacy/image-about-privacy.jpg">
+    content="Passwordless login for your mobile or desktop app – Passwordless identity platform">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image:src" content="http://localhost:4000/assets/img/mfa/mfa.png">
 
   <!-- Facebook OpenGraph -->
   <meta property="og:title"
-    content="Why did we make idemeum decentralized? – Passwordless identity platform" />
-  <meta property="og:description" content="idemeum is a decentralized identity platform that gives people the power to control their digital identity, improves end user experience, and helps enterprises strengthen data privacy." />
-  <meta property="og:image" content="http://localhost:4000/assets/img/blogs/about-privacy/image-about-privacy.jpg" />
+    content="Passwordless login for your mobile or desktop app – Passwordless identity platform" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="http://localhost:4000/assets/img/mfa/mfa.png" />
 
   <!--  Fonts and icons -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -159,111 +159,227 @@
   
 
   
-  <div class="page-header header-filter" style="max-height: 1500px ;">
-    <div class="page-header-image" style="background-image: url(/assets/img/blogs/about-privacy/image-about-privacy.jpg);"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 mx-auto text-center pt-8">
-          <h2 class="display-2 text-white">Why did we make idemeum decentralized?</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="floating-box bg-default">
-          <div class="box text-center">
-            <div class="icon icon-shape bg-primary icon-xl rounded-circle text-white">
-              <i class="ni ni-book-bookmark"></i>
-            </div>
-          </div>
-          <blockquote class="blockquote text-center mt-2">
-            <p class="mb-0 text-white">Posted 05 January 2021</p>
-          </blockquote>
-          <h2 class="lead text-white pl-5 pr-5 pb-5 text-left">idemeum is a decentralized identity platform that gives people the power to control their digital identity, improves end user experience, and helps enterprises strengthen data privacy.</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  
 
   <div class="wrapper page">
     
+    <!-- Is not a blog post or blog archive or contact page -->
+    
+    <!-- Is a page with a banner -->
+    <div class="page-header page-header-small header-filter">
+      <div class="page-header-image card-background"
+        style="background-image: url(/assets/img/mfa/mfa.png);"></div>
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-2 text-white">Passwordless login for your mobile or desktop app</h2>
+            <h2 class="lead text-white pl-5 pr-5 pb-3 text-center">Onboard, authenticate, and engage your users with idemeum SDK.<br><a href="https://developer.idemeum.com/devportal/index.html" class="btn btn-white mt-2" target="_blank">Try it free</a><a href="https://jsdemo.idemeum.com" class="btn btn-outline-white mt-2" target="_blank">Live demo</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
 
 
     
-        <div id="main" class="container">
-          
-<section class="section">
+      <link href="/assets/styles/prism.css" rel="stylesheet" />
+
+<script src="/assets/js/prism.js"></script>
+
+<!-- How is idemeum different? -->
+<div class="section">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 ml-auto mr-auto">
-        <h6 class="category">05 January 2021</h6>
-        <!-- <h3 class="title">Why did we make idemeum decentralized?</h3> -->
-        <article class="blog-post">
-          <h2 id="how-is-digital-identity-evolving">How is digital identity evolving?</h2>
-
-<p>Today digital identity is typically managed at enterprise or application level. What that means is that when you sign up for a service or get hired by a company, your digital identity is created for you, and it is stored at a centralized database owned by a service provider. To access service or corporate resources, we have to prove our digital identity by presenting username / password combination.</p>
-
-<p><img src="/assets/img/blogs/about-privacy/centralized-identity-model.png" alt="" /></p>
-
-<p>This <strong>centralized model</strong> is not convenient for us users - we have to constantly create accounts and memorize numerous password combinations. Moreover, these central databases become honeypots for attackers, who target these databases with persistence and advanced tools in order to steal our personal information and monetize it by committing identity fraud or selling it on a dark web.</p>
-
-<blockquote class="blockquote">“Today’s digital identity frameworks are centralized, suffer from a lack of trust, aren’t portable, and don’t give consumers control.”
-<footer class="blockquote-footer"><a href="https://www.forrester.com/report/New+Tech+Decentralized+Digital+Identity+DDID+Q1+2020/-/E-RES147115" target="_blank">Forrester research</a></footer>
-</blockquote>
-
-<p>At the same time centralized model is not desirable for service providers - credentials get compromised and lead to costly cyber breaches, or they simply get forgotten which leads to password resets and costly support calls.</p>
-
-<p>As a result, industry moved to a <strong>federated</strong> identity model where a single party becomes in charge of creating and managing digital identities for a group of different enterprises and services. The most used federation providers are Google and Facebook, where you can use your social network account to log in and sign up for other services.</p>
-
-<p>Federated model provides better user experience, however it has similar drawbacks. Federated model creates massive pools of data that can be monetized and also serve as a central point of failure. With federated model users have no control over their digital identity since they do not know what data is exactly collected and what it is used for. A recent example is the <a href="https://en.wikipedia.org/wiki/Facebook–Cambridge_Analytica_data_scandal"><strong>Cambridge Analytica scandal</strong></a> where Facebook gave unfettered and unauthorized access to personally identifiable information (PII) of more than 87 million Facebook users without their consent to the data firm Cambridge Analytica.</p>
-
-<h2 id="we-made-idemeum-decentralized">We made idemeum decentralized</h2>
-
-<p>We built idemeum to be <strong>decentralized</strong> so that we can enable 100% user privacy. idemeum removes the need for a central trusted authority. Users store their digital identity on mobile devices and decide what and with who they want to share their personal information.</p>
-
-<p>Let’s look at how idemeum if different from centralized and federated models.</p>
-
-<ul>
-  <li><strong>Control</strong>: with idemeum you have full control of your digital identity.</li>
-  <li><strong>User experience</strong>: idemeum simplifies sign-in and sign-up experience. No more passwords to type, and no more lengthy forms to fill out - access the service with a click of a button.</li>
-  <li><strong>Security</strong>: security is way better with idemeum as users are no longer using passwords, and enterprises are no longer maintaining centralized honeypots of PII information.</li>
-  <li><strong>Fraud</strong>: idemeum reduces identity fraud as there are no more credentials and passwords to re-use.</li>
-  <li><strong>Portability</strong>: with idemeum your digital identity is portable. You can bring our identity to a new place of work, or use it when signing up for a new service. No need to constantly recreate your digital self.</li>
-</ul>
-
-<h2 id="how-does-idemeum-enable-100-privacy">How does idemeum enable 100% privacy?</h2>
-
-<p>The first principle of idemeum is “privacy by design”. We do not store any PII information in our backend. Let’s take a look at some high level technical information to understand how idemeum works.</p>
-
-<p>When you create your idemeum on a digital device, you are assigned a <a href="https://www.w3.org/TR/did-core/"><strong>Decentralized Identifier (DID)</strong></a> that uniquely represents your digital identity among others. You DID is a globally unique persistent identifier that does not require a centralized registration authority because it is generated and registered cryptographically.</p>
-
-<p><img src="/assets/img/blogs/about-privacy/decentralized-idemeum.png" alt="" /></p>
-
-<p>idemeum also generates an asymmetric cryptographic key pair that will be unique for your digital identity. Also known as <a href="https://en.wikipedia.org/wiki/Public-key_cryptography"><strong>public-key cryptography</strong></a> this style of cryptography uses a public key to encrypt data that can only be decrypted with a paired private key. Public key, which can be known to public, is stored in idemeum backend and is associated with your DID. Private key, which must be kept secret, is safely stored on your mobile device and is protected by hardware based security.</p>
-
-<p>idemeum uses asymmetric cryptography to authenticate your identity. When you log in to an online resource, idemeum backend sends your app a challenge with the request to sign it with your private key. By scanning your biometric with idemeum app you automatically unlock your private key, sign the requested challenge, and send it back to our backend. This way we can always know that you are who you claim to be.</p>
-
-<p>No passwords needed - instead we leverage the power of asymmetric cryptography and biometric based authentication.</p>
-
-<p><img src="/assets/img/blogs/about-privacy/authn.png" alt="" /></p>
-
-<p>When you create your idemeum profile and add identity claims such as phone number, email address, or ID document, all information is safely stored on your mobile device only. We not no store any of your personal information in our backend.</p>
-
-<div class="alert alert-primary" role="alert">
-  idemeum is a decentralized identity platform - we do not store any of your personal information in our cloud. We fundamentally believe in digital identity privacy, and we made idemeum to be private-by-design.
-</div>
-
-        </article>
+      <div class="col-lg-12">
+        <h6 class="text-uppercase">How is idemeum different?</h6>
+        <h3 class="display-3">The only passwordless, private, and user-centric platform</h3>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-gradient-success">
+          <div class="card-body">
+            <h4 class="card-title text-white">Passwordless</h4>
+            <p class="card-description text-white">With one SDK you choose how you want to login your users: with one-click, biometrics, or QR-codes. No passwords involved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-gradient-info">
+          <div class="card-body">
+            <h4 class="card-title text-white">Private</h4>
+            <p class="card-description text-white">With client-side encryption we empower your users to own and control their data. Your users' data is none of our business. We make it private.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-gradient-default">
+          <div class="card-body">
+            <h4 class="card-title text-white">Single Sign-on</h4>
+            <p class="card-description text-white">With Single Sign-On across domains and apps your users will love the experience. They won't even notice it.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
+<!-- Login videos -->
+<div class="section">
+  <div class="container">
+    <div class="row">
+		<div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+			<h6 class="text-uppercase">All-in-one SDK</h6>
+			<h3 class="display-3">Remove password friction for your users</h3>
+			<p class="lead">All you need is idemeum SDK and a couple of hours of your time. You can easily implement one-click, biometric, or QR code login flow for your desktop or mobile app.</p>
+			
+	        <a href="https://docs.idemeum.com/overview/oneclick/" target="_blank">
+	          <button type="submit" class="btn btn-outline-primary">About login flows</button>
+	        </a>
+		</div>
+		
+		<div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
 
+<div class="nav-wrapper">
+    <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">One-click</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Biometric</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">QR-code</a>
+        </li>
+    </ul>
+</div>
+<div class="card shadow">
+    <div class="card-body">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+				
+				
+				
+<video width="100%" controls="">
+  <source src="/assets/videos/one-click-animation.mp4" type="video/mp4" />
+  <source type="video/webm" src="/assets/videos/one-click-animation.webm" />
+Your browser does not support the video tag.
+</video>
+            
+			
+			
+			
+			
+			</div>
+            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+				
+				
+				
+				
+<video width="100%" controls="">
+  <source src="/assets/videos/biometric-animation.mp4" type="video/mp4" />
+  <source type="video/webm" src="/assets/videos/biometric-animation.webm" />
+Your browser does not support the video tag.
+</video>
 
+</div>
+            
+			
+			
+			
+            <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+				
+				
+				
+				
+<video width="100%" controls="">
+  <source src="/assets/videos/qrcode-animation.mp4" type="video/mp4" />
+  <source type="video/webm" src="/assets/videos/qrcode-animation.webm" />
+Your browser does not support the video tag.
+</video>
 
+</div>
+            
+				
+				
+				
+            </div>
         </div>
-        </div>
-    
+    </div>
+</div>
+
+<div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Code examples -->
+<div class="section">
+  <div class="container">
+    <div class="row" style="flex-wrap: wrap-reverse;">
+      <div class="col-lg-6 mx-auto">
+
+<pre><code class="language-javascript">var idemeum = new IdemeumManager(
+(clientId = "YOUR_CLIENT_ID")
+);
+
+function isUserLoggedIn() {
+    idemeum.isLoggedIn().then(
+        function(data) {
+            renderUserClaims();
+        },
+        function(errorData) {
+            html = `<button id="btn-login" onclick="login()">Log in</button>`;
+            document.getElementById("initial").innerHTML = html;
+        }
+    );
+}</code></pre>
+			
+			
+			
+			
+			
+
+      </div>
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">How to integrate</h6>
+        <h3 class="display-3">Plug and play experience</h3>
+        <p class="lead">With just a few lines of code you can leverage idemeum SDK to implement passwordless for your mobile or desktop app. We make it simple.</p>
+        <a href="https://docs.idemeum.com/reference/sdkoverview/" target="_blank">
+          <button type="submit" class="btn btn-outline-primary">Start integrating</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About security -->
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">About infrastructure</h6>
+        <h3 class="display-3">Secure and private by design</h3>
+        <p class="lead">With Privacy-aware Identity Architecture we make user data privacy and security part of our DNA. We engineered idemeum to combine best of both worlds - provide Single Sing-On yet enable digital identity privacy and modern security controls.</p>
+        <a href="https://docs.idemeum.com/overview/security/" target="_blank">
+          <button type="submit" class="btn btn-outline-primary">Learn more</button>
+        </a>
+      </div>
+      <div class="col-lg-6 mx-auto justify-content-center d-flex flex-column">
+          <div class="image-container">
+            <img src="./assets/img/architecture.png" alt="idemeum architecture" />
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      
 
 
   

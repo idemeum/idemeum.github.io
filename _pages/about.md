@@ -11,9 +11,9 @@ featured_image: /assets/img/about/future.jpg
 		<h4 class="text-center display-3">Our company</h4>
 		<p class="lead">We are a passionate team with a big ambition to build passwordless identity for people to identify themselves online.</p>
 		
-		<p class="lead">Digital identity is more important then ever, as it serves as a foundational block to form relationships with your customers. But password challenges, sign up friction, and privacy compromises make it hard for everyone of us to enjoy online digital identity experience.</p>
+		<p class="lead">Digital identity is more important then ever, as it serves as a foundational block to form relationships with your customers and employees. But password challenges, sign up friction, and privacy compromises make it hard for everyone of us to enjoy online digital identity experience.</p>
 		
-		<p class="lead">That is why in 2020 we founded idemeum with a mission to make digital identity simple, secure, and private. We build first Passwordless and Private digital identity platform for developers to implement passwordless technology and delight users with frictionless experience.</p>
+		<p class="lead">That is why in 2020 we founded idemeum with a mission to make digital identity simple, secure, and private. We built passwordless platform for small and medium businesses to implement passwordless technology and delight users with frictionless experience.</p>
 	</div>
 	</div>
   </div>
