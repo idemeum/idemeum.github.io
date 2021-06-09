@@ -48,8 +48,12 @@
 </head>
 
 <body>
-  {% if page.type != "login-page" %}
+  {% if page.type != "login-page" or page.type != "skew-header" %}
     {% include header.html %}
+  {% endif %}
+  
+  {% if page.type == "skew-header" %}
+    {% include skew-header.html %}
   {% endif %}
 
   {% if page.type == "home-page" %}
@@ -113,9 +117,11 @@
     </div>
     {% endif %}
     {% endif %}
+	
 
 
-    {% if page.type == "home-page" or page.type == "managed" or page.type == "blogListing" or page.type == "blog-post-wide"%}
+
+    {% if page.type == "home-page" or page.type == "managed" or page.type == "blogListing" or page.type == "blog-post-wide" or page.type == "skew-header" %}
       {{content}}
 
       {% elsif page.title or page.description %}

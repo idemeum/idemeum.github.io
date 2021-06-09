@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Passwordless identity platform
+  site_title: Application Management Platform
   favicon_image: "/assets/img/favicon/idemeum-favicon.png"
 
 header_settings:
@@ -31,17 +31,17 @@ blog_settings:
   # 3. Add a color of the icon - text-primary, text-success, text-info, text-danger, text-warning and text-default all work!
 menu_settings:
   menu_items:
-  - title: 'For your customers'
-    submenu_items:
-     - title: 'Passwordless app login'
-       url: /forcustomers
-       icon: ni ni-single-02 text-warning
-     - title: App login demo
-       url: https://jsdemo.idemeum.com
-       icon: ni ni-tv-2 text-success
-     - title: 'Pricing'
-       url: /pricing
-       icon: ni ni-money-coins text-primary
+  #- title: 'For your customers'
+    #submenu_items:
+     #- title: 'Passwordless app login'
+       #url: /forcustomers
+       #icon: ni ni-single-02 text-warning
+     #- title: App login demo
+       #url: https://jsdemo.idemeum.com
+       #icon: ni ni-tv-2 text-success
+    # - title: 'Pricing'
+       #url: /pricing
+       #icon: ni ni-money-coins text-primary
       #- title: Passwordless Device Deployment
        # url: /deployment
         #icon: fa fa-briefcase text-success
@@ -54,14 +54,14 @@ menu_settings:
     #- title: Passwordless Device Deployment
      # url: /deployment
       #icon: fa fa-briefcase text-success
-  - title: 'Resources'
-    submenu_items:
-     - title: Blog
-       url: https://blog.idemeum.com
-       icon: ni ni-books text-warning
-     - title: Docs
-       url: https://docs.idemeum.com
-       icon: ni ni-books text-primary
+  #- title: 'Resources'
+    #submenu_items:
+     #- title: Blog
+       #url: https://blog.idemeum.com
+       #icon: ni ni-books text-warning
+     #- title: Docs
+       #url: https://docs.idemeum.com
+       #icon: ni ni-books text-primary
      #- title: Videos
        #url: /videos
        #icon: ni ni-tv-2 text-info
