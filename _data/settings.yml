@@ -46,11 +46,11 @@ menu_settings:
        # url: /deployment
         #icon: fa fa-briefcase text-success
 
-  #- title: 'For enterprises'
-    #submenu_items:
-    #- title: Verified Passwordless MFA
-      #url: /mfa
-      #icon: fa fa-key text-primary
+  - title: 'Solutions'
+    submenu_items:
+    - title: Employee IT onboarding
+      url: /onboarding
+      icon: ni ni-badge text-primary
     #- title: Passwordless Device Deployment
      # url: /deployment
       #icon: fa fa-briefcase text-success
