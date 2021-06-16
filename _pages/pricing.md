@@ -31,16 +31,19 @@ featured_image: /assets/img/pricing/pricing.jpg
                           <img src="./assets/img/pricing/plans.svg" class="background">
                         </th>
                         <th class="text-center">
-                          <h4 class="card-title">Entry</h4>
-                          <h5>$4</h5>
+                          <h5 class="card-title">Entry</h5>
+                          <h4 class="display-3	 mt-0 mb-0">$4</h4>
+						  <p class="mb-0" style="font-size: 0.5rem">per user, per month</p>
                         </th>
                         <th class="text-center">
-                          <h4 class="card-title">Base</h4>
-                          <h5>$8</h5>
+                          <h5 class="card-title">Base</h5>
+                          <h4 class="display-3	 mt-0 mb-0">$8</h4>
+						  <p class="mb-0" style="font-size: 0.5rem">per user, per month</p>
                         </th>
                         <th class="text-center">
-                          <h4 class="card-title">Advanced</h4>
-                          <h5>$12</h5>
+                          <h5 class="card-title">Advanced</h5>
+                          <h4 class="display-3	 mt-0 mb-0">$12</h4>
+						  <p class="mb-0" style="font-size: 0.5rem">per user, per month</p>
                         </th>
                       </tr>
                     </thead>
