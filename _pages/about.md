@@ -1,6 +1,6 @@
 ---
 title:  About idemeum
-subtitle: We are on a mission to help small businesses grow without technology restrictions.
+subtitle: We are on a mission to make application management simple
 type: skew-header
 featured_image: /assets/img/about/about.jpg
 ---
@@ -10,10 +10,9 @@ featured_image: /assets/img/about/about.jpg
   <div class="container">
     <div class="row">
       <div class="col-lg-3 mx-auto">
-        <p class="display-4" style="letter-spacing: 0.2em; text-transform: uppercase;">Why idemeum</p>
 	  </div>
       <div class="col-lg-9 mx-auto">
-        <h4>Every company with employees requires application management. Our goal is to empower small businesses, and IT teams in particular, to deal with modern IT challenges. Every minute saved can be spent on growing the business. <br><br> We fundamentally believe IT can and should be simple.</h4>
+        <h4>Applications are powering business productivity. Every small business is using around <span class="font-tertiary-large" style="display: inline; font-size: 1.9rem; font-weight: bold">100 SaaS applications</span> on average. When the company grows, so do the number of applications and IT overload. Eventually every growing company has to address application management pains. And today, it is much more than just procuring licenses. Current market solutions force businesses into product categories, and everything that gets deployed is complex, expensive, and represents numerous disjoint tools. <br><br>We are building an all-in-one <span class="font-tertiary-large" style="display: inline; font-size: 1.9rem; font-weight: bold">Application Management Platform</span> for SMBs. We believe IT teams should have one place to manage workspace applications, simply, securely, and cost effectively.</h4>
 	  </div>
     </div>
   </div>
@@ -48,6 +47,7 @@ featured_image: /assets/img/about/about.jpg
 </div>
 
 
+<!--
 <div class="section mt-5">
   <div class="container">
 	<div class="row mb-4">
@@ -56,11 +56,11 @@ featured_image: /assets/img/about/about.jpg
   </div>
 </div>
 </div>
+-->
 
 
 
-
-
+<!--
 <div class="section mt-7 bg-primary">
   <div class="container">
     <div class="row">
@@ -71,6 +71,6 @@ featured_image: /assets/img/about/about.jpg
         <a href="/contact"><h3 class="display-2 mb-3 text-white">Ping us <i class="fas fa-arrow-right"></i></h3></a>
 	  </div>
     </div>
-  </div>
-</div>
+  </div> 
+</div> -->
 

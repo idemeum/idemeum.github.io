@@ -86,6 +86,26 @@ a.link-default:visited {
   border-bottom: 1px solid #172b4d;
 }
 
+.link-default-dash {
+  color: #172b4d;
+  text-decoration: none;
+  border-bottom: 1px solid #172b4d;
+  border-bottom-style: dotted;
+}
+
+a.link-default-dash:hover {
+  color: #172b4d;
+  border-bottom: 2px solid #172b4d;
+  border-bottom-style: dotted;
+}
+
+a.link-default-dash:visited {
+  color: #172b4d;
+  text-decoration: none;
+  border-bottom: 1px solid #172b4d;
+  border-bottom-style: dotted;
+}
+
 
 .shape-custom {
     background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, #3E79F1 70%, shapes-default-color("step-3-gradient-bg") 94%);
