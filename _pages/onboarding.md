@@ -156,7 +156,7 @@ featured_image: /assets/img/onboarding/onboarding.jpg
       </div>
       <div class="modal-body">
         <!-- Video explainer -->
-        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe id="video-onboarding" src='https://www.youtube.com/embed/CPXcj5XvTPQ' frameborder='0' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe id="video-onboarding" src='https://www.youtube.com/embed/yGVo2vYWvIw' frameborder='0' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <!-- End of video -->
       </div>
       <div class="modal-footer">
@@ -165,6 +165,9 @@ featured_image: /assets/img/onboarding/onboarding.jpg
     </div>
   </div>
 </div>
+
+
+
 
 <!-- Contact us for demo -->
 <div id="main" class="container mt-5">
